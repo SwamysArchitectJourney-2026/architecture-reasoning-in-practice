@@ -15,6 +15,8 @@ This repository documents hands-on practice in **architectural reasoning** acros
 
 The goal of this repo is to develop **architectural judgment and decision-making capability** through structured practice in reasoning, articulation, and evaluation.
 
+This repository develops reasoning and decision articulation skills used in senior technical evaluations, real-world technical discussions, design panels, and leadership decision contexts. It focuses on how to think and communicate, not what answer to produce.
+
 > **📋 Important Distinction**: This repository focuses on reasoning and articulation. Detailed system designs and implementations live in `system-design-in-practice`.
 
 ---
@@ -59,6 +61,13 @@ This is **Swamy's personal learning** repository and practice log, not official 
 - Professionals wanting to develop architectural judgment and decision-making skills
 - Anyone seeking to improve how they think, reason, and communicate under evaluation
 
+Reasoning perspectives covered (as lenses, not “targets”):
+
+- Staff Engineer (depth of execution reasoning)
+- Principal Engineer (scope + leverage reasoning)
+- Architect (long-range trade-off reasoning)
+- Engineering Manager (risk + people + delivery reasoning)
+
 ### ❌ Who This Is Not For
 
 - Those seeking official course materials or structured curriculum
@@ -94,10 +103,11 @@ This repository focuses on developing skills in:
    - Analyze trade-offs and decision points
    - Practice articulating solutions
 
-2. **Study Notes & Insights** (`src/notes/`)
-   - Review common patterns and approaches
-   - Learn from analysis frameworks
-   - Understand decision-making principles
+2. **Study Reasoning Patterns** (thinking-mode folders under `src/`)
+   - Use `src/01_reasoning-foundations/` for framing, assumptions, clarification
+   - Use `src/02_answer-structuring/` for communication structure and depth control
+   - Use `src/03_tradeoff-articulation/` for comparing options and defending decisions
+   - Use `src/04_role-perspectives/` to practice role-anchored lenses
 
 3. **Use Supporting Materials**
    - `src/resources/` - Frameworks, reference materials, and tools
@@ -163,7 +173,7 @@ See `src/05_evaluation-scenarios/` for practice scenarios (to be populated).
 
 ## 📝 Notes & Insights
 
-Key takeaways, patterns, and insights are maintained under `src/notes/`:
+Key takeaways, patterns, and insights are maintained across the thinking-mode folders under `src/`:
 
 - Architectural reasoning patterns
 - Common decision-making frameworks

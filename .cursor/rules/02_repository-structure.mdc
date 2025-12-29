@@ -34,6 +34,7 @@
 
 - ✅ **Practice Content**: Architectural reasoning scenarios and exercises
 - ✅ **Resources**: Frameworks, tools, and reference materials (`src/resources/`)
+- ✅ **Templates**: Standard templates for consistent content (`docs/templates/`)
 
 ### 📋 Content Type Classifications
 
@@ -68,6 +69,8 @@ For the complete repository structure, see: **[docs/01_repository-structure.md](
 - `src/04_role-perspectives/` - How different roles think when solving the same problem
 - `src/05_evaluation-scenarios/` - Vague problems, conflicting requirements, legacy modernization
 - `src/resources/` - Frameworks, tools, and reference materials
+- `docs/templates/` - Scenario + pattern-note templates
+- `.github/workflows/` - CI checks (content compliance)
 
 ## 📁 Directory Structure Details
 

@@ -36,7 +36,7 @@
 - Develops real-world architectural judgment
 - Enhances decision-making capability
 - Improves communication of architectural decisions
-- Practice for interview preparation and professional growth
+- Practice for senior technical evaluation contexts and professional growth
 
 ---
 
@@ -46,9 +46,8 @@
 
 **All content creation must follow these rules, with applicability based on content type:**
 
-- **Practice Content** (`src/`): Organized by architectural reasoning topics and practice areas
-- **Scenarios** (`src/`): Real-world architectural problems and decision-making exercises
-- **Notes** (`src/notes/`): Descriptive naming, architectural reasoning insights
+- **Practice Content** (`src/`): Organized by thinking modes (foundations, structuring, trade-offs, role perspectives, scenarios)
+- **Scenarios** (`src/05_evaluation-scenarios/`): Real-world architectural problems and decision-making exercises (reasoning practice, not answer keys)
 - **Resources** (`src/resources/`): Logical naming, frameworks and reference materials
 
 See: `.cursor/rules/01_educational-content-rules.mdc` for complete details and applicability.

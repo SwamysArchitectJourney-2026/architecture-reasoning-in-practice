@@ -26,6 +26,26 @@ This repository focuses on:
 
 See [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the complete repository structure (single source of truth). See [README.md](README.md) for the learning path.
 
+## Content Contribution Guidelines
+
+### Scenario Contribution Guidelines
+
+- Must use the standard scenario template: [`docs/templates/scenario-template.md`](docs/templates/scenario-template.md)
+- Must focus on reasoning practice, not “answer keys” or full system designs
+- Must explicitly surface ambiguities, assumptions, and trade-offs
+- Must avoid interview-specific language; use role-agnostic “senior technical evaluation contexts” framing instead
+
+### Pattern / Note Contribution Guidelines
+
+- Must start with a clear H1 title (`# ...`)
+- Prefer pattern-oriented structure (Summary → When to Use → How to Apply)
+- Keep content modular and reusable; avoid duplicating `src/resources/`
+
+### Language & Intent Discipline
+
+- Avoid using the word “interview” in repository content
+- Prefer: “design review”, “promotion panel”, “leadership discussion”, “technical evaluation context”
+
 ## Notes
 
 - This is a personal learning repository

@@ -13,6 +13,11 @@
 ```text
 architecture-reasoning-in-practice/
 │
+├── .github/
+│   ├── workflows/
+│   │   └── content-compliance.yml
+│   └── copilot-instructions.md
+│
 ├── README.md
 ├── LICENSE
 ├── CONTRIBUTING.md
@@ -54,6 +59,9 @@ architecture-reasoning-in-practice/
 │
 ├── docs/
 │   ├── 01_repository-structure.md (this file)
+│   ├── templates/
+│   │   ├── scenario-template.md
+│   │   └── pattern-note-template.md
 │   ├── images/
 │   └── review-reports/
 │       └── .gitkeep
@@ -72,7 +80,7 @@ architecture-reasoning-in-practice/
 
 This repository is organized by **thinking modes**, not topics or systems. It focuses on:
 - How senior people think, reason, and communicate
-- Reasoning under evaluation (interviews, promotion panels, design reviews, leadership conversations)
+- Reasoning under senior technical evaluation contexts (promotion panels, design reviews, leadership conversations)
 - Not system design depth or implementation details
 
 ### File Naming Conventions
@@ -93,10 +101,46 @@ This repository is organized by **thinking modes**, not topics or systems. It fo
 ### Special Directories
 
 - **`docs/`**: Additional documentation, images, and planning materials
+- **`docs/templates/`**: Standard templates for scenarios and pattern-style notes
 - **`source-material/`**: Staging area for source content (git-ignored)
   - Raw source materials placed here before migration
   - Files are transformed and migrated to `src/` following content rules
   - Source files remain after migration (user deletes manually)
+
+---
+
+## Purpose of Each Folder
+
+### `src/01_reasoning-foundations/`
+
+Reasoning fundamentals: how to frame problems, extract constraints, and surface assumptions.
+
+### `src/02_answer-structuring/`
+
+How to communicate: top-down structuring, controlling depth, and time-boxing your reasoning.
+
+### `src/03_tradeoff-articulation/`
+
+How to compare options and defend choices: trade-offs, risk, and failure framing.
+
+### `src/04_role-perspectives/`
+
+Role-anchored reasoning perspectives: how focus changes across Staff/Principal/Architect/EM contexts.
+
+### `src/05_evaluation-scenarios/`
+
+Open-ended scenarios designed for reasoning practice. These are not “answer keys” and should avoid full system designs.
+
+### `src/resources/`
+
+Reusable reference artifacts (checklists, templates, frameworks). Avoid duplicating practice-note content.
+
+---
+
+## Templates
+
+- Scenario template: [`docs/templates/scenario-template.md`](templates/scenario-template.md)
+- Pattern-style note template: [`docs/templates/pattern-note-template.md`](templates/pattern-note-template.md)
 
 ---
 

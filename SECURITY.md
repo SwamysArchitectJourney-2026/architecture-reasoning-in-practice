@@ -4,6 +4,8 @@
 
 This is a personal learning repository for Architecture Reasoning in Practice. As such, it primarily contains documentation and learning materials.
 
+This repository contains conceptual and reasoning content only. There are no executable artifacts.
+
 | Version | Supported          |
 | ------- | ------------------ |
 | Current | :white_check_mark: |
