@@ -1,0 +1,9 @@
+blank_issues_enabled: true
+contact_links:
+  - name: GitHub Foundations Learning Community
+    url: https://github.com/YOUR_USERNAME/github-foundations-in-practice/discussions
+    about: Ask questions and discuss GitHub Foundations topics
+  - name: Learning Resources
+    url: https://github.com/YOUR_USERNAME/github-foundations-in-practice/tree/main/resources
+    about: Check out official links and practice questions
+

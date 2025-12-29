@@ -1,0 +1,175 @@
+# Repository Structure & Context
+
+**Version**: 1.0  
+**Last Updated**: December 24, 2025
+
+---
+
+## 🧭 Repository Context
+
+**GitHub Foundations Learning Journey** is a personal learning repository documenting the structured journey toward the **GitHub Foundations Certification**. It provides:
+
+- Core GitHub concepts and terminology
+- Practical workflows and best practices
+- Hands-on labs and exercises
+- Exam preparation materials
+- Progress tracking and readiness assessment
+
+**Target Audience**:
+
+- Swamy (personal learning journey)
+- Others preparing for GitHub Foundations Certification
+- Developers learning GitHub fundamentals
+
+**Purpose**: Provides a structured, exam-focused learning path with practical exercises and comprehensive coverage of all GitHub Foundations exam domains.
+
+### 🚨 CRITICAL: Repository Purpose
+
+**This repository (`github-foundations-in-practice`) contains:**
+
+- ✅ **Domain Content**: GitHub Foundations exam domains (`src/01_github-basics/` through `src/06_open-source-and-community/`)
+- ✅ **Labs**: Hands-on exercises (`src/labs/`)
+- ✅ **Notes**: Exam tips, common mistakes, glossary (`src/notes/`)
+- ✅ **Resources**: Official links, practice questions, cheat sheets (`src/resources/`)
+- ✅ **Progress Tracking**: Milestones, study log, readiness checklist (`src/progress/`)
+
+### 📋 Content Type Classifications
+
+**Domain Content** (`src/01_github-basics/`, `src/02_working-with-repositories/`, `src/03_collaboration/`, `src/04_github-tools/`, `src/05_security-and-best-practices/`, `src/06_open-source-and-community/`):
+
+- Purpose: Educational learning materials for GitHub Foundations certification
+- Structure: Each domain has a README.md and topic-specific markdown files
+- File Naming: Descriptive names (e.g., `concepts.md`, `pull-requests.md`)
+
+**Labs** (`src/labs/`):
+
+- Purpose: Hands-on practical exercises
+- Structure: Each lab includes objective, steps, and expected outcome
+- File Naming: Numbered lab files (`lab-01-create-repo.md`)
+
+**Notes** (`src/notes/`):
+
+- Purpose: Exam tips, common mistakes, glossary
+- File Naming: Descriptive names (`exam-tips.md`, `common-mistakes.md`, `glossary.md`)
+
+**Resources** (`src/resources/`):
+
+- Purpose: Learning resources and reference materials
+- File Naming: Logical names (`official-links.md`, `practice-questions.md`, `cheat-sheets.md`)
+
+---
+
+## 📁 Repository Structure
+
+> **📋 Single Source of Truth**: The complete and up-to-date repository structure is maintained in [`docs/01_repository-structure.md`](../../docs/01_repository-structure.md). This file should be referenced for the authoritative structure. When the structure changes, update that file first, then update references here.
+
+For the complete repository structure, see: **[docs/01_repository-structure.md](../../docs/01_repository-structure.md)**
+
+### Current Structure Overview (As of December 24, 2025)
+
+**Note**: This is a summary. For the complete structure with all file names and details, refer to [`docs/01_repository-structure.md`](../../docs/01_repository-structure.md).
+
+**Quick Overview**:
+
+- `src/01_github-basics/` - Core GitHub concepts and terminology
+- `src/02_working-with-repositories/` - Branching, commits, merges
+- `src/03_collaboration/` - Pull requests, reviews, issues
+- `src/04_github-tools/` - Actions, Pages, Marketplace
+- `src/05_security-and-best-practices/` - Permissions, secrets, protection
+- `src/06_open-source-and-community/` - Licenses, OSS workflows
+- `src/labs/` - Hands-on exercises
+- `src/notes/` - Exam tips, glossary, common mistakes
+- `src/resources/` - Official links, practice questions, cheat sheets
+- `src/progress/` - Milestones, study log, readiness tracking
+
+## 📁 Directory Structure Details
+
+### Domain Directories
+
+**src/01_github-basics/** - Core GitHub concepts
+
+- GitHub vs Git
+- Repository basics
+- Markdown basics
+- Core concepts and terminology
+
+**src/02_working-with-repositories/** - Repository operations
+
+- Cloning and forking
+- Commits and history
+- Branching strategies
+- Merging and rebasing
+
+**src/03_collaboration/** - Collaboration features
+
+- Pull requests
+- Code reviews
+- Issues and projects
+- Discussions
+
+**src/04_github-tools/** - GitHub tools and features
+
+- GitHub Actions
+- Workflows basics
+- Marketplace
+- GitHub Pages
+
+**src/05_security-and-best-practices/** - Security and best practices
+
+- Permissions and roles
+- Branch protection
+- Secrets management
+- Code scanning overview
+
+**src/06_open-source-and-community/** - Open source and community
+
+- Open source basics
+- Licenses
+- Contributing guidelines
+- Code of conduct
+
+### Supporting Directories
+
+**src/labs/** - Hands-on exercises
+
+- Lab 01: Create repository
+- Lab 02: Pull request workflow
+- Lab 03: Actions workflow
+- Lab 04: Pages deployment
+
+**src/notes/** - Study materials
+
+- Common mistakes
+- Exam tips
+- Glossary
+
+**src/resources/** - Reference materials
+
+- Official links
+- Practice questions
+- Cheat sheets
+
+**src/progress/** - Progress tracking
+
+- Milestones
+- Study log
+- Exam readiness checklist
+
+## 📞 Support & Escalation
+
+**Questions about GitHub basics?** → Check `src/01_github-basics/`
+
+**Need repository operations info?** → Check `src/02_working-with-repositories/`
+
+**Looking for collaboration features?** → Check `src/03_collaboration/`
+
+**Structure outdated?** → Update `docs/01_repository-structure.md` first, then update references in `.github/copilot-instructions.md` and `README.md`
+
+---
+
+## For More Information
+
+- **Repository**: Check README.md for repository location
+- **Learning Path**: `README.md`
+- **Content Index**: See domain README files
+- **GitHub Copilot Instructions**: `.github/copilot-instructions.md`
