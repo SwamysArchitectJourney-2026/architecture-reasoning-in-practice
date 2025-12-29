@@ -33,7 +33,7 @@ See [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the
 - Must use the standard scenario template: [`docs/templates/scenario-template.md`](docs/templates/scenario-template.md)
 - Must focus on reasoning practice, not “answer keys” or full system designs
 - Must explicitly surface ambiguities, assumptions, and trade-offs
-- Must avoid interview-specific language; use role-agnostic “senior technical evaluation contexts” framing instead
+- Must avoid hiring-process language; use role-agnostic “senior technical evaluation contexts” framing instead
 
 ### Pattern / Note Contribution Guidelines
 
@@ -43,7 +43,7 @@ See [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the
 
 ### Language & Intent Discipline
 
-- Avoid using the word “interview” in repository content
+- Avoid hiring-process phrasing in repository content
 - Prefer: “design review”, “promotion panel”, “leadership discussion”, “technical evaluation context”
 
 ## Notes

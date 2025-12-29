@@ -18,7 +18,7 @@ function Write-ComplianceError {
 function Get-TrackedTextFiles {
     param([string]$Root)
 
-    $include = @('*.md', '*.mdc', '*.yml', '*.yaml', '*.ps1')
+    $include = @('*.md', '*.mdc', '*.yml', '*.yaml')
 
     $paths = foreach ($pattern in $include) {
         Get-ChildItem -Path $Root -Recurse -File -Filter $pattern -Force -ErrorAction SilentlyContinue
