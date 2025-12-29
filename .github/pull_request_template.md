@@ -15,18 +15,15 @@
 - [ ] Repository structure improvement
 - [ ] Other (please describe):
 
-## Domain/Area
+## Thinking Mode/Area
 
-<!-- Which GitHub Foundations domain does this relate to? -->
+<!-- Which Architecture Reasoning thinking mode does this relate to? -->
 
-- [ ] GitHub Basics
-- [ ] Working with Repositories
-- [ ] Collaboration
-- [ ] GitHub Tools
-- [ ] Security & Best Practices
-- [ ] Open Source & Community
-- [ ] Labs
-- [ ] Notes
+- [ ] Reasoning Foundations
+- [ ] Answer Structuring
+- [ ] Trade-off Articulation
+- [ ] Role Perspectives
+- [ ] Evaluation Scenarios
 - [ ] Resources
 - [ ] Other (please describe):
 

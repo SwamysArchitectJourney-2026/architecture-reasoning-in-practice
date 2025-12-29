@@ -13,7 +13,7 @@ assignees: ''
 ## Location
 
 <!-- Where did you encounter this issue? -->
-- Domain: <!-- e.g., 01_github-basics, 02_working-with-repositories, etc. -->
+- Thinking Mode: <!-- e.g., 01_reasoning-foundations, 02_answer-structuring, etc. -->
 - File: <!-- e.g., concepts.md, lab-01-create-repo.md -->
 - Section: <!-- Specific section or line if applicable -->
 
