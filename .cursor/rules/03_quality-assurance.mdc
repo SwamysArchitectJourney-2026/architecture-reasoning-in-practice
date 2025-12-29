@@ -9,11 +9,10 @@
 
 **Before ANY content creation or modification**:
 
-### Content Quality (GitHub Foundations Standards)
+### Content Quality (Architecture Reasoning Standards)
 
 **APPLICABILITY**: 
-- **Lab Documentation** (`src/labs/`): Apply zero-copy policy, but YAML frontmatter and strict line limits are not required
-- **Domain Content** (`src/01_github-basics/`, `src/02_working-with-repositories/`, `src/03_collaboration/`, `src/04_github-tools/`, `src/05_security-and-best-practices/`, `src/06_open-source-and-community/`): All rules apply strictly
+- **Practice Content** (`src/01_reasoning-foundations/`, `src/02_answer-structuring/`, `src/03_tradeoff-articulation/`, `src/04_role-perspectives/`, `src/05_evaluation-scenarios/`): All rules apply strictly
 
 - [ ] **Zero-Copy Policy Verified**: No verbatim text from sources; completely transformed
 - [ ] **Transformative Workflow Applied**: Fresh outline, new examples, original explanations

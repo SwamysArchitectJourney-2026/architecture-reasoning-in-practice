@@ -7,13 +7,11 @@
 
 ## 🎯 Primary Directives
 
-### 1. GitHub Foundations Content Rules (MANDATORY)
+### 1. Architecture Reasoning Content Rules (MANDATORY)
 
 **All content creation must follow these rules, with applicability based on content type:**
 
-- **Domain Content** (`src/01_github-basics/`, `src/02_working-with-repositories/`, `src/03_collaboration/`, `src/04_github-tools/`, `src/05_security-and-best-practices/`, `src/06_open-source-and-community/`): File naming, zero-copy policy, file references (YAML frontmatter recommended, line limits recommended)
-- **Labs** (`src/labs/`): Standard structure, zero-copy policy, numbered lab files
-- **Notes** (`src/notes/`): Descriptive naming, no numbering required
+- **Practice Content** (`src/01_reasoning-foundations/`, `src/02_answer-structuring/`, `src/03_tradeoff-articulation/`, `src/04_role-perspectives/`, `src/05_evaluation-scenarios/`): File naming, zero-copy policy, file references (YAML frontmatter recommended, line limits recommended)
 - **Resources** (`src/resources/`): Logical naming, no numbering required
 
 See: `01_educational-content-rules.mdc` for complete details and applicability.
@@ -59,7 +57,7 @@ See: `01_educational-content-rules.mdc` for complete details and applicability.
 
 1. ✅ **Check for `00_` prefix**: **NEVER ALLOWED** - Use `01_` instead
 2. ✅ **Verify scope**: Rule applies to **ALL files** including:
-   - Domain content (`src/01_github-basics/`, `src/02_working-with-repositories/`, etc.)
+   - Practice content (`src/01_reasoning-foundations/`, `src/02_answer-structuring/`, etc.)
    - Documentation files (`docs/`)
    - Any numbered files anywhere in repository
 3. ✅ **Quick validation**: Run `Get-ChildItem -Recurse -Filter "*00_*"` to find violations
