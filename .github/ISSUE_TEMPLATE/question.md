@@ -1,6 +1,6 @@
 ---
 name: Question
-about: Ask a question about GitHub Foundations or the learning materials
+about: Ask a question about Architecture Reasoning or the learning materials
 title: '[QUESTION] '
 labels: question
 assignees: ''
@@ -17,7 +17,7 @@ assignees: ''
 ## Related Content
 
 <!-- If applicable, reference related files or sections -->
-- Domain: <!-- e.g., 01_github-basics -->
+- Thinking Mode: <!-- e.g., 01_reasoning-foundations, 02_answer-structuring -->
 - File: <!-- e.g., concepts.md -->
 
 ## What I've Tried

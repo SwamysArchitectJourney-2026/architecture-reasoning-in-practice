@@ -1,9 +1,9 @@
 blank_issues_enabled: true
 contact_links:
-  - name: GitHub Foundations Learning Community
-    url: https://github.com/YOUR_USERNAME/github-foundations-in-practice/discussions
-    about: Ask questions and discuss GitHub Foundations topics
+  - name: Architecture Reasoning Learning Community
+    url: https://github.com/Swamy-s-Tech-Skills-Academy-2026/architecture-reasoning-in-practice/discussions
+    about: Ask questions and discuss Architecture Reasoning topics
   - name: Learning Resources
-    url: https://github.com/YOUR_USERNAME/github-foundations-in-practice/tree/main/resources
-    about: Check out official links and practice questions
+    url: https://github.com/Swamy-s-Tech-Skills-Academy-2026/architecture-reasoning-in-practice/tree/main/src/resources
+    about: Check out frameworks, tools, and reference materials
 
