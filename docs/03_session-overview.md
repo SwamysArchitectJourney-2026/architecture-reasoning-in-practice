@@ -67,19 +67,19 @@ graph LR
 
 **All learning content is organized in `src/` by exam domains** - this is the single source of truth.
 
-| Session | Content Location (src/) | Session Overview (docs/sessions/) |
-|---------|------------------------|-----------------------------------|
-| **01** | `src/01_github-basics/` | *Optional* |
-| **02** | `src/03_collaboration/` | *Optional* |
-| **03** | `src/02_working-with-repositories/` | *Optional* |
-| **04** | `src/03_collaboration/` | *Optional* |
-| **05** | `src/04_github-tools/` | *Optional* |
-| **06** | `src/04_github-tools/` | *Optional* |
-| **07** | `src/05_security-and-best-practices/` | *Optional* |
-| **08** | `src/06_open-source-and-community/` | *Optional* |
-| **09+** | `src/` (by exam domain) | *Optional* |
+| Session | Content Location (src/) |
+|---------|------------------------|
+| **01** | `src/01_github-basics/` |
+| **02** | `src/03_collaboration/` |
+| **03** | `src/02_working-with-repositories/` |
+| **04** | `src/03_collaboration/` |
+| **05** | `src/04_github-tools/` |
+| **06** | `src/04_github-tools/` |
+| **07** | `src/05_security-and-best-practices/` |
+| **08** | `src/06_open-source-and-community/` |
+| **09+** | `src/` (by exam domain) |
 
-**Note**: `docs/sessions/` is kept minimal - it contains session metadata and overviews that link to `src/` content. The actual learning content lives in `src/` organized by exam domains.
+**Note**: All learning content lives in `src/` organized by exam domains.
 
 ---
 

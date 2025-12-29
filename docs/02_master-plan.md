@@ -8,8 +8,8 @@ Build a practical, exam-focused learning repository for the **GitHub Foundations
 
 This repo is optimized for:
 
-* Self-study in timeboxed sessions
-* Small-group meetup delivery
+* Personal self-study journey
+* Timeboxed learning sessions
 * Hands-on practice with real GitHub workflows
 * Exam preparation with structured coverage of all domains
 
@@ -42,7 +42,7 @@ Recommended structure per session:
 
 ## Repository Layout (Current)
 
-* `docs/` — plans, meetup material, and session write-ups
+* `docs/` — plans and documentation
 * `src/` — organized by GitHub Foundations exam domains:
   * `01_github-basics/` — Core GitHub concepts
   * `02_working-with-repositories/` — Branching, commits, merges
@@ -58,7 +58,7 @@ Recommended structure per session:
 
 ## Learning Roadmap (Sessions)
 
-Based on the GitHub Foundations Certification exam domains and meetup sessions. The number of sessions is flexible and can expand as needed to cover all exam domains comprehensively.
+Based on the GitHub Foundations Certification exam domains. The number of sessions is flexible and can expand as needed to cover all exam domains comprehensively.
 
 ### 01. Introduction to Git and GitHub
 
@@ -131,14 +131,13 @@ Session content is organized into the appropriate `src/` domain folders based on
 * Session 07 (Security) → `src/05_security-and-best-practices/`
 * Session 08 (Open Source) → `src/06_open-source-and-community/`
 
-**Note**: `docs/sessions/` is kept minimal - it contains session metadata and overviews that link to `src/` content. The actual learning content lives in `src/` organized by exam domains.
+**Note**: All learning content lives in `src/` organized by exam domains.
 
 ## Next Steps
 
-1. Convert Session 01 and Session 02 source materials into learning content in `src/` organized by exam domains.
-2. Create session overview files in `docs/sessions/` that link to `src/` content (optional - for session-based navigation).
-3. Add a small, consistent content template for `src/` domain files (so every topic feels uniform).
-4. Expand the root README once content exists (so the repo has a solid entry point).
-5. Create lab exercises for each session in `src/labs/`.
-6. Build out exam preparation materials in `src/notes/` and `src/resources/`.
+1. Convert source materials into learning content in `src/` organized by exam domains.
+2. Add a small, consistent content template for `src/` domain files (so every topic feels uniform).
+3. Expand the root README once content exists (so the repo has a solid entry point).
+4. Create lab exercises in `src/labs/`.
+5. Build out exam preparation materials in `src/notes/` and `src/resources/`.
 

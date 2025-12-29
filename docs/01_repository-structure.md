@@ -95,25 +95,8 @@ architecture-reasoning-in-practice/
 │   ├── 02_master-plan.md
 │   ├── 03_session-overview.md
 │   ├── images/
-│   ├── meetup/
-│   │   ├── .gitkeep
-│   │   ├── 01_meetup-introduction-git-github.md
-│   │   ├── 02_meetup-github-for-teams.md
-│   │   └── sessions.md
-│   ├── images/
-│   │   └── .gitkeep
-│   ├── meetup/
-│   │   ├── .gitkeep
-│   │   ├── 01_meetup-introduction-git-github.md
-│   │   ├── 02_meetup-github-for-teams.md
-│   │   └── sessions.md
-│   ├── reviews/
-│   │   └── .gitkeep
 │   ├── review-reports/
 │   │   └── .gitkeep
-│   ├── sessions/
-│   │   ├── .gitkeep
-│   │   └── README.md (session metadata and navigation - links to src/ content)
 │   └── templates/
 │       └── .gitkeep
 │
