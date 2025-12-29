@@ -21,83 +21,12 @@ architecture-reasoning-in-practice/
 ├── lychee.toml
 │
 ├── src/
-│   ├── 01_github-basics/
-│   │   ├── README.md
-│   │   ├── concepts.md
-│   │   ├── git-vs-github.md
-│   │   ├── repositories.md
-│   │   └── markdown-basics.md
-│   │
-│   ├── 02_working-with-repositories/
-│   │   ├── README.md
-│   │   ├── cloning-forking.md
-│   │   ├── commits-history.md
-│   │   ├── branching-strategies.md
-│   │   └── merging-rebasing.md
-│   │
-│   ├── 03_collaboration/
-│   │   ├── README.md
-│   │   ├── pull-requests.md
-│   │   ├── code-reviews.md
-│   │   ├── issues-projects.md (includes Project Management: Projects, Boards, Milestones)
-│   │   └── discussions.md
-│   │
-│   ├── 04_github-tools/
-│   │   ├── README.md
-│   │   ├── github-actions.md
-│   │   ├── workflows-basics.md
-│   │   ├── marketplace.md
-│   │   └── github-pages.md
-│   │
-│   ├── 05_security-and-best-practices/
-│   │   ├── README.md
-│   │   ├── permissions-roles.md
-│   │   ├── branch-protection.md
-│   │   ├── secrets-management.md
-│   │   └── code-scanning-overview.md
-│   │
-│   ├── 06_open-source-and-community/
-│   │   ├── README.md
-│   │   ├── open-source-basics.md
-│   │   ├── licenses.md
-│   │   ├── contributing-guidelines.md
-│   │   └── code-of-conduct.md
-│   │
-│   ├── labs/
-│   │   ├── lab-01-create-repo.md
-│   │   ├── lab-02-pull-request.md
-│   │   ├── lab-03-actions-workflow.md
-│   │   └── lab-04-pages-deployment.md
-│   │
-│   ├── notes/
-│   │   ├── common-mistakes.md
-│   │   ├── exam-tips.md
-│   │   └── glossary.md
-│   │
-│   ├── exam-prep/
-│   │   ├── README.md
-│   │   ├── 01_key-definitions.md
-│   │   ├── 02_trick-questions.md
-│   │   └── 03_exam-mindset.md
-│   │
-│   ├── progress/
-│   │   ├── milestones.md
-│   │   ├── study-log.md
-│   │   └── exam-readiness-checklist.md
-│   │
-│   └── resources/
-│       ├── official-links.md
-│       ├── practice-questions.md
-│       └── cheat-sheets.md
+│   └── (content to be organized by architectural reasoning topics)
 │
 ├── docs/
 │   ├── 01_repository-structure.md (this file)
-│   ├── 02_master-plan.md
-│   ├── 03_session-overview.md
 │   ├── images/
-│   ├── review-reports/
-│   │   └── .gitkeep
-│   └── templates/
+│   └── review-reports/
 │       └── .gitkeep
 │
 └── source-material/
@@ -110,32 +39,20 @@ architecture-reasoning-in-practice/
 
 ### File Naming Conventions
 
-- **Domain Folders** (`src/01_github-basics/` through `src/06_open-source-and-community/`):
-  - ✅ Use zero-padded numeric prefixes: `01_`, `02_`, etc.
-  - ✅ Use hyphens for multi-word names: `01_github-basics/`
-  - ✅ Content files use descriptive names: `concepts.md`, `pull-requests.md`
-
-- **Labs** (`src/labs/`):
-  - ✅ Use numbered lab files: `lab-01-create-repo.md`
-  - ✅ Each lab includes objective, steps, and expected outcome
-
-- **Notes** (`src/notes/`):
-  - ✅ Use descriptive names: `common-mistakes.md`, `exam-tips.md`, `glossary.md`
-
-- **Resources** (`src/resources/`):
-  - ✅ Use logical names: `official-links.md`, `practice-questions.md`, `cheat-sheets.md`
+- **Content Files**: Use descriptive names that clearly indicate the topic
+- **Organization**: Content organized by architectural reasoning topics and practice areas
+- **Structure**: Flexible organization based on learning needs and practice scenarios
 
 ### Content Organization
 
-1. **Learning Progression**: Content follows GitHub Foundations exam domains (01 → 06)
-2. **Hands-On Practice**: Labs provide practical exercises
-3. **Reference Materials**: Notes and resources support learning
-4. **All Content Under `src/`**: All learning materials, labs, notes, progress, and resources are organized under the `src/` directory
+1. **Focus Areas**: Structured thinking, trade-off analysis, clear communication
+2. **Practice Scenarios**: Real-world architectural problems and decision-making exercises
+3. **Reference Materials**: Notes, examples, and resources to support learning
+4. **All Content Under `src/`**: All learning materials and practice content organized under the `src/` directory
 
 ### Special Directories
 
-- **`src/progress/`**: Tracks learning milestones and exam readiness
-- **`docs/`**: Additional documentation, images, and session notes
+- **`docs/`**: Additional documentation, images, and planning materials
 - **`source-material/`**: Staging area for source content (git-ignored)
   - Raw source materials placed here before migration
   - Files are transformed and migrated to `src/` following content rules

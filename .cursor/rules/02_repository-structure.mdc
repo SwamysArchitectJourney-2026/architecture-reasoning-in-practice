@@ -7,27 +7,32 @@
 
 ## 🧭 Repository Context
 
-**GitHub Foundations Learning Journey** is a personal learning repository documenting the structured journey toward the **GitHub Foundations Certification**. It provides:
+**Architecture Reasoning in Practice** is a personal learning repository documenting hands-on practice in architectural reasoning across senior and staff-level technical roles. It provides:
 
-- Core GitHub concepts and terminology
-- Practical workflows and best practices
-- Hands-on labs and exercises
-- Exam preparation materials
-- Progress tracking and readiness assessment
+- Structured thinking approaches
+- Trade-off analysis frameworks
+- Clear communication of architectural decisions
+- Practice with ambiguous and open-ended scenarios
 
 **Target Audience**:
 
 - Swamy (personal learning journey)
-- Others preparing for GitHub Foundations Certification
-- Developers learning GitHub fundamentals
+- Senior Software Engineers
+- Principal Software Engineers
+- Staff Engineers
+- Software Architects
+- Solution Architects
+- AI Architects
+- Engineering Managers
+- Principal Consultants
 
-**Purpose**: Provides a structured, exam-focused learning path with practical exercises and comprehensive coverage of all GitHub Foundations exam domains.
+**Purpose**: Develops real-world architectural judgment and decision-making capability through structured practice and analysis.
 
 ### 🚨 CRITICAL: Repository Purpose
 
 **This repository (`architecture-reasoning-in-practice`) contains:**
 
-- ✅ **Domain Content**: GitHub Foundations exam domains (`src/01_github-basics/` through `src/06_open-source-and-community/`)
+- ✅ **Practice Content**: Architectural reasoning scenarios and exercises
 - ✅ **Labs**: Hands-on exercises (`src/labs/`)
 - ✅ **Notes**: Exam tips, common mistakes, glossary (`src/notes/`)
 - ✅ **Resources**: Official links, practice questions, cheat sheets (`src/resources/`)

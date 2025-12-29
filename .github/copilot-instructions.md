@@ -1,53 +1,55 @@
-# GitHub Copilot Instructions for GitHub Foundations Learning Journey
+# GitHub Copilot Instructions for Architecture Reasoning in Practice
 
 **Version**: 2.0  
-**Last Updated**: December 25, 2025  
-**Repository**: `github-foundations-in-practice`  
+**Last Updated**: December 29, 2025  
+**Repository**: `architecture-reasoning-in-practice`  
 **Critical Principle**: Update this file IMMEDIATELY when repository structure changes
 
 ---
 
 ## 🎯 Repository Purpose
 
-**GitHub Foundations Learning Journey** is a personal learning repository documenting the structured journey toward the **GitHub Foundations Certification**.
+**Architecture Reasoning in Practice** is a personal learning repository documenting hands-on practice in architectural reasoning across senior and staff-level technical roles.
 
 ### What This Repository Provides
 
-- **GitHub Basics**: Core concepts, terminology, Git vs GitHub, repositories, Markdown
-- **Working with Repositories**: Cloning, forking, commits, branching, merging, rebasing
-- **Collaboration**: Pull requests, code reviews, issues, projects, discussions
-- **GitHub Tools**: Actions, workflows, Marketplace, Pages
-- **Security & Best Practices**: Permissions, roles, branch protection, secrets, code scanning
-- **Open Source & Community**: OSS basics, licenses, contributing guidelines, code of conduct
-- **Hands-On Labs**: Practical exercises for creating repos, PRs, workflows, and Pages
-- **Exam Preparation**: Study notes, tips, common mistakes, glossary, practice questions
+- **Structured Thinking**: Systematic approaches to architectural problems
+- **Trade-off Analysis**: Frameworks for evaluating options and making informed decisions
+- **Clear Communication**: Techniques for articulating architectural decisions effectively
+- **Practice Scenarios**: Real-world problems and ambiguous situations for practice
+- **Decision-Making Frameworks**: Tools and methods for architectural judgment
 
 ### Target Audience
 
 - Swamy (personal learning journey)
-- Developers preparing for GitHub Foundations Certification
-- Engineers learning GitHub fundamentals
-- Teams adopting GitHub best practices
+- Senior Software Engineers
+- Principal Software Engineers
+- Staff Engineers
+- Software Architects
+- Solution Architects
+- AI Architects
+- Engineering Managers
+- Principal Consultants
 
 ### Business Value
 
-- Structured exam preparation
-- Practical GitHub knowledge
-- Hands-on experience through labs
-- Comprehensive coverage of all exam domains
+- Develops real-world architectural judgment
+- Enhances decision-making capability
+- Improves communication of architectural decisions
+- Practice for interview preparation and professional growth
 
 ---
 
 ## 🎯 Primary Directives
 
-### 1. GitHub Foundations Content Rules (MANDATORY)
+### 1. Architecture Reasoning Content Rules (MANDATORY)
 
 **All content creation must follow these rules, with applicability based on content type:**
 
-- **Domain Content** (`src/01_github-basics/`, `src/02_working-with-repositories/`, `src/03_collaboration/`, `src/04_github-tools/`, `src/05_security-and-best-practices/`, `src/06_open-source-and-community/`): File naming, zero-copy policy, file references (YAML frontmatter recommended, line limits recommended)
-- **Labs** (`src/labs/`): Standard structure, zero-copy policy, numbered lab files
-- **Notes** (`src/notes/`): Descriptive naming, no numbering required
-- **Resources** (`src/resources/`): Logical naming, no numbering required
+- **Practice Content** (`src/`): Organized by architectural reasoning topics and practice areas
+- **Scenarios** (`src/`): Real-world architectural problems and decision-making exercises
+- **Notes** (`src/notes/`): Descriptive naming, architectural reasoning insights
+- **Resources** (`src/resources/`): Logical naming, frameworks and reference materials
 
 See: `.cursor/rules/01_educational-content-rules.mdc` for complete details and applicability.
 

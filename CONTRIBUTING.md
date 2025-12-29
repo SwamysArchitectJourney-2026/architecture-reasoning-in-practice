@@ -1,25 +1,23 @@
-# Contributing to GitHub Foundations Learning Journey
+# Contributing to Architecture Reasoning in Practice
 
-This is a **personal learning repository** documenting Swamy's journey toward the GitHub Foundations Certification.
+This is a **personal learning repository** documenting hands-on practice in architectural reasoning.
 
 ## Purpose
 
 This repository is primarily for personal learning and documentation. If you're following a similar learning path, feel free to use this as a reference, but please note:
 
-- This is **not an official GitHub repository**
+- This is **not an official repository**
 - Content is based on personal study and practice
 - The structure and content reflect one individual's learning approach
 
-## Learning Structure
+## Focus Areas
 
-This repository follows the GitHub Foundations Certification exam domains:
+This repository focuses on:
 
-- **GitHub Basics** - Core concepts and terminology
-- **Working with Repositories** - Branching, commits, merges
-- **Collaboration** - Pull requests, reviews, issues
-- **GitHub Tools** - Actions, Pages, Marketplace
-- **Security & Best Practices** - Permissions, secrets, protection
-- **Open Source & Community** - Licenses, OSS workflows
+- **Structured Thinking** - Systematic approaches to architectural problems
+- **Trade-off Analysis** - Evaluating options and making informed decisions
+- **Clear Communication** - Articulating architectural decisions effectively
+- **Real-world Scenarios** - Practice with ambiguous and open-ended problems
 
 ## Repository Structure
 
@@ -28,5 +26,5 @@ See [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the
 ## Notes
 
 - This is a personal learning repository
-- Content is organized for exam preparation and practical application
-- Labs and exercises are included for hands-on practice
+- Content is organized for practice and skill development
+- Focus is on architectural reasoning, not specific technologies

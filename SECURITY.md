@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-This is a personal learning repository for GitHub Foundations Certification. As such, it primarily contains documentation and learning materials.
+This is a personal learning repository for Architecture Reasoning in Practice. As such, it primarily contains documentation and learning materials.
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -19,12 +19,12 @@ If you discover a security vulnerability in this repository, please report it re
 
 ## Security Best Practices
 
-This repository follows GitHub security best practices:
+This repository follows security best practices:
 
 - Regular dependency updates (if applicable)
 - Secure configuration management
 - No hardcoded secrets or credentials
-- Following GitHub's security advisories
+- Following security advisories
 
 ## Note
 
