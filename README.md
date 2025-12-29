@@ -11,9 +11,11 @@
 
 > **⚠️ IMPORTANT: This is NOT a course or official curriculum. This is Swamy's personal learning journey and practice log.**
 
-This repository documents hands-on practice in **architectural reasoning** across senior and staff-level technical roles. The focus is on structured thinking, trade-off analysis, and clear communication of decisions in ambiguous and open-ended scenarios.
+This repository documents hands-on practice in **architectural reasoning** across senior and staff-level technical roles. The focus is on **how senior people think, reason, and communicate** when facing ambiguous and open-ended problems.
 
-The goal of this repo is to develop **real-world architectural judgment and decision-making capability** through structured practice and analysis.
+The goal of this repo is to develop **architectural judgment and decision-making capability** through structured practice in reasoning, articulation, and evaluation.
+
+> **📋 Important Distinction**: This repository focuses on reasoning and articulation. Detailed system designs and implementations live in `system-design-in-practice`.
 
 ---
 
@@ -31,7 +33,7 @@ This is **Swamy's personal learning** repository and practice log, not official 
 - [Objectives](#-objectives)
 - [Learning Structure](#-learning-structure)
 - [Repository Structure Overview](#-repository-structure-overview)
-- [Practice Scenarios](#-practice-scenarios)
+- [Evaluation Scenarios](#-evaluation-scenarios)
 - [Notes & Insights](#-notes--insights)
 - [Resources](#-resources)
 - [Status](#-status)
@@ -54,8 +56,8 @@ This is **Swamy's personal learning** repository and practice log, not official 
 - AI Architects
 - Engineering Managers
 - Principal Consultants
-- Anyone preparing for senior/staff-level technical interviews
 - Professionals wanting to develop architectural judgment and decision-making skills
+- Anyone seeking to improve how they think, reason, and communicate under evaluation
 
 ### ❌ Who This Is Not For
 
@@ -63,6 +65,7 @@ This is **Swamy's personal learning** repository and practice log, not official 
 - People looking for a complete, ready-to-use course (this is a personal practice log)
 - Those who want passive learning without hands-on practice
 - Anyone expecting step-by-step tutorials (this focuses on reasoning and decision-making)
+- Those seeking detailed system design walkthroughs (see `system-design-in-practice` instead)
 
 ---
 
@@ -72,12 +75,13 @@ This repository focuses on developing skills in:
 
 | Focus Area | Description | Practice Location |
 |------------|-------------|-------------------|
-| **Structured Thinking** | Systematic approaches to architectural problems | `src/` (to be organized) |
-| **Trade-off Analysis** | Evaluating options and making informed decisions | `src/` (to be organized) |
-| **Clear Communication** | Articulating architectural decisions effectively | `src/` (to be organized) |
-| **Real-world Scenarios** | Practice with ambiguous and open-ended problems | `src/` (to be organized) |
+| **Reasoning Foundations** | Problem framing, clarification strategies, assumptions and constraints | `src/01_reasoning-foundations/` |
+| **Answer Structuring** | Top-down communication, depth control, time-boxed reasoning | `src/02_answer-structuring/` |
+| **Trade-off Articulation** | Cost vs scale, simplicity vs flexibility, risk and failure framing | `src/03_tradeoff-articulation/` |
+| **Role Perspectives** | How different roles think when solving the same ambiguous problem | `src/04_role-perspectives/` |
+| **Evaluation Scenarios** | Vague problems, conflicting requirements, legacy modernization | `src/05_evaluation-scenarios/` |
 
-> **Note**: Content is organized progressively as the practice log evolves. See [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the complete structure.
+> **Note**: Content is organized by **thinking modes**, not topics or systems. See [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the complete structure.
 
 ---
 
@@ -111,19 +115,20 @@ This repository focuses on developing skills in:
 - Develop structured thinking approaches for architectural problems
 - Master trade-off analysis and decision-making frameworks
 - Improve communication of architectural decisions
-- Build confidence for senior/staff-level technical interviews
+- Practice reasoning and articulation under evaluation
 - Maintain a reusable reference for architectural reasoning
 
 ---
 
 ## 🧭 Learning Structure
 
-Content is organized to support:
+Content is organized by **thinking modes** to support:
 
-- **Practice Scenarios**: Real-world architectural problems and decision-making exercises
-- **Analysis Frameworks**: Structured approaches to evaluating options
-- **Communication Techniques**: Methods for articulating decisions clearly
-- **Reference Materials**: Tools and resources to support learning
+- **Reasoning Foundations**: How to frame problems, ask clarifying questions, and identify assumptions
+- **Answer Structuring**: How to organize and communicate solutions with appropriate depth
+- **Trade-off Articulation**: How to evaluate and defend decisions
+- **Role Perspectives**: How different roles approach the same problem differently
+- **Evaluation Scenarios**: Practice with ambiguous, conflicting, and open-ended problems
 
 ---
 
@@ -135,7 +140,12 @@ Content is organized to support:
 
 ```text
 src/
-└── (content to be organized by architectural reasoning topics)
+├── 01_reasoning-foundations/    → Problem framing, clarification strategies, assumptions
+├── 02_answer-structuring/       → Top-down communication, depth control, time-boxed reasoning
+├── 03_tradeoff-articulation/   → Cost vs scale, simplicity vs flexibility, risk framing
+├── 04_role-perspectives/        → Staff, Principal, Architect, EM perspectives
+├── 05_evaluation-scenarios/    → Vague problems, conflicting requirements, legacy modernization
+└── resources/                   → Frameworks, tools, and reference materials
 
 docs/
 ├── 01_repository-structure.md  → Complete repository structure documentation
@@ -149,24 +159,24 @@ For the complete repository structure with all file names and details, see: **[`
 
 ---
 
-## 🧪 Practice Scenarios
+## 🧪 Evaluation Scenarios
 
-Practice scenarios provide hands-on experience with architectural reasoning:
+Evaluation scenarios provide hands-on experience with architectural reasoning:
 
-- Real-world architectural problems
+- Vague problems requiring clarification
+- Conflicting requirements demanding trade-off analysis
+- Legacy modernization challenges
 - Ambiguous and open-ended scenarios
-- Trade-off analysis exercises
-- Decision-making frameworks
 
-Each scenario includes:
+Each scenario focuses on:
 
-- **Problem Statement**: The architectural challenge
-- **Context**: Background and constraints
-- **Analysis Framework**: Structured approach to reasoning
-- **Decision Points**: Key trade-offs to consider
-- **Communication**: How to articulate the solution
+- **Problem Framing**: How to structure and understand the challenge
+- **Clarification Strategy**: What questions to ask and why
+- **Reasoning Process**: How to think through the problem
+- **Articulation**: How to communicate the solution effectively
+- **Role Adaptation**: How different roles would approach it
 
-See `src/` for practice scenarios (to be populated).
+See `src/05_evaluation-scenarios/` for practice scenarios (to be populated).
 
 ---
 

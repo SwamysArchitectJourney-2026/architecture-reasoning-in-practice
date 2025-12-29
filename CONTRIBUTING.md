@@ -14,10 +14,13 @@ This repository is primarily for personal learning and documentation. If you're 
 
 This repository focuses on:
 
-- **Structured Thinking** - Systematic approaches to architectural problems
-- **Trade-off Analysis** - Evaluating options and making informed decisions
-- **Clear Communication** - Articulating architectural decisions effectively
-- **Real-world Scenarios** - Practice with ambiguous and open-ended problems
+- **Reasoning Foundations** - Problem framing, clarification strategies, assumptions and constraints
+- **Answer Structuring** - Top-down communication, depth control, time-boxed reasoning
+- **Trade-off Articulation** - Cost vs scale, simplicity vs flexibility, risk and failure framing
+- **Role Perspectives** - How different roles think when solving the same ambiguous problem
+- **Evaluation Scenarios** - Vague problems, conflicting requirements, legacy modernization
+
+> **📋 Important Distinction**: This repository focuses on reasoning and articulation. Detailed system designs and implementations live in `system-design-in-practice`.
 
 ## Repository Structure
 
