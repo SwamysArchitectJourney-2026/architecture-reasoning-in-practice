@@ -136,25 +136,6 @@ Content is organized by **thinking modes** to support:
 
 > **📋 Single Source of Truth**: The complete and up-to-date repository structure is maintained in [`docs/01_repository-structure.md`](docs/01_repository-structure.md). This file should be referenced for the authoritative structure.
 
-### Quick Structure Overview
-
-```text
-src/
-├── 01_reasoning-foundations/    → Problem framing, clarification strategies, assumptions
-├── 02_answer-structuring/       → Top-down communication, depth control, time-boxed reasoning
-├── 03_tradeoff-articulation/   → Cost vs scale, simplicity vs flexibility, risk framing
-├── 04_role-perspectives/        → Staff, Principal, Architect, EM perspectives
-├── 05_evaluation-scenarios/    → Vague problems, conflicting requirements, legacy modernization
-└── resources/                   → Frameworks, tools, and reference materials
-
-docs/
-├── 01_repository-structure.md  → Complete repository structure documentation
-├── images/                      → Images and diagrams
-└── review-reports/             → Review reports and analysis
-
-source-material/                 → Staging area for raw materials (git-ignored)
-```
-
 For the complete repository structure with all file names and details, see: **[`docs/01_repository-structure.md`](docs/01_repository-structure.md)**
 
 ---
