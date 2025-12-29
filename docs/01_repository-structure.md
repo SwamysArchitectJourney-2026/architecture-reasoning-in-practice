@@ -11,7 +11,7 @@
 ## Complete Repository Structure
 
 ```text
-github-foundations-in-practice/
+architecture-reasoning-in-practice/
 │
 ├── README.md
 ├── LICENSE

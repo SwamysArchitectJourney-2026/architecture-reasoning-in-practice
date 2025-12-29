@@ -1,6 +1,6 @@
 # Meetup Sessions - AI Minds: The Hub for AI Intellectuals
 
-This document tracks meetup sessions conducted by AI Minds: The Hub for AI Intellectuals based on the `github-foundations-in-practice` repository content.
+This document tracks meetup sessions conducted by AI Minds: The Hub for AI Intellectuals based on the `architecture-reasoning-in-practice` repository content.
 
 Each meetup session has its own file in [`docs/meetup/`](./) following the naming pattern `NN_meetup-{session-name}.md`.
 

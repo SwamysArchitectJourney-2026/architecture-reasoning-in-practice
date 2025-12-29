@@ -2,7 +2,7 @@
 
 This document provides detailed information about each learning session, including modules, learning outcomes, and navigation.
 
-**Repository**: `github-foundations-in-practice`  
+**Repository**: `architecture-reasoning-in-practice`  
 **Format**: 30-60 minute focused sessions  
 **Approach**: Exam-focused, hands-on practice for GitHub Foundations Certification
 
