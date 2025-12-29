@@ -25,7 +25,7 @@
 
 ### 🚨 CRITICAL: Repository Purpose
 
-**This repository (`github-foundations-in-practice`) contains:**
+**This repository (`architecture-reasoning-in-practice`) contains:**
 
 - ✅ **Domain Content**: GitHub Foundations exam domains (`src/01_github-basics/` through `src/06_open-source-and-community/`)
 - ✅ **Labs**: Hands-on exercises (`src/labs/`)
