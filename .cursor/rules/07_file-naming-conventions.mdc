@@ -1,4 +1,4 @@
-# File Naming Conventions (GitHub Foundations Learning Journey)
+# File Naming Conventions (Architecture Reasoning in Practice)
 
 **Version**: 1.0  
 **Last Updated**: December 24, 2025  
@@ -93,12 +93,12 @@ case-studies/
 **Use numbered prefixes ONLY when there's a deliberate learning order**:
 
 ```
-src/01_github-basics/
-├── git-fundamentals.md
-├── github-overview-part1.md
-├── github-overview-part2.md
-├── repositories-intro-part1.md
-└── repositories-intro-part2.md
+src/01_reasoning-foundations/
+├── problem-framing.md
+├── clarification-strategies-part1.md
+├── clarification-strategies-part2.md
+├── assumptions-and-constraints-part1.md
+└── assumptions-and-constraints-part2.md
 ```
 
 **Use this when**:
@@ -107,7 +107,7 @@ src/01_github-basics/
 - Sequence is part of the educational design
 - Content must be learned in a specific progression
 
-**Current Repository Pattern**: The repository uses numbered prefixes (`01_`, `02_`, etc.) for domain folders (`src/01_github-basics/` through `src/06_open-source-and-community/`). This is appropriate because there is a deliberate learning progression aligned with GitHub Foundations exam domains.
+**Current Repository Pattern**: The repository uses numbered prefixes (`01_`, `02_`, etc.) for thinking mode folders (`src/01_reasoning-foundations/` through `src/05_evaluation-scenarios/`). This is appropriate because there is a deliberate learning progression aligned with Architecture Reasoning thinking modes.
 
 ### Pattern 3: Split Files with `-part1`, `-part2` (For Mechanical Splitting)
 
@@ -196,7 +196,7 @@ src/notes/
 - `01_glossary.md` (if order doesn't matter)
 - `02_questions.md` (if order doesn't matter)
 
-**Current Repository**: Uses numbered prefixes for domain folders (`src/01_github-basics/` through `src/06_open-source-and-community/`) because there is a deliberate learning progression aligned with GitHub Foundations exam domains. This is appropriate.
+**Current Repository**: Uses numbered prefixes for thinking mode folders (`src/01_reasoning-foundations/` through `src/05_evaluation-scenarios/`) because there is a deliberate learning progression aligned with Architecture Reasoning thinking modes. This is appropriate.
 
 ### Rule 4: Use Folders for Structure
 
@@ -282,10 +282,10 @@ case-studies-url-shortener-scalability.md
 
 3. **You need navigation**:
    ```
-   src/01_github-basics/
+   src/01_reasoning-foundations/
    ├── README.md  # Index with links
-   ├── git-fundamentals.md
-   └── github-overview.md
+   ├── problem-framing.md
+   └── clarification-strategies.md
    ```
 
 ### Folder Naming
@@ -302,10 +302,10 @@ case-studies-url-shortener-scalability.md
 
 **Current** (appropriate):
 ```
-src/01_github-basics/
-├── git-fundamentals.md
-├── github-overview.md
-└── repositories-intro.md
+src/01_reasoning-foundations/
+├── problem-framing.md
+├── clarification-strategies.md
+└── assumptions-and-constraints.md
 ```
 
 **Why this works**:
@@ -358,8 +358,8 @@ src/labs/
 **Before writing**:
 
 1. **Choose the right folder** based on learning progression or content type
-   - For domain content: Use numbered domain folders (`src/01_github-basics/`, `src/02_working-with-repositories/`, etc.)
-   - For labs: Use `src/labs/` with numbered lab files (e.g., `lab-01-create-repo.md`)
+   - For practice content: Use numbered thinking mode folders (`src/01_reasoning-foundations/`, `src/02_answer-structuring/`, etc.)
+   - For resources: Use `src/resources/` with descriptive names (e.g., `frameworks.md`)
 
 2. **Choose a filename that matches the concept boundary**:
    - Prefer `NN_concept-name.md` for sequence-based modules (e.g., `01_abstractions.md`)
@@ -394,8 +394,8 @@ src/labs/
 
 ### Recommended Patterns by Folder Type
 
-**In domain folders** (e.g., `src/01_github-basics/`, `src/02_working-with-repositories/`):
-- Use semantic names: `topic-name.md` (e.g., `git-fundamentals.md`, `pull-requests.md`)
+**In thinking mode folders** (e.g., `src/01_reasoning-foundations/`, `src/02_answer-structuring/`):
+- Use semantic names: `topic-name.md` (e.g., `problem-framing.md`, `top-down-communication.md`)
 - If you must split: `topic-name-part1.md`, `topic-name-part2.md`
 
 **In labs folder** (`src/labs/`):

@@ -94,7 +94,7 @@ See: `.cursor/rules/01_educational-content-rules.mdc` for complete details and a
 
 1. ✅ **Check for `00_` prefix**: **NEVER ALLOWED** - Use `01_` instead
 2. ✅ **Verify scope**: Rule applies to **ALL files** including:
-   - Domain content (`src/01_github-basics/`, `src/02_working-with-repositories/`, etc.)
+   - Practice content (`src/01_reasoning-foundations/`, `src/02_answer-structuring/`, etc.)
    - Documentation files (`docs/`)
    - Any numbered files anywhere in repository
 3. ✅ **Quick validation**: Run `Get-ChildItem -Recurse -Filter "*00_*"` to find violations
@@ -207,24 +207,20 @@ For the complete repository structure, see: **[docs/01_repository-structure.md](
 
 **Quick Overview**:
 
-- `src/01_github-basics/` - Core GitHub concepts and terminology
-- `src/02_working-with-repositories/` - Branching, commits, merges
-- `src/03_collaboration/` - Pull requests, reviews, issues
-- `src/04_github-tools/` - Actions, Pages, Marketplace
-- `src/05_security-and-best-practices/` - Permissions, secrets, protection
-- `src/06_open-source-and-community/` - Licenses, OSS workflows
-- `src/labs/` - Hands-on exercises
-- `src/notes/` - Exam tips, glossary, common mistakes
-- `src/resources/` - Official links, practice questions, cheat sheets
-- `src/progress/` - Milestones, study log, readiness tracking
+- `src/01_reasoning-foundations/` - Problem framing, clarification strategies, assumptions
+- `src/02_answer-structuring/` - Top-down communication, depth control, time-boxed reasoning
+- `src/03_tradeoff-articulation/` - Cost vs scale, simplicity vs flexibility, risk framing
+- `src/04_role-perspectives/` - How different roles think when solving the same problem
+- `src/05_evaluation-scenarios/` - Vague problems, conflicting requirements, legacy modernization
+- `src/resources/` - Frameworks, tools, and reference materials
 
 ---
 
 ## 🔧 Development Guidelines
 
-### When Working with GitHub Foundations Content
+### When Working with Architecture Reasoning Content
 
-1. **Follow Exam Domain Structure**: Content organized by GitHub Foundations exam domains
+1. **Follow Thinking Mode Structure**: Content organized by Architecture Reasoning thinking modes
 2. **Use Descriptive Names**: Files use clear, descriptive names (e.g., `concepts.md`, `pull-requests.md`)
 3. **Keep Modular**: Recommended ≤150 lines per file (split if needed)
 4. **Include Practical Examples**: Add real-world examples and use cases
@@ -235,7 +231,7 @@ For the complete repository structure, see: **[docs/01_repository-structure.md](
 #### File Naming
 
 - ✅ Use descriptive names: `concepts.md`, `pull-requests.md`, `github-actions.md`
-- ✅ Domain folders use numbered prefixes: `src/01_github-basics/`, `src/02_working-with-repositories/`
+- ✅ Thinking mode folders use numbered prefixes: `src/01_reasoning-foundations/`, `src/02_answer-structuring/`
 - ✅ Lab files use numbered format: `lab-01-create-repo.md` (in `src/labs/`)
 
 #### Content Structure
