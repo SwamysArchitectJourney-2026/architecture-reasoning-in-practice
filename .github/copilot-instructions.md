@@ -74,6 +74,8 @@ See: `.cursor/rules/01_educational-content-rules.mdc` for complete details and a
 - `Compare-DocFiles.ps1` - Compare multiple files
 - `Find-DuplicateContent.ps1` - Find duplicate headings
 - `Quick-HealthCheck.ps1` - Fast workspace health check
+- `Validate-FileReferences.ps1` - Validate file references in markdown
+- `Verify-ZeroCopy.ps1` - **Zero-copy policy verification** (checks for verbatim text from source material)
 
 ### 3. Update Verification Protocol (CRITICAL)
 
@@ -287,16 +289,53 @@ If a `source-material/` folder exists locally, treat it as an **intake/staging a
 4. **Cross-Reference**: Link related topics across thinking modes
 5. **Transformative Content**: Follow zero-copy policy - create original content, not reformatted source material
 
+### Zero-Copy Policy Verification (MANDATORY)
+
+**Before creating ANY content from source material:**
+
+1. ✅ **Read source material for intent only** - Don't copy notes verbatim
+2. ✅ **Create fresh outline** - Different sectioning than source
+3. ✅ **Use original examples** - Avoid source examples, create new ones
+4. ✅ **Transform all quotes** - Even "Key Principle" quotes must be original phrasing
+5. ✅ **Verify no verbatim text** - Run verification check before committing
+
+**Verification Command** (run before committing):
+```powershell
+# Automated zero-copy verification
+.\tools\psscripts\Verify-ZeroCopy.ps1
+
+# For stricter checking (checks phrases, not just quotes)
+.\tools\psscripts\Verify-ZeroCopy.ps1 -Strict
+```
+
+**Manual Verification** (also recommended):
+- Search for known source material phrases in new content
+- Check all "Key Principle" quotes for originality
+- Verify example structures are not copied from source
+
+**Common Violation Patterns to Avoid**:
+- ❌ Copying "Key Principle" quotes verbatim from source
+- ❌ Using exact phrasing from source material examples
+- ❌ Mirroring source outline or section order
+- ❌ Light paraphrasing (changing a few words)
+
+**Required Transformation**:
+- ✅ Complete rewording of all concepts
+- ✅ Original examples and analogies
+- ✅ Different structure and organization
+- ✅ Fresh phrasing for all quotes and principles
+
 ### Quality Gate Questions
 
 Before publishing any content:
 
 1. ✅ Does this focus on reasoning, articulation, or decision-making?
-2. ✅ Are practical examples included?
-3. ✅ Is the content clear and easy to follow?
-4. ✅ Does this fit naturally in the thinking mode progression?
-5. ✅ Does this avoid system design depth (which belongs in `system-design-in-practice`)?
-6. ✅ Is this content within 150 lines for effective delivery?
+2. ✅ **Is ALL content transformative? (No verbatim text from sources)**
+3. ✅ Are practical examples included?
+4. ✅ Is the content clear and easy to follow?
+5. ✅ Does this fit naturally in the thinking mode progression?
+6. ✅ Does this avoid system design depth (which belongs in `system-design-in-practice`)?
+7. ✅ Is this content within 150 lines for effective delivery?
 
 ---
 
@@ -318,11 +357,13 @@ docker run --rm -v "${PWD}:/input:ro" lycheeverse/lychee --config /input/lychee.
 
 ### Pre-Commit Checklist
 
+- [ ] **Zero-Copy Policy Verified**: No verbatim text from source material (check all quotes and examples)
 - [ ] Run markdownlint and fix any issues
 - [ ] Run Lychee link checker (if Docker available)
 - [ ] Verify all file references point to existing files
 - [ ] Check that code fences have language specifications
 - [ ] Ensure proper blank lines around headings and lists
+- [ ] **Manual Verification**: Search for known source material phrases in new content
 - [ ] Verify file naming follows conventions
 
 ---

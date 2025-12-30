@@ -53,9 +53,12 @@
 4. **Produce Original Artifacts**: Explanations, diagrams (Mermaid with ASCII fallback), minimal examples
 5. **Cross-Link**: Add references and connections across Architecture Reasoning thinking modes
 6. **Similarity Audit**: Ensure no sentences/structures resemble source
-7. **Optional References**: Add "References/Inspired by" links (no copied phrasing)
+7. **Zero-Copy Verification**: **MANDATORY** - Verify no verbatim text, especially in quotes and "Key Principle" sections
+8. **Optional References**: Add "References/Inspired by" links (no copied phrasing)
 
 **Goal**: Create transformative educational content, not just reformative. Entirely new presentation, examples, and explanations that teach the same concepts through original methods.
+
+**⚠️ CRITICAL REMINDER**: Even "Key Principle" quotes and example structures must be completely transformed. Verbatim copying of ANY text from source material violates the zero-copy policy.
 
 ---
 
@@ -533,12 +536,14 @@ Before committing:
 - [ ] Learning objectives are clear and measurable
 - [ ] Progressive scaffolding present (Foundations → Practice → Pitfalls → Next Steps)
 
-#### 6. Zero-Copy Policy Review
-- [ ] No verbatim text from sources
-- [ ] No mirrored outlines or section order
-- [ ] Original examples and explanations
-- [ ] Diagrams are original (Mermaid/ASCII, not embedded copyrighted figures)
-- [ ] Content adds educational value beyond source
+#### 6. Zero-Copy Policy Review (CRITICAL)
+- [ ] **No verbatim text from sources** - Check ALL quotes, especially "Key Principle" sections
+- [ ] **All quotes transformed** - Even example quotes must use original phrasing
+- [ ] **No mirrored outlines or section order** - Structure must be different from source
+- [ ] **Original examples and explanations** - No source examples reused
+- [ ] **Diagrams are original** - Mermaid/ASCII only, not embedded copyrighted figures
+- [ ] **Content adds educational value beyond source** - Not just reformatted
+- [ ] **Manual verification completed** - Searched for known source material phrases
 
 #### 7. Learning Progression Review
 - [ ] File numbering reflects logical learning dependencies
