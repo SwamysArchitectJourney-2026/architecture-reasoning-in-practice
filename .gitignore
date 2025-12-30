@@ -11,6 +11,9 @@
 *.sln.docstates
 *.env
 
+# Copilot-generated local artifacts (do not track)
+.copilot/tmp/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
