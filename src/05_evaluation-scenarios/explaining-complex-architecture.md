@@ -57,7 +57,7 @@ You need to explain a microservices-based system that uses multiple architectura
    - Stop when question is answered
 
 **Example Structure:**
-> "At a high level, we built a microservices-based platform using .NET 8. We used Domain-Driven Design to define bounded contexts and align services with business capabilities. CQRS was applied selectively in areas with high read–write divergence. For data, we adopted polyglot persistence—SQL Server for transactional consistency and MongoDB for document-oriented read models. We integrated Generative AI as an augmenting capability, hosted on Azure using OpenAI models, deployed via AKS, and exposed through backend services consumed by React-based micro-frontends."
+> "Our architecture follows a microservices approach built on .NET 8. Domain-Driven Design principles guide our service boundaries, ensuring alignment with business domains. We selectively implement CQRS in subsystems where read and write patterns diverge significantly. Our data strategy uses multiple database technologies: SQL Server provides strong transactional guarantees for core business operations, while MongoDB supports document-based read models with flexible schemas. Generative AI capabilities are integrated as supporting services rather than core dependencies, leveraging OpenAI APIs through Azure-hosted infrastructure on AKS, with React micro-frontends handling user interactions."
 
 ## Reflections
 
