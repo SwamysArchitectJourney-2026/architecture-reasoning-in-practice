@@ -258,6 +258,15 @@ Each lab should include:
 - ✅ **ALWAYS** use environment variables or GitHub Secrets
 - ✅ **ALWAYS** add sensitive files to `.gitignore`
 
+### Source Material Staging (Local Only)
+
+If a `source-material/` folder exists locally, treat it as an **intake/staging area** for raw notes.
+
+- ❌ **NEVER MODIFY** files under `source-material/` (read-only for analysis).
+- ❌ **NEVER COPY** content verbatim into `src/` (follow the Zero-Copy / transformative policy).
+- ✅ **ALWAYS TRANSFORM**: create original outlines, examples, and explanations in `src/`.
+- ✅ Assume `source-material/` is **git-ignored** and may **not** appear on GitHub; don’t add repo structure links that depend on it.
+
 ---
 
 ## 📋 Code Quality Standards

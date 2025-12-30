@@ -65,9 +65,7 @@ architecture-reasoning-in-practice/
 │   ├── images/
 │   └── review-reports/
 │       └── .gitkeep
-│
-└── source-material/
-    └── README.md
+
 ```
 
 ---
@@ -102,10 +100,6 @@ This repository is organized by **thinking modes**, not topics or systems. It fo
 
 - **`docs/`**: Additional documentation, images, and planning materials
 - **`docs/templates/`**: Standard templates for scenarios and pattern-style notes
-- **`source-material/`**: Staging area for source content (git-ignored)
-  - Raw source materials placed here before migration
-  - Files are transformed and migrated to `src/` following content rules
-  - Source files remain after migration (user deletes manually)
 
 ---
 
