@@ -220,37 +220,26 @@ For the complete repository structure, see: **[docs/01_repository-structure.md](
 ### When Working with Architecture Reasoning Content
 
 1. **Follow Thinking Mode Structure**: Content organized by Architecture Reasoning thinking modes
-2. **Use Descriptive Names**: Files use clear, descriptive names (e.g., `concepts.md`, `pull-requests.md`)
+2. **Use Descriptive Names**: Files use clear, descriptive names (e.g., `problem-framing.md`, `cqrs-selective-application.md`)
 3. **Keep Modular**: Recommended ≤150 lines per file (split if needed)
 4. **Include Practical Examples**: Add real-world examples and use cases
-5. **Lab Structure**: Each lab includes objective, steps, and expected outcome
+5. **Focus on Reasoning**: Content emphasizes how to think, reason, and communicate, not implementation details
 
 ### When Creating Educational Content
 
 #### File Naming
 
-- ✅ Use descriptive names: `concepts.md`, `pull-requests.md`, `github-actions.md`
+- ✅ Use descriptive names: `problem-framing.md`, `decision-rationale-framing.md`, `micro-frontends-rationale.md`
 - ✅ Thinking mode folders use numbered prefixes: `src/01_reasoning-foundations/`, `src/02_answer-structuring/`
-- ✅ Lab files use numbered format: `lab-01-create-repo.md` (in `src/labs/`)
+- ✅ Content files do NOT use numbered prefixes - use descriptive names only
 
 #### Content Structure
 
 - ✅ Recommended ≤150 lines per file
-- ✅ Split into multiple parts if content exceeds 150 lines
+- ✅ Split into multiple parts if content exceeds 150 lines (use `-part1`, `-part2` suffixes)
 - ✅ Each part should be self-contained
 - ✅ Include practical examples and use cases
-
-### When Creating Labs
-
-#### Standard Structure
-
-Each lab should include:
-
-- **Objective**: What the lab teaches
-- **Prerequisites**: What you need before starting
-- **Steps**: Detailed step-by-step instructions
-- **Expected Outcome**: What you should see/achieve
-- **Troubleshooting**: Common issues and solutions (optional)
+- ✅ Focus on reasoning patterns, trade-offs, and articulation, not system design depth
 
 ### Security Best Practices
 
@@ -290,23 +279,23 @@ If a `source-material/` folder exists locally, treat it as an **intake/staging a
 
 ## 🚀 Content Creation Workflow
 
-### Learning-Focused Workflow
+### Architecture Reasoning Workflow
 
-1. **Domain Coverage**: Ensure content covers all exam objectives for the domain
+1. **Thinking Mode Alignment**: Ensure content fits the appropriate thinking mode folder
 2. **Practical Examples**: Include real-world scenarios and use cases
-3. **Hands-On Practice**: Create labs that reinforce concepts
-4. **Cross-Reference**: Link related topics across domains
-5. **Progress Tracking**: Update progress files as content is completed
+3. **Reasoning Focus**: Emphasize how to think, reason, and communicate, not implementation details
+4. **Cross-Reference**: Link related topics across thinking modes
+5. **Transformative Content**: Follow zero-copy policy - create original content, not reformatted source material
 
 ### Quality Gate Questions
 
 Before publishing any content:
 
-1. ✅ Does this cover exam objectives for the domain?
+1. ✅ Does this focus on reasoning, articulation, or decision-making?
 2. ✅ Are practical examples included?
 3. ✅ Is the content clear and easy to follow?
-4. ✅ Does this fit naturally in the learning progression?
-5. ✅ Are there hands-on exercises or labs for this topic?
+4. ✅ Does this fit naturally in the thinking mode progression?
+5. ✅ Does this avoid system design depth (which belongs in `system-design-in-practice`)?
 6. ✅ Is this content within 150 lines for effective delivery?
 
 ---
@@ -349,8 +338,8 @@ docker run --rm -v "${PWD}:/input:ro" lycheeverse/lychee --config /input/lychee.
 ## 📞 Support
 
 - **Issues**: Use GitHub Issues for questions or suggestions
-- **Learning**: Follow the domain progression (01 → 06)
-- **Labs**: Complete labs in order for best learning experience
+- **Learning**: Follow the thinking mode progression (01_reasoning-foundations → 05_evaluation-scenarios)
+- **Practice**: Work through scenarios systematically to develop reasoning skills
 
 ---
 

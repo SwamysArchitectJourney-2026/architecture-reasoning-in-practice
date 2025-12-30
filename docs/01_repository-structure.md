@@ -1,7 +1,7 @@
 # Repository Structure
 
-**Version**: 3.0  
-**Last Updated**: December 29, 2025  
+**Version**: 3.1  
+**Last Updated**: December 30, 2025  
 **Purpose**: Single source of truth for repository structure
 
 > **Note**: This document should be referenced from `.github/copilot-instructions.md`, `.cursor/rules/02_repository-structure.mdc`, `README.md`, and other documentation files. When the structure changes, update this file first, then update references.
@@ -29,17 +29,24 @@ architecture-reasoning-in-practice/
 │   ├── 01_reasoning-foundations/
 │   │   ├── problem-framing.md
 │   │   ├── clarification-strategies.md
-│   │   └── assumptions-and-constraints.md
+│   │   ├── assumptions-and-constraints.md
+│   │   └── decision-rationale-framing.md
 │   │
 │   ├── 02_answer-structuring/
 │   │   ├── top-down-communication.md
 │   │   ├── depth-control.md
-│   │   └── time-boxed-reasoning.md
+│   │   ├── time-boxed-reasoning.md
+│   │   └── architecture-explanation-structure.md
 │   │
 │   ├── 03_tradeoff-articulation/
 │   │   ├── cost-vs-scale.md
 │   │   ├── simplicity-vs-flexibility.md
-│   │   └── risk-and-failure-framing.md
+│   │   ├── risk-and-failure-framing.md
+│   │   ├── cqrs-selective-application.md
+│   │   ├── polyglot-persistence-rationale.md
+│   │   ├── genai-production-integration.md
+│   │   ├── micro-frontends-rationale.md
+│   │   └── edge-security-layered-defense.md
 │   │
 │   ├── 04_role-perspectives/
 │   │   ├── staff-engineer.md
@@ -50,7 +57,10 @@ architecture-reasoning-in-practice/
 │   ├── 05_evaluation-scenarios/
 │   │   ├── vague-problem.md
 │   │   ├── conflicting-requirements.md
-│   │   └── legacy-modernization.md
+│   │   ├── legacy-modernization.md
+│   │   ├── explaining-complex-architecture.md
+│   │   ├── managing-complexity-trade-offs.md
+│   │   └── microservices-transaction-management.md
 │   │
 │   └── resources/
 │       ├── frameworks.md
@@ -77,6 +87,7 @@ architecture-reasoning-in-practice/
 > **📋 Important Distinction**: This repository focuses on reasoning and articulation. Detailed system designs and implementations live in `system-design-in-practice`.
 
 This repository is organized by **thinking modes**, not topics or systems. It focuses on:
+
 - How senior people think, reason, and communicate
 - Reasoning under senior technical evaluation contexts (promotion panels, design reviews, leadership conversations)
 - Not system design depth or implementation details
@@ -89,11 +100,16 @@ This repository is organized by **thinking modes**, not topics or systems. It fo
 
 ### Content Organization
 
-1. **Reasoning Foundations** (`01_reasoning-foundations/`): Problem framing, clarification strategies, assumptions and constraints
-2. **Answer Structuring** (`02_answer-structuring/`): Top-down communication, depth control, time-boxed reasoning
-3. **Trade-off Articulation** (`03_tradeoff-articulation/`): Cost vs scale, simplicity vs flexibility, risk and failure framing
+1. **Reasoning Foundations** (`01_reasoning-foundations/`): Problem framing, clarification strategies, assumptions and constraints, decision rationale framing
+
+2. **Answer Structuring** (`02_answer-structuring/`): Top-down communication, depth control, time-boxed reasoning, architecture explanation structure
+
+3. **Trade-off Articulation** (`03_tradeoff-articulation/`): Cost vs scale, simplicity vs flexibility, risk and failure framing, CQRS, polyglot persistence, GenAI integration, micro-frontends, edge security
+
 4. **Role Perspectives** (`04_role-perspectives/`): How different roles think when solving the same ambiguous problem
-5. **Evaluation Scenarios** (`05_evaluation-scenarios/`): Vague problems, conflicting requirements, legacy modernization
+
+5. **Evaluation Scenarios** (`05_evaluation-scenarios/`): Vague problems, conflicting requirements, legacy modernization, explaining complex architecture, managing complexity, microservices transaction management
+
 6. **Resources** (`resources/`): Frameworks, tools, and reference materials
 
 ### Special Directories

@@ -11,27 +11,21 @@
 **IMPORTANT**: These rules apply differently based on content type:
 
 ### Practice Content (`src/01_reasoning-foundations/`, `src/02_answer-structuring/`, `src/03_tradeoff-articulation/`, `src/04_role-perspectives/`, `src/05_evaluation-scenarios/`)
-- ✅ **File naming**: Descriptive names (concepts.md, pull-requests.md, etc.) - no numbering required for content files
+- ✅ **File naming**: Descriptive names (e.g., `problem-framing.md`, `cqrs-selective-application.md`) - **NO numbering required** for content files
+- ✅ **Folder naming**: Folders use numbered prefixes (`01_reasoning-foundations/`, `02_answer-structuring/`) - **ALWAYS numbered**
 - ✅ **Line limits**: Recommended ≤150 lines (split, don't trim)
 - ✅ **YAML frontmatter**: Recommended for content files (all 5 metadata fields when content is added)
 - ✅ **Zero-copy policy**: Applies (content must be transformative)
 - ✅ **File references**: Must point to existing files
 
-### Labs (`src/labs/` directory)
-- ✅ **File naming**: Numbered lab files (`lab-01-create-repo.md`)
-- ✅ **Structure**: Each lab includes objective, steps, and expected outcome
-- ✅ **Line limits**: Recommended ≤150 lines, but flexible for comprehensive lab instructions
-- ⚠️ **YAML frontmatter**: NOT required (lab documentation)
-- ✅ **Zero-copy policy**: Applies (content must be original)
-
-### Notes (`src/notes/` directory)
-- ✅ **File naming**: Descriptive names (`common-mistakes.md`, `exam-tips.md`, `glossary.md`)
-- ⚠️ **Numbering**: NOT required (reference materials)
-- ⚠️ **YAML frontmatter**: NOT required
+**Numbering Rules Summary**:
+- **Folders**: Always use numbered prefixes (`01_`, `02_`, etc.) - **NEVER use `00_`**
+- **Content files**: Use descriptive names without numbering (e.g., `decision-rationale-framing.md`)
+- **Split files**: When splitting content, use `-part1`, `-part2` suffixes (e.g., `topic-part1.md`, `topic-part2.md`) - no numbered prefix on content files
 
 ### Resources (`src/resources/` directory)
-- ✅ **File naming**: Logical names (`official-links.md`, `practice-questions.md`, `cheat-sheets.md`)
-- ⚠️ **Numbering**: NOT required (reference materials)
+- ✅ **File naming**: Logical names (`frameworks.md`, `reference-materials.md`, `tools.md`)
+- ✅ **Numbering**: NOT required (reference materials)
 - ⚠️ **YAML frontmatter**: NOT required
 
 ---
@@ -199,8 +193,8 @@ related_topics:
 - ✅ `03_consistency-models-part2.md`
 
 **Rules**:
-1. ✅ **Use `-part1`, `-part2` suffixes** - Preserves base slug for predictable links
-2. ✅ **Keep the numbered prefix** - Maintains learning sequence (e.g., `02_network-abstractions-part1.md`)
+1. ✅ **Use `-part1`, `-part2` suffixes** - Preserves base slug for predictable links (e.g., `topic-part1.md`, `topic-part2.md`)
+2. ✅ **NO numbered prefix on content files** - Content files use descriptive names, not numbered prefixes
 3. ✅ **Avoid letter suffixes** - Don't use `Part1-A`, `Part1-B` patterns
 4. ✅ **Maintain order** - Parts reflect sequential content flow
 
