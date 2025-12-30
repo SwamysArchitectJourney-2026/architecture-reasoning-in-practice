@@ -13,19 +13,49 @@
 ```text
 architecture-reasoning-in-practice/
 │
+├── .copilot/
+│   ├── settings.json
+│   └── tmp/
+│       ├── all-files.txt
+│       ├── markdown-inventory.json
+│       └── markdown-summary.txt
+│
+├── .cursor/
+│   └── rules/
+│       ├── 01_educational-content-rules.mdc
+│       ├── 02_repository-structure.mdc
+│       ├── 03_quality-assurance.mdc
+│       ├── 04_markdown-standards.mdc
+│       ├── 05_primary-directives.mdc
+│       ├── 06_cross-domain-integration.mdc
+│       ├── 07_file-naming-conventions.mdc
+│       └── README.md
+│
 ├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   ├── config.yml
+│   │   ├── content_suggestion.md
+│   │   └── question.md
 │   ├── workflows/
 │   │   └── content-compliance.yml
-│   └── copilot-instructions.md
+│   ├── copilot-instructions.md
+│   └── pull_request_template.md
 │
-├── README.md
+├── .gitignore
+├── .markdownlint-cli2.yaml
+├── .markdownlint.json
+├── .markdownlintignore
+│
+├── CODE_OF_CONDUCT.md
 ├── LICENSE
 ├── CONTRIBUTING.md
+├── README.md
 ├── SECURITY.md
-├── .gitignore
 ├── lychee.toml
 │
 ├── src/
+│   ├── .gitkeep
 │   ├── 01_reasoning-foundations/
 │   │   ├── problem-framing.md
 │   │   ├── clarification-strategies.md
@@ -69,12 +99,25 @@ architecture-reasoning-in-practice/
 │
 ├── docs/
 │   ├── 01_repository-structure.md (this file)
+│   ├── images/
+│   │   └── .gitkeep
+│   ├── review-reports/
+│   │   └── .gitkeep
 │   ├── templates/
 │   │   ├── scenario-template.md
 │   │   └── pattern-note-template.md
-│   ├── images/
-│   └── review-reports/
-│       └── .gitkeep
+
+└── tools/
+   └── psscripts/
+      ├── .gitkeep
+      ├── Compare-DocFiles.ps1
+      ├── Find-DuplicateContent.ps1
+      ├── Get-FileStats.ps1
+      ├── Get-MarkdownSummary.ps1
+      ├── Get-RepoStats.ps1
+      ├── Quick-HealthCheck.ps1
+      ├── Test-ContentCompliance.ps1
+      └── Validate-FileReferences.ps1
 
 ```
 
