@@ -17,7 +17,7 @@ This repository helps you develop **architectural reasoning and decision-making 
 - A personal practice log for reasoning skills
 - Structured thinking frameworks
 - Role-specific preparation guides
-- Interview practice materials
+- Evaluation practice materials
 
 ---
 
@@ -28,7 +28,7 @@ This repository helps you develop **architectural reasoning and decision-making 
 02_thinking-toolkit/     ← How to think (role-agnostic)
 03_answer-frameworks/    ← How to explain decisions
 04_role-paths/          ← THE CORE - Role-specific preparation
-05_interview-practice/   ← Practice scenarios only
+05_evaluation-practice/   ← Practice scenarios only
 06_reference/           ← Lookup materials
 07_notes/               ← Personal scratchpad
 ```
@@ -47,7 +47,7 @@ Navigate to `04_role-paths/[your-role]/README.md` and follow the preparation pat
 Work through `02_thinking-toolkit/` - these skills apply to all roles.
 
 ### Step 4: Practice
-Use `05_interview-practice/` for scenario practice.
+Use `05_evaluation-practice/` for scenario practice.
 
 ---
 
@@ -56,7 +56,7 @@ Use `05_interview-practice/` for scenario practice.
 To keep this repository clean:
 
 1. **No role folders outside `04_role-paths`**
-2. **No interview questions outside `05_interview-practice`**
+2. **No evaluation questions outside `05_evaluation-practice`**
 3. **If a file fits multiple roles → it belongs in `02_thinking-toolkit`**
 4. **Reference materials go in `06_reference`**
 
@@ -70,7 +70,7 @@ See `01_orientation/learning-strategies.md` for:
 - How to study based on your goal
 - Time management tips
 - Practice schedules
-- Interview preparation timelines
+- Evaluation preparation timelines
 
 ---
 

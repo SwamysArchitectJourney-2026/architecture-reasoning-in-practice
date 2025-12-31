@@ -1,10 +1,10 @@
-# Architect Interview Checklist
+# Architect Preparation Checklist
 
-**Use this checklist** in the final week before your interview.
+**Use this checklist** in the final week before your evaluation.
 
 ---
 
-## Pre-Interview (1 Week Before)
+## Pre-Evaluation (1 Week Before)
 
 ### Knowledge Review
 - [ ] Review all system design patterns
@@ -25,24 +25,24 @@
 - [ ] Prepare conflict resolution examples
 - [ ] Prepare failure and learning stories
 
-### Mock Interviews
-- [ ] Complete 2-3 mock interviews
+### Mock Evaluations
+- [ ] Complete 2-3 mock evaluations
 - [ ] Get feedback on communication
 - [ ] Practice time management
 - [ ] Review common question patterns
 
 ---
 
-## Day Before Interview
+## Day Before Evaluation
 
 ### Final Review
-- [ ] Review interview checklist
+- [ ] Review preparation checklist
 - [ ] Review common questions
 - [ ] Review answer frameworks
 - [ ] Review key trade-offs
 
 ### Preparation
-- [ ] Prepare questions to ask interviewers
+- [ ] Prepare questions to ask evaluators
 - [ ] Review company/product information
 - [ ] Prepare your introduction
 - [ ] Get good sleep
@@ -55,7 +55,7 @@
 
 ---
 
-## During Interview
+## During Evaluation
 
 ### Communication
 - [ ] Start high-level, go deeper if asked
@@ -111,7 +111,7 @@
 
 ---
 
-## Post-Interview
+## Post-Evaluation
 
 ### Immediate
 - [ ] Send thank you note
@@ -157,4 +157,8 @@
 ---
 
 **Remember**: The goal is to demonstrate architectural thinking, not to have perfect answers. Show your reasoning process, not just solutions.
+
+---
+
+**Note**: This checklist is for evaluation contexts including interviews, technical assessments, and design reviews.
 

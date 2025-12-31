@@ -104,12 +104,12 @@ See `core-responsibilities/` for detailed breakdown:
 
 **Practice architect scenarios**:
 
-1. **System Design Scenarios** (`../../05_interview-practice/system-design/architect/`)
+1. **System Design Scenarios** (`../../05_evaluation-practice/system-design/architect/`)
    - Design scalable systems
    - Explain complex architectures
    - Handle conflicting requirements
 
-2. **Behavioral Scenarios** (`../../05_interview-practice/behavioral/`)
+2. **Behavioral Scenarios** (`../../05_evaluation-practice/behavioral/`)
    - Leadership situations
    - Conflict resolution
    - Failure stories
@@ -122,16 +122,16 @@ See `core-responsibilities/` for detailed breakdown:
 
 ---
 
-### Phase 4: Interview Preparation (Weeks 7-8)
+### Phase 4: Final Preparation (Weeks 7-8)
 
 **Final preparation**:
 
-1. **Mock Interviews** (`../../05_interview-practice/mock-interviews/architect/`)
-   - Full interview simulations
+1. **Mock Evaluations** (`../../05_evaluation-practice/mock-evaluations/architect/`)
+   - Full evaluation simulations
    - Feedback and improvement
    - Common question patterns
 
-2. **Interview Checklist** (`interview-checklist.md`)
+2. **Preparation Checklist** (`preparation-checklist.md`)
    - Final review checklist
    - Common questions
    - Answer frameworks
@@ -206,7 +206,7 @@ See `core-responsibilities/` for detailed breakdown:
 
 ---
 
-## Interview Tips
+## Evaluation Tips
 
 ### Do's
 - **Start high-level** - Don't dive into details immediately
@@ -225,7 +225,7 @@ See `core-responsibilities/` for detailed breakdown:
 
 ---
 
-## Common Interview Questions
+## Common Evaluation Questions
 
 ### System Design
 - "Design a scalable system for X"
@@ -264,13 +264,13 @@ You're ready when you can:
 1. **Start with Phase 1** - Study foundations
 2. **Follow the checklist** - Track your progress
 3. **Practice regularly** - Work through scenarios
-4. **Review interview checklist** - Before your interview
+4. **Review preparation checklist** - Before your evaluation
 
 ---
 
 **Related**:
 - Role comparison: `../../01_orientation/role-comparison.md`
 - Thinking toolkit: `../../02_thinking-toolkit/`
-- Interview practice: `../../05_interview-practice/`
+- Evaluation practice: `../../05_evaluation-practice/`
 - Reference materials: `../../06_reference/`
 

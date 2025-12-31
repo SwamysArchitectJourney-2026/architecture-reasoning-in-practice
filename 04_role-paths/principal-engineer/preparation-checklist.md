@@ -1,10 +1,10 @@
-# Principal Engineer Interview Checklist
+# Principal Engineer Preparation Checklist
 
-**Use this checklist** in the final week before your interview.
+**Use this checklist** in the final week before your evaluation.
 
 ---
 
-## Pre-Interview (1 Week Before)
+## Pre-Evaluation (1 Week Before)
 
 ### Knowledge Review
 - [ ] Review system design patterns
@@ -32,15 +32,15 @@
 - [ ] Prepare code review examples
 - [ ] Prepare technical leadership examples
 
-### Mock Interviews
-- [ ] Complete 2-3 mock interviews
+### Mock Evaluations
+- [ ] Complete 2-3 mock evaluations
 - [ ] Get feedback on technical depth
 - [ ] Practice time management
 - [ ] Review common question patterns
 
 ---
 
-## Day Before Interview
+## Day Before Evaluation
 
 ### Final Review
 - [ ] Review interview checklist
@@ -49,7 +49,7 @@
 - [ ] Review key technical concepts
 
 ### Preparation
-- [ ] Prepare questions to ask interviewers
+- [ ] Prepare questions to ask evaluators
 - [ ] Review company/product information
 - [ ] Prepare your introduction
 - [ ] Get good sleep
@@ -62,7 +62,7 @@
 
 ---
 
-## During Interview
+## During Evaluation
 
 ### Communication
 - [ ] Show hands-on skills
@@ -122,7 +122,7 @@
 
 ---
 
-## Post-Interview
+## Post-Evaluation
 
 ### Immediate
 - [ ] Send thank you note
@@ -196,4 +196,8 @@
 ---
 
 **Remember**: The goal is to demonstrate hands-on technical leadership, not just theoretical knowledge. Show your ability to design, implement, and mentor.
+
+---
+
+**Note**: This checklist is for evaluation contexts including interviews, technical assessments, and design reviews.
 

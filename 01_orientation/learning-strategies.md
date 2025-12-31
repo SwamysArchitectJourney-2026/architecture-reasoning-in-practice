@@ -6,7 +6,7 @@
 
 ## Study Approaches by Goal
 
-### Goal 1: Interview Preparation (2-3 months)
+### Goal 1: Evaluation Preparation (2-3 months)
 
 **Timeline**: 8-12 weeks
 
@@ -25,8 +25,8 @@
 - Practice behavioral questions
 - Time yourself
 
-**Week 7-8**: Interview preparation
-- Mock interviews
+**Week 7-8**: Final preparation
+- Mock evaluations
 - Review checklist
 - Final preparation
 
@@ -77,8 +77,8 @@
 - Study key concepts
 - Practice 2-3 scenarios
 
-**Day 6-7**: Interview prep
-- Review interview checklist
+**Day 6-7**: Final prep
+- Review preparation checklist
 - Practice common questions
 - Prepare questions to ask
 
@@ -97,10 +97,10 @@
 - 2 hours: Practice scenarios
 - 1 hour: Review and reflect
 
-### Before Interview (1 week)
+### Before Evaluation (1 week)
 - 2 hours/day: Review and practice
 - Focus on weak areas
-- Practice mock interviews
+- Practice mock evaluations
 
 ---
 
@@ -169,7 +169,7 @@
 - Focus on improvement
 - Get feedback
 
-❌ **Cramming before interview**
+❌ **Cramming before evaluation**
 - Start early
 - Build habits
 - Practice regularly
@@ -196,7 +196,7 @@ Track your progress:
 ## Resources
 
 - Role paths: `../04_role-paths/`
-- Interview practice: `../05_interview-practice/`
+- Evaluation practice: `../05_evaluation-practice/`
 - Reference materials: `../06_reference/`
 
 ---
