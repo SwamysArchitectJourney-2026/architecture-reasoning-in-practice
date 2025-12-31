@@ -74,6 +74,8 @@ See: `.cursor/rules/01_educational-content-rules.mdc` for complete details and a
 - `Compare-DocFiles.ps1` - Compare multiple files
 - `Find-DuplicateContent.ps1` - Find duplicate headings
 - `Quick-HealthCheck.ps1` - Fast workspace health check
+- `Validate-FileReferences.ps1` - Validate file references in markdown
+- `Verify-ZeroCopy.ps1` - **Zero-copy policy verification** (checks for verbatim text from source material)
 
 ### 3. Update Verification Protocol (CRITICAL)
 
@@ -220,43 +222,41 @@ For the complete repository structure, see: **[docs/01_repository-structure.md](
 ### When Working with Architecture Reasoning Content
 
 1. **Follow Thinking Mode Structure**: Content organized by Architecture Reasoning thinking modes
-2. **Use Descriptive Names**: Files use clear, descriptive names (e.g., `concepts.md`, `pull-requests.md`)
+2. **Use Descriptive Names**: Files use clear, descriptive names (e.g., `problem-framing.md`, `cqrs-selective-application.md`)
 3. **Keep Modular**: Recommended ≤150 lines per file (split if needed)
 4. **Include Practical Examples**: Add real-world examples and use cases
-5. **Lab Structure**: Each lab includes objective, steps, and expected outcome
+5. **Focus on Reasoning**: Content emphasizes how to think, reason, and communicate, not implementation details
 
 ### When Creating Educational Content
 
 #### File Naming
 
-- ✅ Use descriptive names: `concepts.md`, `pull-requests.md`, `github-actions.md`
+- ✅ Use descriptive names: `problem-framing.md`, `decision-rationale-framing.md`, `micro-frontends-rationale.md`
 - ✅ Thinking mode folders use numbered prefixes: `src/01_reasoning-foundations/`, `src/02_answer-structuring/`
-- ✅ Lab files use numbered format: `lab-01-create-repo.md` (in `src/labs/`)
+- ✅ Content files do NOT use numbered prefixes - use descriptive names only
 
 #### Content Structure
 
 - ✅ Recommended ≤150 lines per file
-- ✅ Split into multiple parts if content exceeds 150 lines
+- ✅ Split into multiple parts if content exceeds 150 lines (use `-part1`, `-part2` suffixes)
 - ✅ Each part should be self-contained
 - ✅ Include practical examples and use cases
-
-### When Creating Labs
-
-#### Standard Structure
-
-Each lab should include:
-
-- **Objective**: What the lab teaches
-- **Prerequisites**: What you need before starting
-- **Steps**: Detailed step-by-step instructions
-- **Expected Outcome**: What you should see/achieve
-- **Troubleshooting**: Common issues and solutions (optional)
+- ✅ Focus on reasoning patterns, trade-offs, and articulation, not system design depth
 
 ### Security Best Practices
 
 - ❌ **NEVER** commit API keys or secrets
 - ✅ **ALWAYS** use environment variables or GitHub Secrets
 - ✅ **ALWAYS** add sensitive files to `.gitignore`
+
+### Source Material Staging (Local Only)
+
+If a `source-material/` folder exists locally, treat it as an **intake/staging area** for raw notes.
+
+- ❌ **NEVER MODIFY** files under `source-material/` (read-only for analysis).
+- ❌ **NEVER COPY** content verbatim into `src/` (follow the Zero-Copy / transformative policy).
+- ✅ **ALWAYS TRANSFORM**: create original outlines, examples, and explanations in `src/`.
+- ✅ Assume `source-material/` is **git-ignored** and may **not** appear on GitHub; don’t add repo structure links that depend on it.
 
 ---
 
@@ -281,24 +281,61 @@ Each lab should include:
 
 ## 🚀 Content Creation Workflow
 
-### Learning-Focused Workflow
+### Architecture Reasoning Workflow
 
-1. **Domain Coverage**: Ensure content covers all exam objectives for the domain
+1. **Thinking Mode Alignment**: Ensure content fits the appropriate thinking mode folder
 2. **Practical Examples**: Include real-world scenarios and use cases
-3. **Hands-On Practice**: Create labs that reinforce concepts
-4. **Cross-Reference**: Link related topics across domains
-5. **Progress Tracking**: Update progress files as content is completed
+3. **Reasoning Focus**: Emphasize how to think, reason, and communicate, not implementation details
+4. **Cross-Reference**: Link related topics across thinking modes
+5. **Transformative Content**: Follow zero-copy policy - create original content, not reformatted source material
+
+### Zero-Copy Policy Verification (MANDATORY)
+
+**Before creating ANY content from source material:**
+
+1. ✅ **Read source material for intent only** - Don't copy notes verbatim
+2. ✅ **Create fresh outline** - Different sectioning than source
+3. ✅ **Use original examples** - Avoid source examples, create new ones
+4. ✅ **Transform all quotes** - Even "Key Principle" quotes must be original phrasing
+5. ✅ **Verify no verbatim text** - Run verification check before committing
+
+**Verification Command** (run before committing):
+```powershell
+# Automated zero-copy verification
+.\tools\psscripts\Verify-ZeroCopy.ps1
+
+# For stricter checking (checks phrases, not just quotes)
+.\tools\psscripts\Verify-ZeroCopy.ps1 -Strict
+```
+
+**Manual Verification** (also recommended):
+- Search for known source material phrases in new content
+- Check all "Key Principle" quotes for originality
+- Verify example structures are not copied from source
+
+**Common Violation Patterns to Avoid**:
+- ❌ Copying "Key Principle" quotes verbatim from source
+- ❌ Using exact phrasing from source material examples
+- ❌ Mirroring source outline or section order
+- ❌ Light paraphrasing (changing a few words)
+
+**Required Transformation**:
+- ✅ Complete rewording of all concepts
+- ✅ Original examples and analogies
+- ✅ Different structure and organization
+- ✅ Fresh phrasing for all quotes and principles
 
 ### Quality Gate Questions
 
 Before publishing any content:
 
-1. ✅ Does this cover exam objectives for the domain?
-2. ✅ Are practical examples included?
-3. ✅ Is the content clear and easy to follow?
-4. ✅ Does this fit naturally in the learning progression?
-5. ✅ Are there hands-on exercises or labs for this topic?
-6. ✅ Is this content within 150 lines for effective delivery?
+1. ✅ Does this focus on reasoning, articulation, or decision-making?
+2. ✅ **Is ALL content transformative? (No verbatim text from sources)**
+3. ✅ Are practical examples included?
+4. ✅ Is the content clear and easy to follow?
+5. ✅ Does this fit naturally in the thinking mode progression?
+6. ✅ Does this avoid system design depth (which belongs in `system-design-in-practice`)?
+7. ✅ Is this content within 150 lines for effective delivery?
 
 ---
 
@@ -320,11 +357,13 @@ docker run --rm -v "${PWD}:/input:ro" lycheeverse/lychee --config /input/lychee.
 
 ### Pre-Commit Checklist
 
+- [ ] **Zero-Copy Policy Verified**: No verbatim text from source material (check all quotes and examples)
 - [ ] Run markdownlint and fix any issues
 - [ ] Run Lychee link checker (if Docker available)
 - [ ] Verify all file references point to existing files
 - [ ] Check that code fences have language specifications
 - [ ] Ensure proper blank lines around headings and lists
+- [ ] **Manual Verification**: Search for known source material phrases in new content
 - [ ] Verify file naming follows conventions
 
 ---
@@ -340,8 +379,8 @@ docker run --rm -v "${PWD}:/input:ro" lycheeverse/lychee --config /input/lychee.
 ## 📞 Support
 
 - **Issues**: Use GitHub Issues for questions or suggestions
-- **Learning**: Follow the domain progression (01 → 06)
-- **Labs**: Complete labs in order for best learning experience
+- **Learning**: Follow the thinking mode progression (01_reasoning-foundations → 05_evaluation-scenarios)
+- **Practice**: Work through scenarios systematically to develop reasoning skills
 
 ---
 

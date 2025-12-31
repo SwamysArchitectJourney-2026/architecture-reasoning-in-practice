@@ -46,7 +46,7 @@ Avoid polyglot persistence when:
    - Document migration and evolution strategies
 
 **Key Principle:**
-> "We chose SQL Server for transactional consistency in core domains, and MongoDB where document-oriented aggregates mapped better to read models or rapidly evolving schemas."
+> "SQL Server handles our transactional core where ACID guarantees matter most, while MongoDB supports document-based aggregates that align with read-optimized models and flexible schema requirements."
 
 ## Trade-offs
 

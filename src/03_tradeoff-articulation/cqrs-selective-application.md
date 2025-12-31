@@ -43,7 +43,7 @@ Avoid CQRS when:
    - Operational overhead vs architectural flexibility
 
 **Key Principle:**
-> "We don't start with CQRS everywhere. We introduce it where read/write contention or scalability demands justify the complexity."
+> "CQRS isn't our default pattern. We adopt it selectively when read and write operations have distinct scalability needs or when contention patterns justify the added complexity."
 
 ## Trade-offs
 

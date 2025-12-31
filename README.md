@@ -167,7 +167,7 @@ Each scenario focuses on:
 - **Articulation**: How to communicate the solution effectively
 - **Role Adaptation**: How different roles would approach it
 
-See `src/05_evaluation-scenarios/` for practice scenarios (to be populated).
+See `src/05_evaluation-scenarios/` for practice scenarios.
 
 ---
 
@@ -206,7 +206,7 @@ See `src/resources/` for complete list including:
 
 ### Repository Resources
 
-- `src/resources/` - Frameworks, tools, and reference materials (to be populated)
+- `src/resources/` - Frameworks, tools, and reference materials
 - `docs/` - Documentation and planning materials
 
 ---
