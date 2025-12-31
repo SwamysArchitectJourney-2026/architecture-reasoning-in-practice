@@ -1,254 +1,190 @@
 # Architecture Reasoning in Practice
 
-[![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-success)](https://github.com/Swamy-s-Tech-Skills-Academy-2026/architecture-reasoning-in-practice)
-[![Architecture](https://img.shields.io/badge/Architecture-Reasoning-orange)](https://github.com/Swamy-s-Tech-Skills-Academy-2026/architecture-reasoning-in-practice)
-![Format](https://img.shields.io/badge/Format-Practice%20Log-yellow)
-![Built with](https://img.shields.io/badge/Built%20with-GitHub%20Copilot-brown)
-[![Maintainer](https://img.shields.io/badge/Maintainer-Viswanatha%20Swamy%20P%20K-blue)](https://github.com/Swamy-s-Tech-Skills-Academy-2026)
+**Purpose**: Develop architectural reasoning and decision-making skills for senior technical roles.
 
-**Repository**: [architecture-reasoning-in-practice](https://github.com/Swamy-s-Tech-Skills-Academy-2026/architecture-reasoning-in-practice)
-
-> **⚠️ IMPORTANT: This is NOT a course or official curriculum. This is Swamy's personal learning journey and practice log.**
-
-This repository documents hands-on practice in **architectural reasoning** across senior and staff-level technical roles. The focus is on **how senior people think, reason, and communicate** when facing ambiguous and open-ended problems.
-
-The goal of this repo is to develop **architectural judgment and decision-making capability** through structured practice in reasoning, articulation, and evaluation.
-
-This repository develops reasoning and decision articulation skills used in senior technical evaluations, real-world technical discussions, design panels, and leadership decision contexts. It focuses on how to think and communicate, not what answer to produce.
-
-> **📋 Important Distinction**: This repository focuses on reasoning and articulation. Detailed system designs and implementations live in `system-design-in-practice`.
+This repository focuses on **how to think**, not just what to know.
 
 ---
 
-## 📌 Disclaimer
+## 🎯 What This Is
 
-This is **Swamy's personal learning** repository and practice log, not official course material or a packaged curriculum.
+**This IS:**
+- A professional reasoning system for senior engineers
+- Structured thinking frameworks
+- Role-specific preparation guides
+- Evaluation practice materials
+- A place to build architectural judgment
+
+**This is NOT:**
+- A course or official curriculum
+- A collection of system design solutions
+- A replacement for hands-on experience
+- An interview cheat sheet
+
+---
+
+## 🗺️ Repository Structure
+
+```
+src/
+├── 01_orientation/          ← Start here - Context and how to use
+├── 02_thinking/             ← How to reason (role-agnostic)
+├── 03_communication/        ← How to explain decisions
+├── 04_roles/               ← Role-specific scope and readiness
+├── 05_evaluation/           ← Practice scenarios
+├── 06_reference/            ← Quick lookup (terminology, patterns)
+└── 07_notes/                ← Temporary ideas (quarantine)
+```
+
+**Progressive by capability:**
+1. **Orientation** → Clarity
+2. **Thinking** → Judgment
+3. **Communication** → Articulation
+4. **Roles** → Scope
+5. **Evaluation** → Confidence
 
 ---
 
 ## 🚀 Quick Start
 
-1. **Read** `src/01_orientation/README.md` - How to use this repository
-2. **Choose** your role in `src/01_orientation/role-comparison.md`
-3. **Follow** your role path in `src/04_roles/[your-role]/README.md`
-4. **Study** thinking frameworks in `src/02_thinking/`
-5. **Practice** scenarios in `src/05_evaluation/`
+### For Architects
+1. Read `src/01_orientation/README.md`
+2. Study `src/02_thinking/` (foundations)
+3. Review `src/04_roles/architect/README.md`
+4. Practice with `src/05_evaluation/system-design/architect/`
+
+### For Principal Engineers
+1. Read `src/01_orientation/README.md`
+2. Study `src/02_thinking/` (foundations)
+3. Review `src/04_roles/principal-engineer/README.md`
+4. Practice with `src/05_evaluation/system-design/principal-engineer/`
+
+### For All Roles
+Start with `src/01_orientation/README.md` for full guidance.
 
 ---
 
-## 📑 Repository Structure
+## 🔗 Related Repositories
 
-```
-src/
-├── 01_orientation/          ← Start here - How to use this repo
-├── 02_thinking/             ← How to think (role-agnostic)
-├── 03_communication/        ← How to explain decisions
-├── 04_roles/               ← Role-specific preparation
-│   ├── architect/
-│   ├── principal-engineer/
-│   ├── staff-engineer/
-│   └── engineering-manager/
-├── 05_evaluation/           ← Practice scenarios
-│   ├── system-design/
-│   ├── leadership-scenarios/
-│   └── scenario-walkthroughs/
-├── 06_reference/           ← Lookup materials
-└── 07_notes/               ← Personal scratchpad
-```
+### `system-design-in-practice`
+**Relationship:**
+- **Reasoning** lives here (`architecture-reasoning-in-practice`)
+- **Application** lives there (`system-design-in-practice`)
 
-**See** `src/01_orientation/README.md` for detailed navigation.
+**Workflow:**
+1. Learn how to think → `02_thinking/`
+2. Learn what your role owns → `04_roles/`
+3. Apply thinking to full designs → `system-design-in-practice/`
+4. Reflect and refine → back here
+
+**No duplication. No mirroring.**
+
+See `src/CROSS_REPO_STUDY_FLOW.md` for detailed workflow.
 
 ---
 
-## 👥 Who This Is For
+## 📋 Key Principles
 
-### ✅ Who This Is For
+### Progressive Disclosure
+- Start with orientation
+- Build thinking foundations
+- Learn role-specific scope
+- Practice with scenarios
+- Reference materials as needed
 
-- Senior Software Engineers
-- Principal Software Engineers
-- Staff Engineers
-- Software Architects
-- Solution Architects
-- AI Architects
-- Engineering Managers
-- Principal Consultants
-- Professionals wanting to develop architectural judgment and decision-making skills
+### Role-Centric
+- Clear separation by role
+- Role-specific readiness checklists
+- No role overlap
 
-### ❌ Who This Is Not For
-
-- Those seeking official course materials or structured curriculum
-- People looking for a complete, ready-to-use course (this is a personal practice log)
-- Those who want passive learning without hands-on practice
-- Anyone expecting step-by-step tutorials (this focuses on reasoning and decision-making)
-- Those seeking detailed system design walkthroughs (see `system-design-in-practice` instead)
+### Professional Framing
+- Readiness-based, not interview-focused
+- Architectural maturity, not exam prep
+- Real-world decision making
 
 ---
 
-## 🎓 Focus Areas
+## 📚 Folder Contracts
 
-This repository focuses on developing skills in:
+Each folder has a **contract** that defines its purpose and rules.
 
-| Focus Area | Description | Location |
-|------------|-------------|----------|
-| **System Thinking** | Problem framing, clarification strategies, constraints | `src/02_thinking/system-thinking/` |
-| **Trade-off Analysis** | Cost vs scale, simplicity vs flexibility, risk framing | `src/02_thinking/tradeoffs/` |
-| **Communication** | Top-down communication, structured answers, decision narratives | `src/03_communication/` |
-| **Role Readiness** | Architect, Principal Engineer, Staff Engineer, Engineering Manager | `src/04_roles/` |
-| **Evaluation Practice** | System design scenarios, leadership scenarios, walkthroughs | `src/05_evaluation/` |
+**Rule**: If content violates a folder's contract, it goes to `07_notes/` or gets deleted.
 
-> **Note**: Content is organized by **thinking modes and role readiness**, not topics or systems.
+See `src/FOLDER_CONTRACTS.md` for detailed contracts.
 
 ---
 
-## 🎯 Objectives
+## 🎓 How to Use This Repository
 
-- Develop structured thinking approaches for architectural problems
-- Master trade-off analysis and decision-making frameworks
-- Improve communication of architectural decisions
-- Practice reasoning and articulation under evaluation
-- Achieve role readiness through structured preparation
+### Phase 1: Orientation (Week 1)
+- Read `01_orientation/README.md`
+- Understand role comparison
+- Learn the repository structure
 
----
+### Phase 2: Foundations (Weeks 2-3)
+- Study `02_thinking/` (all modules)
+- Practice `03_communication/` frameworks
+- Build architectural judgment
 
-## 🧭 Learning Structure
+### Phase 3: Role-Specific (Weeks 4-5)
+- Review `04_roles/[your-role]/README.md`
+- Complete readiness checklist
+- Understand role scope
 
-Content is organized to support:
+### Phase 4: Practice (Weeks 6-8)
+- Work through `05_evaluation/` scenarios
+- Apply to `system-design-in-practice/`
+- Refine based on feedback
 
-- **Thinking Frameworks** (`02_thinking/`): How to frame problems, analyze trade-offs, reason about constraints
-- **Communication** (`03_communication/`): How to organize and communicate solutions effectively
-- **Role Preparation** (`04_roles/`): Role-specific knowledge, responsibilities, and readiness checklists
-- **Practice** (`05_evaluation/`): Scenarios for system design, leadership, and real-world challenges
-
----
-
-## 🧪 Evaluation Scenarios
-
-Evaluation scenarios provide hands-on experience with architectural reasoning:
-
-- System design challenges
-- Leadership and conflict scenarios
-- Legacy modernization problems
-- Ambiguous and open-ended situations
-
-Each scenario focuses on:
-
-- **Problem Framing**: How to structure and understand the challenge
-- **Clarifying Questions**: What to ask and why
-- **Structured Reasoning**: How to think through the problem
-- **Trade-offs**: How to evaluate options
-- **Communication**: How to explain solutions effectively
-
-See `src/05_evaluation/` for practice scenarios.
+### Ongoing: Reference
+- Use `06_reference/` for quick lookup
+- Never study it end-to-end
+- Just-in-time recall only
 
 ---
 
-## 📝 Notes & Insights
+## 🔒 Structure Lock
 
-Key takeaways, patterns, and insights are maintained across folders:
+**This structure is frozen.**
 
-- Architectural reasoning patterns
-- Common decision-making frameworks
-- Communication techniques
-- Analysis methodologies
+- ✅ Structure: Locked
+- ✅ Folder contracts: Defined
+- ✅ Cross-repo relationship: Clear
 
-**Reference Materials**: See `src/06_reference/` for:
-- Architecture patterns
-- Cloud reference
-- Terminology
-- Reading lists
+**Only content changes, not structure.**
+
+Review structure every 30-60 days for contract violations, not daily.
 
 ---
 
-## 🔗 Resources
+## 📖 Documentation
 
-### Repository Resources
-
-- `src/06_reference/` - Architecture patterns, cloud reference, terminology, reading lists
-- `src/01_orientation/` - How to use this repository, role comparison, learning strategies
-
-### External Resources
-
-See `src/06_reference/reading-list.md` for curated study references.
+- **Folder Contracts**: `src/FOLDER_CONTRACTS.md`
+- **Cross-Repo Flow**: `src/CROSS_REPO_STUDY_FLOW.md`
+- **Orientation**: `src/01_orientation/README.md`
+- **Role Guides**: `src/04_roles/[role]/README.md`
 
 ---
 
-## 🚧 Status
+## ✅ Success Criteria
 
-This repository is **actively evolving** as a personal practice log for architectural reasoning.
-
----
-
-## 🛠️ Development & Quality Assurance
-
-### Documentation Quality Checks (Local)
-
-Run Markdown lint against README and all documentation before opening a PR:
-
-```bash
-# From repo root - lint all markdown files
-npx --yes markdownlint-cli2 "README.md" "src/**/*.md" ".github/**/*.md"
-```
-
-This uses the repository's `.markdownlint.json` configuration automatically.
-
-### Link Validation (Lychee)
-
-Run link checker to validate all links in documentation:
-
-```bash
-# Validate all links (recommended; matches CI behavior)
-docker run --rm -w /input -v "${PWD}:/input" lycheeverse/lychee:latest --config lychee.toml --no-progress README.md src/**/*.md .github/**/*.md
-```
-
-### Pre-Commit Checklist
-
-Before committing changes:
-
-- [ ] Run markdownlint and fix any issues
-- [ ] Run Lychee link checker (if Docker available)
-- [ ] Verify all file references point to existing files
-- [ ] Check that code fences have language specifications
-- [ ] Ensure proper blank lines around headings and lists
+You're ready when you can:
+- Explain architectural decisions with clear trade-offs
+- Handle ambiguous requirements with structured thinking
+- Communicate effectively with technical and non-technical audiences
+- Make long-term decisions considering system-wide impact
+- Balance competing requirements and quality attributes
 
 ---
 
-## 🤝 Contributing
+## 🎯 Next Steps
 
-Contributions are welcome and encouraged. You may contribute in the following ways:
-
-- Bug fixes and corrections
-- Documentation improvements
-- New practice scenarios or exercises
-- Additional case studies, examples, or diagrams
-- Curated learning resources
-- Tooling, scripts, or automation enhancements
-
-**Please review** [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines and structure rules.
+1. **Start here**: `src/01_orientation/README.md`
+2. **Choose your role**: `src/04_roles/[your-role]/README.md`
+3. **Follow the path**: Role-specific preparation guide
+4. **Practice**: `src/05_evaluation/` scenarios
+5. **Apply**: `system-design-in-practice/` repository
 
 ---
 
-## 📞 About & Community
-
-### [Swamy's Tech Skills Academy](https://www.linkedin.com/company/swamy-s-tech-skills-academy) & [ShyvnTech](https://www.linkedin.com/company/shyvntech)
-
-This repository is stewarded and supported by **Swamy's Tech Skills Academy** and **ShyvnTech**. It is focused on helping senior engineers and architects develop architectural reasoning skills through structured practice and hands-on exercises.
-
-You can connect with the community to:
-
-- Follow structured learning journeys and deep-dive content
-- Participate in knowledge-sharing discussions
-- Explore mentoring, workshops, and custom training opportunities
-- Develop architectural reasoning and decision-making capabilities
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
-
----
-
-> 🎓 **Architecture Reasoning in Practice** — Designed and maintained by `Viswanatha Swamy P K`  
-> Empowering senior engineers and architects to master architectural reasoning and excel in technical decision-making.  
-> © 2025 Swamy's Tech Skills Academy, ShyvnTech & Srivari Software Solutions
+**This repository is a professional readiness system, not an interview cheat sheet.**
