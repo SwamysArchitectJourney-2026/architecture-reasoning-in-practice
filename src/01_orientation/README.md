@@ -62,6 +62,8 @@ To keep this repository clean:
 
 These rules prevent confusion and maintain structure.
 
+**See `FOLDER_CONTRACTS.md` for detailed folder contracts and enforcement rules.**
+
 ---
 
 ## 🎓 Learning Strategies
@@ -71,6 +73,14 @@ See `01_orientation/learning-strategies.md` for:
 - Time management tips
 - Practice schedules
 - Evaluation preparation timelines
+
+---
+
+## 🔗 Related Documentation
+
+- **Folder Contracts**: `../FOLDER_CONTRACTS.md` - Locked folder purposes and rules
+- **Cross-Repo Flow**: `../CROSS_REPO_STUDY_FLOW.md` - How to use with `system-design-in-practice`
+- **Root README**: `../../README.md` - Repository overview
 
 ---
 
