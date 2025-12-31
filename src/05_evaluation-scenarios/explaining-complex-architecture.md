@@ -1,5 +1,9 @@
 # Explaining Complex Architecture
 
+**Tags**: `architect`, `principal-engineer`, `technical-lead`  
+**Difficulty**: Intermediate  
+**Time**: 30-45 minutes
+
 ## Context
 
 You need to explain a microservices-based system that uses multiple architectural patterns, polyglot persistence, cloud services, and AI integration to stakeholders with limited time and varying technical depth.

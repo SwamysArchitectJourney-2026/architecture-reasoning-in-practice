@@ -179,5 +179,90 @@ Review role-specific interview materials:
 
 ---
 
-**Next Steps**: Start with foundations, then practice scenarios, then review interview materials.
+## Learning Path Checklist
+
+### Phase 1: Foundations (Week 1-2)
+- [ ] Read `01_reasoning-foundations/problem-framing.md`
+- [ ] Read `01_reasoning-foundations/clarification-strategies.md`
+- [ ] Read `02_answer-structuring/top-down-communication.md`
+- [ ] Read `02_answer-structuring/depth-control.md`
+- [ ] Read `03_tradeoff-articulation/risk-and-failure-framing.md`
+- [ ] Practice problem framing on 3 scenarios
+- [ ] Practice top-down communication on 3 scenarios
+
+### Phase 2: Architect-Specific Knowledge (Week 3-4)
+- [ ] Read `04_role-perspectives/architect.md`
+- [ ] Study all architect-specific trade-offs (Step 3 above)
+- [ ] Read `docs/role-skills-matrix.md` (Architect column)
+- [ ] Review `docs/glossary.md` for architecture terms
+- [ ] Read `source-material/Architect_Preparation_Guide.md`
+
+### Phase 3: Scenario Practice (Week 5-6)
+- [ ] Practice "Explaining Complex Architecture" scenario
+- [ ] Practice "Managing Complexity Trade-offs" scenario
+- [ ] Practice "Legacy Modernization" scenario
+- [ ] Practice "Conflicting Requirements" scenario
+- [ ] Practice "Microservices Transaction Management" scenario
+- [ ] Time yourself: 30-second architecture summaries
+
+### Phase 4: Interview Preparation (Week 7-8)
+- [ ] Review `source-material/Architect_Interview_1.md`
+- [ ] Review `source-material/Architect_Interview_2.md`
+- [ ] Review `source-material/Architect_Interview_3.md`
+- [ ] Review `source-material/Architect_Interview_4.md`
+- [ ] Practice mock interviews with scenarios
+- [ ] Prepare STAR stories for behavioral questions
+
+### Phase 5: Final Review (Week 9)
+- [ ] Review all trade-offs
+- [ ] Practice 60-second architecture explanations
+- [ ] Review common questions and prepare answers
+- [ ] Review glossary for key terms
+- [ ] Final mock interview
+
+---
+
+## Recommended Reading List
+
+### Books
+- "Software Architecture: The Hard Parts" by Neal Ford et al.
+- "Designing Data-Intensive Applications" by Martin Kleppmann
+- "Building Microservices" by Sam Newman
+- "Domain-Driven Design" by Eric Evans
+
+### Articles & Blogs
+- Martin Fowler's architecture articles
+- AWS Architecture Center
+- Google Cloud Architecture Center
+- Microsoft Azure Architecture Center
+
+### Practice Resources
+- System design interview practice sites
+- Architecture decision records (ADRs) from open source projects
+- Case studies from tech companies
+
+---
+
+## Mock Interview Prompts
+
+### System Design
+1. "Design a scalable e-commerce platform"
+2. "Design a real-time chat system"
+3. "Design a distributed file storage system"
+4. "Design a recommendation system"
+
+### Architecture Decisions
+1. "When would you choose microservices over monolith?"
+2. "How do you decide between SQL and NoSQL?"
+3. "When is CQRS appropriate?"
+4. "How do you handle data consistency across services?"
+
+### Trade-offs
+1. "Explain the trade-offs of using managed services"
+2. "What are the trade-offs of polyglot persistence?"
+3. "How do you balance performance and cost?"
+
+---
+
+**Next Steps**: Start with Phase 1 (Foundations), then follow the checklist sequentially.
 

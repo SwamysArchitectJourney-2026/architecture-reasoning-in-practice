@@ -75,6 +75,14 @@
 
 ---
 
+## 📚 Supporting Documentation
+
+- **Role Skills Matrix** (`docs/role-skills-matrix.md`) - See what skills are required for each role
+- **Glossary** (`docs/glossary.md`) - Definitions of key terms
+- **Scenario Tags** (`docs/scenario-tags.md`) - Find scenarios by role
+
+---
+
 ## 📚 Shared Foundations (All Roles)
 
 These apply to **all roles** - study these first:

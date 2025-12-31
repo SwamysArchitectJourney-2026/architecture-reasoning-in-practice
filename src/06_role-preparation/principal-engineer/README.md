@@ -139,5 +139,57 @@ Review role-specific interview materials:
 
 ---
 
-**Next Steps**: Start with foundations, practice system design, review interview materials.
+## Learning Path Checklist
+
+### Phase 1: Foundations (Week 1-2)
+- [ ] Read `01_reasoning-foundations/problem-framing.md`
+- [ ] Read `02_answer-structuring/top-down-communication.md`
+- [ ] Read `03_tradeoff-articulation/risk-and-failure-framing.md`
+- [ ] Practice problem framing on 3 scenarios
+
+### Phase 2: Principal Engineer Knowledge (Week 3-4)
+- [ ] Read `04_role-perspectives/principal-engineer.md`
+- [ ] Study all principal engineer trade-offs (Step 3 above)
+- [ ] Read `docs/role-skills-matrix.md` (Principal Engineer column)
+- [ ] Review `docs/glossary.md` for key terms
+- [ ] Review `source-material/PrincipalSoftwareEngineer_1.md`
+
+### Phase 3: Scenario Practice (Week 5-6)
+- [ ] Practice "Explaining Complex Architecture" scenario
+- [ ] Practice "Microservices Transaction Management" scenario
+- [ ] Practice "Managing Complexity Trade-offs" scenario
+- [ ] Practice "Vague Problem" scenario
+- [ ] Practice system design exercises
+
+### Phase 4: Interview Preparation (Week 7-8)
+- [ ] Review interview materials
+- [ ] Practice system design questions
+- [ ] Practice code review scenarios
+- [ ] Prepare mentoring examples
+- [ ] Mock interviews
+
+### Phase 5: Final Review (Week 9)
+- [ ] Review all trade-offs
+- [ ] Practice system design explanations
+- [ ] Review common questions
+- [ ] Final mock interview
+
+---
+
+## Recommended Reading List
+
+### Books
+- "Designing Data-Intensive Applications" by Martin Kleppmann
+- "Building Microservices" by Sam Newman
+- "Clean Architecture" by Robert C. Martin
+- "The Pragmatic Programmer" by Andy Hunt and Dave Thomas
+
+### Practice Resources
+- System design interview practice
+- Code review best practices
+- Technical leadership articles
+
+---
+
+**Next Steps**: Start with Phase 1 (Foundations), then follow the checklist sequentially.
 
