@@ -25,10 +25,10 @@ This repository helps you develop **architectural reasoning and decision-making 
 
 ```
 01_orientation/          ← YOU ARE HERE - Start here
-02_thinking-toolkit/     ← How to think (role-agnostic)
-03_answer-frameworks/    ← How to explain decisions
-04_role-paths/          ← THE CORE - Role-specific preparation
-05_evaluation-practice/   ← Practice scenarios only
+02_thinking/             ← How to think (role-agnostic)
+03_communication/        ← How to explain decisions
+04_roles/               ← THE CORE - Role-specific preparation
+05_evaluation/           ← Practice scenarios only
 06_reference/           ← Lookup materials
 07_notes/               ← Personal scratchpad
 ```
@@ -41,13 +41,13 @@ This repository helps you develop **architectural reasoning and decision-making 
 Read `01_orientation/role-comparison.md` to understand role differences.
 
 ### Step 2: Go to Your Role Path
-Navigate to `04_role-paths/[your-role]/README.md` and follow the preparation path.
+Navigate to `04_roles/[your-role]/README.md` and follow the preparation path.
 
 ### Step 3: Study Thinking Toolkit
-Work through `02_thinking-toolkit/` - these skills apply to all roles.
+Work through `02_thinking/` - these skills apply to all roles.
 
 ### Step 4: Practice
-Use `05_evaluation-practice/` for scenario practice.
+Use `05_evaluation/` for scenario practice.
 
 ---
 
@@ -55,9 +55,9 @@ Use `05_evaluation-practice/` for scenario practice.
 
 To keep this repository clean:
 
-1. **No role folders outside `04_role-paths`**
-2. **No evaluation questions outside `05_evaluation-practice`**
-3. **If a file fits multiple roles → it belongs in `02_thinking-toolkit`**
+1. **No role folders outside `04_roles`**
+2. **No evaluation content outside `05_evaluation`**
+3. **If a file fits multiple roles → it belongs in `02_thinking`**
 4. **Reference materials go in `06_reference`**
 
 These rules prevent confusion and maintain structure.
@@ -78,7 +78,7 @@ See `01_orientation/learning-strategies.md` for:
 
 1. Read `01_orientation/role-comparison.md`
 2. Choose your target role
-3. Go to `04_role-paths/[your-role]/README.md`
+3. Go to `04_roles/[your-role]/README.md`
 4. Follow the step-by-step path
 
 That's it. The structure is designed to be self-explanatory.
@@ -86,4 +86,3 @@ That's it. The structure is designed to be self-explanatory.
 ---
 
 **Next**: Read `role-comparison.md` to understand role differences.
-

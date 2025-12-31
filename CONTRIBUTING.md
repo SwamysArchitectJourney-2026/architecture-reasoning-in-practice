@@ -1,53 +1,176 @@
-# Contributing to Architecture Reasoning in Practice
+# Contribution Rules
 
-This is a **personal learning repository** documenting hands-on practice in architectural reasoning.
+**Purpose**: Maintain repository structure and quality as it grows.
 
-## Purpose
+---
 
-This repository is primarily for personal learning and documentation. If you're following a similar learning path, feel free to use this as a reference, but please note:
+## 🚫 Hard Rules (Non-Negotiable)
 
-- This is **not an official repository**
-- Content is based on personal study and practice
-- The structure and content reflect one individual's learning approach
+These rules prevent structural drift and maintain clarity:
 
-## Focus Areas
+1. **No role folders outside `04_roles/`**
+   - All role-specific content belongs in `src/04_roles/[role]/`
+   - If content applies to multiple roles, it belongs in `02_thinking/` or `03_communication/`
 
-This repository focuses on:
+2. **No evaluation content outside `05_evaluation/`**
+   - All scenarios, walkthroughs, and practice materials belong in `05_evaluation/`
+   - Organize by type: `system-design/`, `leadership-scenarios/`, `scenario-walkthroughs/`
 
-- **Reasoning Foundations** - Problem framing, clarification strategies, assumptions and constraints
-- **Answer Structuring** - Top-down communication, depth control, time-boxed reasoning
-- **Trade-off Articulation** - Cost vs scale, simplicity vs flexibility, risk and failure framing
-- **Role Perspectives** - How different roles think when solving the same ambiguous problem
-- **Evaluation Scenarios** - Vague problems, conflicting requirements, legacy modernization
+3. **No "interview" terminology**
+   - Use "evaluation", "readiness", "scenario", or "walkthrough"
+   - This repository is about role readiness, not interview prep
 
-> **📋 Important Distinction**: This repository focuses on reasoning and articulation. Detailed system designs and implementations live in `system-design-in-practice`.
+4. **One concept = one folder**
+   - Each folder should have a single, clear purpose
+   - If a folder's purpose is unclear, it needs restructuring
 
-## Repository Structure
+5. **If unsure → `07_notes/`**
+   - When in doubt, put content in `07_notes/` for later organization
+   - Don't create new folders without clear purpose
 
-See [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the complete repository structure (single source of truth). See [README.md](README.md) for the learning path.
+---
 
-## Content Contribution Guidelines
+## 📁 Folder Structure Rules
 
-### Scenario Contribution Guidelines
+### `01_orientation/`
+- **Purpose**: How to use the repository
+- **Content**: README, role comparison, learning strategies
+- **Rule**: No role-specific content, no scenarios
 
-- Must use the standard scenario template: [`docs/templates/scenario-template.md`](docs/templates/scenario-template.md)
-- Must focus on reasoning practice, not “answer keys” or full system designs
-- Must explicitly surface ambiguities, assumptions, and trade-offs
-- Must avoid hiring-process language; use role-agnostic “senior technical evaluation contexts” framing instead
+### `02_thinking/`
+- **Purpose**: How to think (role-agnostic)
+- **Content**: System thinking, trade-offs, constraints, failure resilience
+- **Rule**: Must apply to all roles
 
-### Pattern / Note Contribution Guidelines
+### `03_communication/`
+- **Purpose**: How to explain decisions
+- **Content**: Structured answers, whiteboard flow, decision narratives
+- **Rule**: Must apply to all roles
 
-- Must start with a clear H1 title (`# ...`)
-- Prefer pattern-oriented structure (Summary → When to Use → How to Apply)
-- Keep content modular and reusable; avoid duplicating `src/resources/`
+### `04_roles/`
+- **Purpose**: Role-specific preparation
+- **Content**: README, readiness checklist, role-specific topics
+- **Rule**: One folder per role, no mixing
 
-### Language & Intent Discipline
+### `05_evaluation/`
+- **Practice scenarios only**
+- **Content**: System design scenarios, leadership scenarios, walkthroughs
+- **Rule**: No theory, only practice materials
 
-- Avoid hiring-process phrasing in repository content
-- Prefer: “design review”, “promotion panel”, “leadership discussion”, “technical evaluation context”
+### `06_reference/`
+- **Lookup materials only**
+- **Content**: Architecture patterns, cloud reference, terminology, reading lists
+- **Rule**: Not study material, reference only
 
-## Notes
+### `07_notes/`
+- **Personal, unstructured**
+- **Content**: Scratchpad, temporary content, unsure items
+- **Rule**: Can be messy, this is fine
 
-- This is a personal learning repository
-- Content is organized for practice and skill development
-- Focus is on architectural reasoning, not specific technologies
+---
+
+## ✍️ File Naming Conventions
+
+- Use kebab-case: `readiness-checklist.md`
+- Be descriptive: `system-design-scenario.md` not `scenario1.md`
+- No "interview" in names: use `evaluation`, `readiness`, `scenario`
+- README files: `README.md` (uppercase)
+
+---
+
+## 📝 Content Guidelines
+
+### Scenarios (`05_evaluation/`)
+- Must include: Context, Ambiguities, Clarifying Questions, Trade-offs, Structured Reasoning, Reflections
+- Use scenario templates from `05_evaluation/scenario-template.md`
+- Tag with relevant roles
+- Focus on reasoning process, not just solutions
+
+### Role Content (`04_roles/`)
+- Each role must have: `README.md` and `readiness-checklist.md`
+- README should include: Role definition, preparation path, key topics, practice exercises
+- Readiness checklist should measure role maturity, not interview performance
+
+### Thinking Content (`02_thinking/`)
+- Must be role-agnostic
+- Focus on "how to think" not "what to know"
+- Include: Summary, When to Use, How to Apply
+
+### Communication Content (`03_communication/`)
+- Must be role-agnostic
+- Focus on "how to explain" not "what to say"
+- Include: Summary, When to Use, How to Apply
+
+---
+
+## 🔍 Review Checklist
+
+Before adding content, verify:
+
+- [ ] Content belongs in the right folder (check hard rules)
+- [ ] File name follows conventions
+- [ ] No "interview" terminology
+- [ ] Links to other files use relative paths
+- [ ] Content is role-appropriate (role-specific vs role-agnostic)
+- [ ] Scenarios use templates
+- [ ] README files exist in major folders
+
+---
+
+## 🚨 What NOT to Do
+
+❌ Create new top-level folders without discussion  
+❌ Mix role-specific and role-agnostic content  
+❌ Use "interview" terminology  
+❌ Create navigation guides (structure should be self-explanatory)  
+❌ Add content without clear purpose  
+❌ Duplicate content across folders  
+
+---
+
+## ✅ What TO Do
+
+✅ Follow the existing structure  
+✅ Use templates for scenarios  
+✅ Keep content focused and clear  
+✅ Update README files when adding major content  
+✅ Put unsure content in `07_notes/`  
+✅ Ask questions if structure is unclear  
+
+---
+
+## 📋 Adding New Content
+
+### New Scenario
+1. Choose appropriate folder: `05_evaluation/system-design/` or `leadership-scenarios/`
+2. Use template from `05_evaluation/scenario-template.md`
+3. Tag with relevant roles
+4. Add to appropriate role folder's README if role-specific
+
+### New Role
+1. Create folder: `04_roles/[role-name]/`
+2. Create `README.md` following existing role README pattern
+3. Create `readiness-checklist.md` following existing pattern
+4. Add role to `01_orientation/role-comparison.md`
+
+### New Thinking Framework
+1. Determine if role-agnostic (goes in `02_thinking/`) or role-specific (goes in `04_roles/[role]/`)
+2. Follow existing framework structure: Summary, When to Use, How to Apply
+3. Update relevant README files
+
+---
+
+## 🎯 Philosophy
+
+This repository follows the same principles it teaches:
+
+- **Clear boundaries** (folder structure)
+- **Trade-offs** (what goes where and why)
+- **Long-term thinking** (structure that scales)
+- **Pragmatic decisions** (rules that prevent drift)
+
+If you're unsure about structure, ask: "Would this make sense to a new reader in 60 seconds?"
+
+---
+
+**Remember**: Structure is architecture. Keep it clean, clear, and maintainable.

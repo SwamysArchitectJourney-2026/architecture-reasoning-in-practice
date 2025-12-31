@@ -27,26 +27,41 @@ This is **Swamy's personal learning** repository and practice log, not official 
 
 ---
 
-## 📑 Table of Contents
+## 🚀 Quick Start
 
-- [Who This Is For / Who This Is Not For](#-who-this-is-for--who-this-is-not-for)
-- [Focus Areas](#-focus-areas)
-- [How to Use This Repository](#-how-to-use-this-repository)
-- [Objectives](#-objectives)
-- [Learning Structure](#-learning-structure)
-- [Repository Structure Overview](#-repository-structure-overview)
-- [Evaluation Scenarios](#-evaluation-scenarios)
-- [Notes & Insights](#-notes--insights)
-- [Resources](#-resources)
-- [Status](#-status)
-- [Development & Quality Assurance](#️-development--quality-assurance)
-- [Contributing](#-contributing)
-- [About & Community](#-about--community)
-- [License](#-license)
+1. **Read** `src/01_orientation/README.md` - How to use this repository
+2. **Choose** your role in `src/01_orientation/role-comparison.md`
+3. **Follow** your role path in `src/04_roles/[your-role]/README.md`
+4. **Study** thinking frameworks in `src/02_thinking/`
+5. **Practice** scenarios in `src/05_evaluation/`
 
 ---
 
-## 👥 Who This Is For / Who This Is Not For
+## 📑 Repository Structure
+
+```
+src/
+├── 01_orientation/          ← Start here - How to use this repo
+├── 02_thinking/             ← How to think (role-agnostic)
+├── 03_communication/        ← How to explain decisions
+├── 04_roles/               ← Role-specific preparation
+│   ├── architect/
+│   ├── principal-engineer/
+│   ├── staff-engineer/
+│   └── engineering-manager/
+├── 05_evaluation/           ← Practice scenarios
+│   ├── system-design/
+│   ├── leadership-scenarios/
+│   └── scenario-walkthroughs/
+├── 06_reference/           ← Lookup materials
+└── 07_notes/               ← Personal scratchpad
+```
+
+**See** `src/01_orientation/README.md` for detailed navigation.
+
+---
+
+## 👥 Who This Is For
 
 ### ✅ Who This Is For
 
@@ -59,14 +74,6 @@ This is **Swamy's personal learning** repository and practice log, not official 
 - Engineering Managers
 - Principal Consultants
 - Professionals wanting to develop architectural judgment and decision-making skills
-- Anyone seeking to improve how they think, reason, and communicate under evaluation
-
-Reasoning perspectives covered (as lenses, not “targets”):
-
-- Staff Engineer (depth of execution reasoning)
-- Principal Engineer (scope + leverage reasoning)
-- Architect (long-range trade-off reasoning)
-- Engineering Manager (risk + people + delivery reasoning)
 
 ### ❌ Who This Is Not For
 
@@ -82,41 +89,15 @@ Reasoning perspectives covered (as lenses, not “targets”):
 
 This repository focuses on developing skills in:
 
-| Focus Area | Description | Practice Location |
-|------------|-------------|-------------------|
-| **Reasoning Foundations** | Problem framing, clarification strategies, assumptions and constraints | `src/01_reasoning-foundations/` |
-| **Answer Structuring** | Top-down communication, depth control, time-boxed reasoning | `src/02_answer-structuring/` |
-| **Trade-off Articulation** | Cost vs scale, simplicity vs flexibility, risk and failure framing | `src/03_tradeoff-articulation/` |
-| **Role Perspectives** | How different roles think when solving the same ambiguous problem | `src/04_role-perspectives/` |
-| **Evaluation Scenarios** | Vague problems, conflicting requirements, legacy modernization | `src/05_evaluation-scenarios/` |
+| Focus Area | Description | Location |
+|------------|-------------|----------|
+| **System Thinking** | Problem framing, clarification strategies, constraints | `src/02_thinking/system-thinking/` |
+| **Trade-off Analysis** | Cost vs scale, simplicity vs flexibility, risk framing | `src/02_thinking/tradeoffs/` |
+| **Communication** | Top-down communication, structured answers, decision narratives | `src/03_communication/` |
+| **Role Readiness** | Architect, Principal Engineer, Staff Engineer, Engineering Manager | `src/04_roles/` |
+| **Evaluation Practice** | System design scenarios, leadership scenarios, walkthroughs | `src/05_evaluation/` |
 
-> **Note**: Content is organized by **thinking modes**, not topics or systems. See [`docs/01_repository-structure.md`](docs/01_repository-structure.md) for the complete structure.
-
----
-
-## 🚀 How to Use This Repository
-
-### Recommended Learning Path
-
-1. **Explore Practice Scenarios** (`src/`)
-   - Review architectural problems and scenarios
-   - Analyze trade-offs and decision points
-   - Practice articulating solutions
-
-2. **Study Reasoning Patterns** (thinking-mode folders under `src/`)
-   - Use `src/01_reasoning-foundations/` for framing, assumptions, clarification
-   - Use `src/02_answer-structuring/` for communication structure and depth control
-   - Use `src/03_tradeoff-articulation/` for comparing options and defending decisions
-   - Use `src/04_role-perspectives/` to practice role-anchored lenses
-
-3. **Use Supporting Materials**
-   - `src/resources/` - Frameworks, reference materials, and tools
-   - `docs/` - Documentation and planning materials
-
-4. **Practice Regularly**
-   - Work through scenarios systematically
-   - Document your reasoning process
-   - Review and refine your approach
+> **Note**: Content is organized by **thinking modes and role readiness**, not topics or systems.
 
 ---
 
@@ -126,27 +107,18 @@ This repository focuses on developing skills in:
 - Master trade-off analysis and decision-making frameworks
 - Improve communication of architectural decisions
 - Practice reasoning and articulation under evaluation
-- Maintain a reusable reference for architectural reasoning
+- Achieve role readiness through structured preparation
 
 ---
 
 ## 🧭 Learning Structure
 
-Content is organized by **thinking modes** to support:
+Content is organized to support:
 
-- **Reasoning Foundations**: How to frame problems, ask clarifying questions, and identify assumptions
-- **Answer Structuring**: How to organize and communicate solutions with appropriate depth
-- **Trade-off Articulation**: How to evaluate and defend decisions
-- **Role Perspectives**: How different roles approach the same problem differently
-- **Evaluation Scenarios**: Practice with ambiguous, conflicting, and open-ended problems
-
----
-
-## 🗂 Repository Structure Overview
-
-> **📋 Single Source of Truth**: The complete and up-to-date repository structure is maintained in [`docs/01_repository-structure.md`](docs/01_repository-structure.md). This file should be referenced for the authoritative structure.
-
-For the complete repository structure with all file names and details, see: **[`docs/01_repository-structure.md`](docs/01_repository-structure.md)**
+- **Thinking Frameworks** (`02_thinking/`): How to frame problems, analyze trade-offs, reason about constraints
+- **Communication** (`03_communication/`): How to organize and communicate solutions effectively
+- **Role Preparation** (`04_roles/`): Role-specific knowledge, responsibilities, and readiness checklists
+- **Practice** (`05_evaluation/`): Scenarios for system design, leadership, and real-world challenges
 
 ---
 
@@ -154,60 +126,50 @@ For the complete repository structure with all file names and details, see: **[`
 
 Evaluation scenarios provide hands-on experience with architectural reasoning:
 
-- Vague problems requiring clarification
-- Conflicting requirements demanding trade-off analysis
-- Legacy modernization challenges
-- Ambiguous and open-ended scenarios
+- System design challenges
+- Leadership and conflict scenarios
+- Legacy modernization problems
+- Ambiguous and open-ended situations
 
 Each scenario focuses on:
 
 - **Problem Framing**: How to structure and understand the challenge
-- **Clarification Strategy**: What questions to ask and why
-- **Reasoning Process**: How to think through the problem
-- **Articulation**: How to communicate the solution effectively
-- **Role Adaptation**: How different roles would approach it
+- **Clarifying Questions**: What to ask and why
+- **Structured Reasoning**: How to think through the problem
+- **Trade-offs**: How to evaluate options
+- **Communication**: How to explain solutions effectively
 
-See `src/05_evaluation-scenarios/` for practice scenarios.
+See `src/05_evaluation/` for practice scenarios.
 
 ---
 
 ## 📝 Notes & Insights
 
-Key takeaways, patterns, and insights are maintained across the thinking-mode folders under `src/`:
+Key takeaways, patterns, and insights are maintained across folders:
 
 - Architectural reasoning patterns
 - Common decision-making frameworks
 - Communication techniques
 - Analysis methodologies
 
-**Reference Materials**: See `src/resources/` for:
-
-- Frameworks and tools
-- Reference materials
-- Best practices
+**Reference Materials**: See `src/06_reference/` for:
+- Architecture patterns
+- Cloud reference
+- Terminology
+- Reading lists
 
 ---
 
 ## 🔗 Resources
 
-### Official Resources
-
-- **Architecture Patterns**: Industry-standard architectural patterns and practices
-- **Decision Frameworks**: Structured approaches to architectural decision-making
-- **Communication Guides**: Techniques for articulating architectural decisions
-
-### Curated Study References
-
-See `src/resources/` for complete list including:
-
-- **Architectural Frameworks**: Reference materials and methodologies
-- **Case Studies**: Real-world architectural decisions and outcomes
-- **Best Practices**: Industry best practices and patterns
-
 ### Repository Resources
 
-- `src/resources/` - Frameworks, tools, and reference materials
-- `docs/` - Documentation and planning materials
+- `src/06_reference/` - Architecture patterns, cloud reference, terminology, reading lists
+- `src/01_orientation/` - How to use this repository, role comparison, learning strategies
+
+### External Resources
+
+See `src/06_reference/reading-list.md` for curated study references.
 
 ---
 
@@ -225,7 +187,7 @@ Run Markdown lint against README and all documentation before opening a PR:
 
 ```bash
 # From repo root - lint all markdown files
-npx --yes markdownlint-cli2 "README.md" "docs/**/*.md" ".github/**/*.md"
+npx --yes markdownlint-cli2 "README.md" "src/**/*.md" ".github/**/*.md"
 ```
 
 This uses the repository's `.markdownlint.json` configuration automatically.
@@ -236,7 +198,7 @@ Run link checker to validate all links in documentation:
 
 ```bash
 # Validate all links (recommended; matches CI behavior)
-docker run --rm -w /input -v "${PWD}:/input" lycheeverse/lychee:latest --config lychee.toml --no-progress README.md docs/**/*.md .github/**/*.md
+docker run --rm -w /input -v "${PWD}:/input" lycheeverse/lychee:latest --config lychee.toml --no-progress README.md src/**/*.md .github/**/*.md
 ```
 
 ### Pre-Commit Checklist
@@ -262,7 +224,7 @@ Contributions are welcome and encouraged. You may contribute in the following wa
 - Curated learning resources
 - Tooling, scripts, or automation enhancements
 
-Please review [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
+**Please review** [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines and structure rules.
 
 ---
 
@@ -287,6 +249,6 @@ This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LIC
 
 ---
 
-> 🎓 **Architecture Reasoning in Practice** — Designed and maintained by `Viswanatha Swamy P K`
-> Empowering senior engineers and architects to master architectural reasoning and excel in technical decision-making.
+> 🎓 **Architecture Reasoning in Practice** — Designed and maintained by `Viswanatha Swamy P K`  
+> Empowering senior engineers and architects to master architectural reasoning and excel in technical decision-making.  
 > © 2025 Swamy's Tech Skills Academy, ShyvnTech & Srivari Software Solutions
