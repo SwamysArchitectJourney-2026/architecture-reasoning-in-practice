@@ -10,6 +10,21 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
+function Get-RepoConfig {
+    param([string]$RepoRootPath)
+
+    $configPath = Join-Path $RepoRootPath 'tools\psscripts\RepoConfig.psd1'
+    if (Test-Path -LiteralPath $configPath) {
+        return Import-PowerShellDataFile -Path $configPath
+    }
+
+    # Safe defaults if config is missing
+    return @{
+        RepoName = (Split-Path -Leaf $RepoRootPath)
+        DisallowInterviewLanguage = $false
+    }
+}
+
 function Write-ComplianceError {
     param([string]$Message)
     Write-Host "ERROR: $Message" -ForegroundColor Red
@@ -47,6 +62,9 @@ function Get-FirstNonEmptyLine {
 $repoRootPath = (Resolve-Path $RepoRoot).Path
 Write-Host "Running content compliance checks in: $repoRootPath"
 
+$repoConfig = Get-RepoConfig -RepoRootPath $repoRootPath
+$disallowInterview = [bool]$repoConfig.DisallowInterviewLanguage
+
 $failed = $false
 
 # Rule: No 00_ prefix anywhere
@@ -58,19 +76,21 @@ if ($bad00) {
     $bad00 | ForEach-Object { Write-Host "  - $($_.FullName)" }
 }
 
-# Rule: Avoid interview language
-$textFiles = Get-TrackedTextFiles -Root $repoRootPath
-$interviewHits = @()
-foreach ($file in $textFiles) {
-    $content = Get-Content -LiteralPath $file.FullName -Raw -ErrorAction Stop
-    if ($content -match '(?i)\binterview(s)?\b') {
-        $interviewHits += $file.FullName
+# Rule: Avoid interview language (repo-specific)
+if ($disallowInterview) {
+    $textFiles = Get-TrackedTextFiles -Root $repoRootPath
+    $interviewHits = @()
+    foreach ($file in $textFiles) {
+        $content = Get-Content -LiteralPath $file.FullName -Raw -ErrorAction Stop
+        if ($content -match '(?i)\binterview(s)?\b') {
+            $interviewHits += $file.FullName
+        }
     }
-}
-if ($interviewHits.Count -gt 0) {
-    $failed = $true
-    Write-ComplianceError "Found disallowed interview-language occurrences (use senior technical evaluation contexts framing)."
-    $interviewHits | Sort-Object -Unique | ForEach-Object { Write-Host "  - $_" }
+    if ($interviewHits.Count -gt 0) {
+        $failed = $true
+        Write-ComplianceError "Found disallowed interview-language occurrences (use senior technical evaluation contexts framing)."
+        $interviewHits | Sort-Object -Unique | ForEach-Object { Write-Host "  - $_" }
+    }
 }
 
 # Rule: All src markdown files start with an H1
