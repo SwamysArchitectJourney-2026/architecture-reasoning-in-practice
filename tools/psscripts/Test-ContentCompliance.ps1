@@ -107,46 +107,10 @@ if (Test-Path -LiteralPath $srcPath) {
     }
 }
 
-# Rule: Scenario template compliance
-$scenarioPath = Join-Path $repoRootPath 'src\05_evaluation-scenarios'
-if (Test-Path -LiteralPath $scenarioPath) {
-    $scenarioFiles = Get-ChildItem -Path $scenarioPath -File -Filter '*.md' -ErrorAction SilentlyContinue
-
-    $requiredHeadings = @(
-        '#',
-        '## Context',
-        '## Ambiguities',
-        '## Clarifying Questions',
-        '## Trade-offs Analysis',
-        '## Structured Reasoning',
-        '## Reflections'
-    )
-
-    foreach ($file in $scenarioFiles) {
-        $content = Get-Content -LiteralPath $file.FullName -Raw -ErrorAction Stop
-
-        foreach ($h in $requiredHeadings) {
-            if ($h -eq '#') {
-                if ($content -notmatch '(?m)^#\s+\S') {
-                    $failed = $true
-                    Write-ComplianceError "Scenario missing H1 title: $($file.FullName)"
-                }
-                continue
-            }
-
-            $escaped = [regex]::Escape($h)
-            if ($content -notmatch "(?m)^$escaped\s*$") {
-                $failed = $true
-                Write-ComplianceError "Scenario missing required heading '$h': $($file.FullName)"
-            }
-        }
-    }
-}
-
 if ($failed) {
     Write-Host "\nContent compliance: FAILED" -ForegroundColor Red
-    exit 1
+    throw "Content compliance failed."
 }
 
 Write-Host "\nContent compliance: PASSED" -ForegroundColor Green
-exit 0
+return

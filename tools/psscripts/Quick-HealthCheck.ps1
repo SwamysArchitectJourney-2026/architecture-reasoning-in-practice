@@ -130,44 +130,12 @@ Write-Host ""
 Write-Host "=== Summary ===" -ForegroundColor Cyan
 if ($structureOk) {
   Write-Host "✅ Health Check: PASSED" -ForegroundColor Green
-  exit 0
+  return
 }
 
 Write-Host "❌ Health Check: FAILED" -ForegroundColor Red
 Write-Host "  - Missing expected folders" -ForegroundColor Red
-exit 1
-[CmdletBinding()]
-param(
-  [string]$RepoRoot
-)
-
-Set-StrictMode -Version Latest
-$ErrorActionPreference = 'Stop'
-
-if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
-  $scriptDir = if (-not [string]::IsNullOrWhiteSpace($PSScriptRoot)) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
-  $RepoRoot = (Resolve-Path (Join-Path $scriptDir "..\\.." )).Path
-}
-
-$excludedDirNames = @('.git', 'node_modules', '.venv', '.idea', '.vscode')
-
-function Test-IsExcludedPath {
-  param([string]$FullName)
-  foreach ($dir in $excludedDirNames) {
-    if ($FullName -match ([regex]::Escape("\\$dir\\"))) { return $true }
-  }
-  return $false
-}
-
-function Get-MarkdownFiles {
-  Get-ChildItem -Path $RepoRoot -Recurse -File -Filter '*.md' | Where-Object { -not (Test-IsExcludedPath $_.FullName) }
-}
-
-Write-Host "RepoRoot: $RepoRoot" 
-
-# 1) Forbidden file naming: 00_ prefix
-$bad00 = @(Get-ChildItem -Path $RepoRoot -Recurse -File -Filter '*00_*' | Where-Object { -not (Test-IsExcludedPath $_.FullName) })
-Write-Host "" 
+throw "Health Check failed: missing expected folders."
 Write-Host "Check: Forbidden '*00_*' files" 
 if ($bad00.Count -eq 0) {
   Write-Host "- OK: none found" 
