@@ -13,7 +13,7 @@
 **Status**: The workspace demonstrates:
 - ✅ Clear architectural intent
 - ✅ Strong separation of concerns
-- ✅ Professional framing (readiness-based, not interview-focused)
+- ✅ Professional framing (readiness-based, not evaluation-focused)
 - ✅ Contract-enforced structure
 - ✅ ZERO copy policy compliance (no violations found)
 - ⚠️ Minor cleanup needed (temporary files)
