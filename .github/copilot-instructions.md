@@ -1,9 +1,12 @@
 # GitHub Copilot Instructions for Architecture Reasoning in Practice
 
 **Version**: 2.0  
-**Last Updated**: December 29, 2025  
+**Last Updated**: January 1, 2026  
 **Repository**: `architecture-reasoning-in-practice`  
 **Critical Principle**: Update this file IMMEDIATELY when repository structure changes
+
+**Environment**: Windows 11, PowerShell  
+**Note**: All commands and scripts should use PowerShell syntax. File paths use Windows format.
 
 ---
 
@@ -343,15 +346,17 @@ Before publishing any content:
 
 Before committing changes:
 
+**Note**: The following commands work in PowerShell on Windows 11. Use PowerShell syntax for file paths.
+
 ### Markdown Linting
 
-```bash
+```powershell
 npx markdownlint-cli2 "**/*.md"
 ```
 
 ### Link Checking (Lychee via Docker)
 
-```bash
+```powershell
 docker run --rm -v "${PWD}:/input:ro" lycheeverse/lychee --config /input/lychee.toml "/input/**/*.md"
 ```
 
