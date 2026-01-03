@@ -255,7 +255,7 @@ src/
 - ✅ Structure follows numbering convention (01_, 02_, etc.)
 - ✅ No 00_ violations found
 - ✅ Content appears transformative
-- ✅ Interview prep section exists (generic, company-agnostic per policy)
+- ✅ Technical evaluation prep section exists (generic, company-agnostic per policy)
 
 **Relationship with `architecture-reasoning-in-practice`**:
 - ✅ Referenced in cross-repo flow
@@ -286,7 +286,7 @@ src/
 **Location**: `source-material/ToProcess/` (git-ignored)
 
 **Files Found**:
-- Multiple interview preparation source materials
+- Multiple technical evaluation preparation source materials
 - Architect role descriptions
 - Technical lead materials
 
@@ -365,7 +365,7 @@ src/
 1. **Structure is architecturally sound** - Clear separation of concerns
 2. **Contracts are well-defined** - Prevents drift
 3. **ZERO copy policy compliance** - No violations found
-4. **Professional framing** - Readiness-based, not interview-focused
+4. **Professional framing** - Readiness-based, not evaluation-focused
 5. **Cross-repo integration** - Clear relationships defined
 6. **Documentation quality** - Clear, progressive, role-centric
 
