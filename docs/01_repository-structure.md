@@ -192,8 +192,8 @@ Reusable reference artifacts (checklists, templates, frameworks). Avoid duplicat
 
 ## Templates
 
-- Scenario template: [`docs/templates/scenario-template.md`](templates/scenario-template.md)
-- Pattern-style note template: [`docs/templates/pattern-note-template.md`](templates/pattern-note-template.md)
+- Scenario template: [`docs/templates/scenario-template.md`](./templates/scenario-template.md)
+- Pattern-style note template: [`docs/templates/pattern-note-template.md`](./templates/pattern-note-template.md)
 
 ---
 
