@@ -2,7 +2,7 @@
 
 ## Summary
 
-Integrating Generative AI into production systems requires treating it as an external reasoning service with validation, guardrails, and fallback mechanisms, not as a source of truth.
+Integrating Generative AI into production systems works best when you treat the model as a probabilistic reasoning component that must be verified, constrained, and safely degradable.
 
 ## When to Use
 
@@ -47,7 +47,8 @@ Avoid GenAI integration when:
    - Flexibility vs control
 
 **Key Principle:**
-> "We treat the LLM as an external reasoning service, not a source of truth."
+
+Use the model to propose hypotheses or drafts, then validate with deterministic checks or trusted data before the output affects critical state.
 
 ## Trade-offs
 

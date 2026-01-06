@@ -90,8 +90,8 @@ foreach ($sourceFile in $sourceFiles) {
             foreach ($sentence in $sentences) {
                 $words = $sentence.Trim() -split '\s+' | Where-Object { $_.Length -gt 3 }
                 if ($words.Count -ge 5) {
-                    # Take first 5-7 words as a potential phrase
-                    $phrase = ($words[0..6] -join ' ').Trim()
+                    $takeCount = [Math]::Min(7, $words.Count)
+                    $phrase = ($words[0..($takeCount - 1)] -join ' ').Trim()
                     if ($phrase.Length -gt 20) {
                         $sourcePhrases += $phrase
                     }
@@ -122,7 +122,11 @@ foreach ($contentFile in $contentFiles) {
         foreach ($sourceQuote in $sourceQuotes) {
             # Check for exact or near-exact matches
             $quoteWords = $sourceQuote.Quote -split '\s+' | Where-Object { $_.Length -gt 3 }
-            $quotePattern = ($quoteWords[0..([Math]::Min(7, $quoteWords.Count - 1))] -join '\s+')
+            $quotePattern = $null
+            if ($quoteWords.Count -gt 0) {
+                $takeCount = [Math]::Min(8, $quoteWords.Count)
+                $quotePattern = ($quoteWords[0..($takeCount - 1)] | ForEach-Object { [regex]::Escape($_) }) -join '\s+'
+            }
             
             if ($content -match [regex]::Escape($sourceQuote.Quote)) {
                 $violations += [PSCustomObject]@{
@@ -132,7 +136,7 @@ foreach ($contentFile in $contentFiles) {
                     Quote = $sourceQuote.Quote.Substring(0, [Math]::Min(80, $sourceQuote.Quote.Length))
                 }
             }
-            elseif ($content -match $quotePattern) {
+            elseif ($quotePattern -and ($content -match $quotePattern)) {
                 $warnings += [PSCustomObject]@{
                     File = $contentFile.FullName.Replace($RepoRoot, '').TrimStart('\')
                     Type = "Potential Quote Match"

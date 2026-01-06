@@ -61,7 +61,8 @@ A system requires operations that span multiple microservices, but distributed t
    - Plan for failure detection and recovery
 
 **Key Principle:**
-> "We avoided distributed transactions. Instead, we designed services to be eventually consistent. For workflows spanning multiple services, we used saga patterns—mostly choreography using events, and orchestration only where business flow required tight control. Idempotency and compensating actions were critical to make this reliable."
+
+Prefer designs that keep each service locally consistent, then coordinate cross-service workflows with explicit steps, retries, and compensations. Use orchestration only when the business workflow needs a single place to reason about progress.
 
 ## Reflections
 
