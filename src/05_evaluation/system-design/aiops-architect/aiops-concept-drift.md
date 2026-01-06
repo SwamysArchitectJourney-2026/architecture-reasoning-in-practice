@@ -1,84 +1,58 @@
-# AIOps Concept Drift Handling
+# AIOps Drift in Production (Scenario)
 
-## Context
+## Scenario
 
-You need to design a system that handles concept drift in production ML models for AIOps. Models that worked well initially are now showing degraded performance due to changing patterns in operational data.
+An ML-powered ops feature worked well for months, then gradually became less useful.
+Operators report more noise and missed issues, especially after frequent releases and traffic pattern changes.
 
-## Ambiguities
+Your task is to explain a *practical* drift strategy: what you measure, when you react, and how you ship changes safely.
 
-- How quickly does drift occur? (gradual, sudden)
-- What is the acceptable performance degradation before retraining?
-- Should retraining be automated or manual?
-- How do you validate new models before deployment?
-- What is the cost of retraining vs degraded performance?
+## Clarify what “drift” means here
 
-## Clarifying Questions
+- Is the problem input distribution shift, output distribution shift, or “human trust” drift?
+- What’s the cost of being wrong (false alarm vs missed incident)?
+- What’s the cadence of change (deployments/day, config churn, seasonality)?
 
-- What types of drift are observed? (data drift, prediction drift, performance drift)
-- How quickly does drift occur? (days, weeks, months)
-- What is the current retraining process? (manual, scheduled, event-driven)
-- What is the acceptable performance degradation threshold?
-- What is the cost of false positives/negatives during drift?
-- What validation process exists for new models?
+## A useful mental model
 
-## Trade-offs Analysis
+Treat drift handling as three loops:
 
-**Option 1: Scheduled Retraining Only**
-- Periodic retraining (daily, weekly, monthly)
-- Pros: Simple, predictable, low operational overhead
-- Cons: May miss sudden drift, retrains even when not needed
+1. **Detect**: notice that today differs from yesterday
+2. **Decide**: determine whether the difference matters
+3. **Deploy**: roll out changes without making things worse
 
-**Option 2: Drift Detection Only**
-- Retrain only when drift is detected
-- Pros: Efficient, responds to actual drift
-- Cons: Requires drift detection, may delay retraining
+## What to monitor (examples)
 
-**Option 3: Online Learning Only**
-- Incremental model updates
-- Pros: Adaptive, no retraining overhead
-- Cons: May drift over time, less stable
+- **Data health**: missingness, cardinality, schema/field changes, outliers
+- **Score behavior**: confidence distribution shifts, alert volume shifts
+- **Downstream outcomes**: operator actions (dismissed vs acknowledged), time-to-triage, precision at top-K
 
-**Option 4: Hybrid Approach (Recommended)**
-- Drift detection + scheduled retraining + online learning
-- Pros: Robust, handles multiple drift types, efficient
-- Cons: More complex, requires orchestration
+## Response options (trade-offs)
 
-## Structured Reasoning
+### Option A: time-based refresh
 
-**Recommended Approach:**
+- Works when change is steady and predictable
+- Risk: wasteful retrains and slow reaction to sudden shifts
 
-1. **Problem Framing**
-   - Restate: "Maintain model performance in production despite changing operational patterns"
-   - Stakeholders: Data science teams, SRE teams, platform engineers
-   - Constraints: Performance requirements, compute costs, operational overhead
+### Option B: event-based refresh
 
-2. **Architecture (High-Level)**
-   > "We monitor data drift (PSI, KS test) and prediction drift (performance metrics) continuously. When drift is detected, we trigger retraining pipelines. We also use online learning for adaptive models and maintain a feedback loop from human reviewers. We version models and use A/B testing to validate improvements before full rollout."
+- Trigger on deployment waves, config changes, or telemetry shifts
+- Risk: over-triggering and operational complexity
 
-3. **Key Components**
-   - **Drift detection**: Statistical tests (PSI, KS), performance monitoring, distribution shifts
-   - **Retraining**: Automated pipelines, feature validation, model validation, deployment
-   - **Online learning**: Incremental updates, adaptive thresholds, ensemble methods
-   - **Validation**: A/B testing, historical replay, expert review
-   - **Rollback**: Model versioning, feature flags, canary deployments
+### Option C: adaptive models / thresholding
 
-4. **Trade-offs to Articulate**
-   - **Detection sensitivity**: More sensitive = more retraining = higher cost
-   - **Online vs Batch learning**: Adaptive vs stable models
-   - **Automation vs Control**: Auto-retraining vs manual review
-   - **Validation rigor**: Comprehensive validation vs faster deployment
+- Good for gradual changes; reduces manual tuning
+- Risk: can “chase noise” without guardrails
 
-5. **Production Considerations**
-   - **Drift types**: Data drift (input distribution changes), prediction drift (output distribution changes), performance drift (accuracy degradation)
-   - **Detection methods**: PSI (Population Stability Index), KS test (Kolmogorov-Smirnov), performance monitoring
-   - **Retraining triggers**: Drift detection, scheduled, performance degradation threshold
-   - **Validation**: A/B testing, historical replay, expert review, shadow mode
+## Safety rails (make these explicit)
 
-## Reflections
+- Version everything (data, features, model, thresholds)
+- Validate with replay/shadow/canary before full rollout
+- Keep rollback fast and boring
 
-- How do you balance detection sensitivity with retraining costs?
-- What makes a drift detection system reliable?
-- How do you ensure new models don't degrade performance?
-- What level of automation is appropriate for retraining?
-- How do you handle cases where drift is expected (seasonal changes)?
+## What a strong answer sounds like
+
+- You separate “distribution changed” from “performance degraded”
+- You propose simple default actions first, then automation
+- You explain how the org reviews drift changes (who signs off, what metrics)
 
