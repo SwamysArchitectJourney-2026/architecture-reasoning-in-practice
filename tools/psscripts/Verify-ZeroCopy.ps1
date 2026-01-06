@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [Parameter()]
-    [string]$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")),
+    [string]$RepoRoot = ((Resolve-Path (Join-Path $PSScriptRoot "..\..") | Select-Object -First 1 -ExpandProperty Path)),
 
     [Parameter()]
     [string[]]$SourceFiles = @(),
@@ -39,6 +39,12 @@ if (Test-Path $sourceMaterialPath) {
 if ($SourceFiles.Count -gt 0) {
     $sourceFiles += $SourceFiles | ForEach-Object { Get-Item $_ -ErrorAction SilentlyContinue }
 }
+
+$sourceFiles = @(
+    $sourceFiles | Where-Object {
+        $_ -and $_.PSObject -and ($_.PSObject.Properties.Match('FullName').Count -gt 0)
+    }
+)
 
 if ($sourceFiles.Count -eq 0) {
     Write-Host "No source material files found to check against." -ForegroundColor Yellow
