@@ -41,41 +41,55 @@ You need to design a real-time streaming pipeline that processes millions of met
 
 ## Structured Reasoning
 
-**Recommended Approach:**
+# AIOps Streaming Pipeline (Scenario)
 
-1. **Problem Framing**
-   - Restate: "Process millions of metrics, logs, and traces per second with low latency"
-   - Stakeholders: Data science teams, SRE teams, platform engineers
-   - Constraints: Latency (<1s), throughput (millions/sec), exactly-once semantics
+## Scenario
 
-2. **Architecture (High-Level)**
-   > "We'd use Kafka for ingestion with partitioning by service/tenant, Flink for stream processing with windowing for aggregations, time-series DBs for metrics storage, and distributed search for logs. We'd implement backpressure handling, exactly-once processing, and auto-scaling. The architecture would be fault-tolerant with checkpointing and replication."
+Your platform team wants a single “observability ingestion and processing backbone” that can support:
 
-3. **Key Components**
-   - **Ingestion**: Kafka topics, schema registry, partitioning strategy
-   - **Processing**: Flink operators, windowing (tumbling/sliding), state management
-   - **Storage**: Time-series DB for metrics, Elasticsearch for logs, trace stores for traces
-   - **Reliability**: Exactly-once semantics, checkpointing, replication, failure recovery
-   - **Scaling**: Horizontal scaling, dynamic partitioning, auto-scaling based on lag
+- Real-time alerting and anomaly detection
+- Near-real-time dashboards
+- Post-incident replay and deeper analytics
 
-4. **Trade-offs to Articulate**
-   - **Latency vs Throughput**: Smaller batches vs larger batches
-   - **Exactly-once vs At-least-once**: Consistency vs performance
-   - **Managed vs Self-hosted**: Cloud services vs control and cost
-   - **Real-time vs Batch**: Streaming vs periodic analysis
+You’re asked to sketch the design and defend key trade-offs.
 
-5. **Production Considerations**
-   - **Late data**: Watermarks, allowed lateness, side outputs
-   - **Data quality**: Schema validation, anomaly detection in streams, dead letter queues
-   - **Scaling**: Horizontal scaling, dynamic partitioning, auto-scaling
-   - **Schema evolution**: Schema registry, backward compatibility, versioning
-   - **Backpressure**: Handling spikes, circuit breakers, adaptive scaling
+## Clarify first (don’t assume)
 
-## Reflections
+- What’s the target end-to-end latency for *alerts* vs *dashboards*?
+- What’s the rough event volume (and which signal dominates: logs vs metrics vs traces)?
+- How long do we need to retain raw data for replay?
+- Do we need cross-signal correlation in real time or can some of it be offline?
+- Who are the consumers and what contracts do they expect?
 
-- How do you balance latency with throughput in streaming systems?
-- What makes a streaming pipeline production-ready?
-- How do you handle schema evolution without breaking downstream consumers?
-- How do you ensure exactly-once semantics at scale?
-- What level of automation is appropriate for scaling decisions?
+## Decompose the pipeline
+
+Think in stages (each stage has its own failure modes):
+
+1. **Collection**: agents/collectors close to workloads
+2. **Ingestion buffer**: durable queue/event bus
+3. **Stream processing**: normalize, enrich, correlate, score
+4. **Storage tiers**: raw (replay), hot (fast), curated (query)
+5. **Consumption**: alerting, dashboards, investigations
+
+## Decisions to articulate
+
+- **Delivery semantics**: at-least-once is simpler; exactly-once is possible but not “free”
+- **Backpressure strategy**: where to shed load, where to buffer, and what to drop first
+- **Schema evolution**: versioning and validation so producers don’t break consumers
+- **Reprocessing**: how to replay safely without duplicating side effects
+
+## Failure thinking (what you’d monitor)
+
+- Producer error rate and ingestion lag
+- Consumer lag and processing latency percentiles
+- Dead-letter volume and retry storms
+- Hot partitions / skew and uneven load
+- Schema validation failures and incompatible changes
+
+## What you’d present in an interview
+
+- A minimal pipeline that meets the strictest latency path
+- How it scales with volume and burstiness
+- Where you enforce contracts (schemas) and how you enable replay
+- A short plan for observability and operational runbooks
 

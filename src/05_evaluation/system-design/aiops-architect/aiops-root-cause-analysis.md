@@ -1,84 +1,57 @@
-# AIOps Root Cause Analysis
+# AIOps Root Cause Analysis (Scenario)
 
-## Context
+## Scenario
 
-You need to design a system that performs root cause analysis at scale, identifying the most likely root cause of incidents from correlated signals across services. The system must reduce MTTR and provide explainable results.
+During an incident, responders see many symptoms across multiple services.
+Your job is to propose an approach that helps an on-call engineer narrow down *likely causes* quickly and explain why.
 
-## Ambiguities
+## What to clarify early
 
-- How much time is available for analysis? (seconds, minutes)
-- What level of accuracy is acceptable?
-- How should the system handle multiple potential root causes?
-- Should analysis be fully automated or human-in-the-loop?
-- How do you validate root cause predictions?
+- Do we need “best guess in 60 seconds” or “deep analysis in 10 minutes”?
+- Is the goal live triage, post-incident learning, or both?
+- Do we have reliable service topology and deployment/change data?
+- What evidence format is useful: ranked suspects, a path through dependencies, or a narrative?
 
-## Clarifying Questions
+## A good framing
 
-- What is the primary goal: reducing MTTR, learning from incidents, or both?
-- What is the acceptable analysis time? (time pressure)
-- What level of explainability is required?
-- Are there service dependency graphs available?
-- What types of signals are available? (metrics, logs, traces)
-- How are root causes currently identified?
+Separate the problem into:
 
-## Trade-offs Analysis
+1. **Context**: topology + recent changes (deployments, config, feature flags)
+2. **Signals**: anomalies in metrics, logs, traces
+3. **Reasoning**: ranking candidates and explaining the ranking
 
-**Option 1: Correlation-Based Only**
-- Statistical correlation analysis, temporal ordering
-- Pros: Simple, fast, interpretable
-- Cons: Correlation ≠ causation, may miss complex relationships
+## Approaches to compare (and when)
 
-**Option 2: Graph-Based Only**
-- Dependency graphs, graph neural networks
-- Pros: Captures service relationships, handles complex dependencies
-- Cons: Requires accurate dependency graphs, may be slow for large graphs
+### Correlation + time ordering
 
-**Option 3: Causal Inference Only**
-- Granger causality, causal discovery algorithms
-- Pros: Identifies true causal relationships, more accurate
-- Cons: Computationally expensive, requires assumptions
+- Fast and often “good enough” for obvious cascades
+- Risk: spurious correlation and noisy blast radii
 
-**Option 4: Hybrid Approach (Recommended)**
-- Combine graph-based methods with causal inference and correlation analysis
-- Pros: Robust, handles multiple signal types, explainable
-- Cons: More complex, requires orchestration
+### Dependency/topology-guided ranking
 
-## Structured Reasoning
+- Use service calls and ownership boundaries to constrain the search
+- Risk: stale or incomplete topology gives misleading answers
 
-**Recommended Approach:**
+### Causal-style checks (careful with claims)
 
-1. **Problem Framing**
-   - Restate: "Identify the most likely root cause of incidents from correlated signals across services"
-   - Stakeholders: On-call engineers, incident responders, post-mortem teams
-   - Constraints: Time pressure (reduce MTTR), accuracy, explainability
+- Useful to test hypotheses (did X precede Y consistently?)
+- Risk: overclaiming causality from observational data
 
-2. **Architecture (High-Level)**
-   > "We'd use a graph-based approach: build dependency graphs from service mesh and configuration, use causal inference to identify likely root causes, rank by correlation strength and temporal ordering, and provide explainable results with evidence chains. We'd combine automated analysis with human feedback for continuous improvement."
+## What makes it trustworthy
 
-3. **Key Components**
-   - **Dependency graphs**: Service mesh data, configuration analysis, call graphs
-   - **Causal inference**: Granger causality, correlation analysis, temporal ordering
-   - **Ranking**: Multiple signals (metrics, logs, traces), confidence scoring
-   - **Explainability**: Evidence chains, visualization, natural language explanations
-   - **Feedback loop**: Human validation, model improvement, knowledge base updates
+- Clear “evidence chain”: what changed, what broke first, what downstream suffered
+- Multiple independent signals supporting the same suspect
+- A way for humans to correct the system (feedback + annotations)
 
-4. **Trade-offs to Articulate**
-   - **Automation vs Accuracy**: Fully automated vs human-in-the-loop
-   - **Speed vs Thoroughness**: Quick answers vs comprehensive analysis
-   - **Graph complexity vs Performance**: Detailed graphs vs simplified models
-   - **Explainability vs Accuracy**: Simple models vs complex deep learning
+## Pitfalls to call out
 
-5. **Production Considerations**
-   - **Validation**: Historical incident replay, A/B testing, expert review
-   - **Domain knowledge**: Graph neural networks, knowledge graphs, rule-based post-processing
-   - **Performance**: Graph pruning, caching, parallel processing
-   - **Feedback**: Human validation, model improvement, knowledge base updates
+- Confusing propagation paths with root cause
+- Ignoring deployments/config changes as first-class signals
+- Producing too much output during an incident (operators need prioritization)
 
-## Reflections
+## What you’d present
 
-- How do you balance speed with accuracy in root cause analysis?
-- What makes a root cause analysis result trustworthy?
-- How do you handle cases where multiple root causes are possible?
-- How do you ensure the system learns from human feedback?
-- What level of automation is appropriate for root cause analysis?
+- A ranked list of suspects with evidence summaries
+- A fast path (triage mode) and a deeper path (postmortem mode)
+- A feedback mechanism that improves future incidents
 

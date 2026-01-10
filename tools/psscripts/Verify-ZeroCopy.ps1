@@ -1,10 +1,10 @@
 [CmdletBinding()]
 param(
     [Parameter()]
-    [string]$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")),
+    [string]$RepoRoot = ((Resolve-Path (Join-Path $PSScriptRoot "..\..") | Select-Object -First 1 -ExpandProperty Path)),
 
     [Parameter()]
-    [string[]]$SourceFiles = @(),
+    [string[]]$AdditionalSourceFiles = @(),
 
     [Parameter()]
     [switch]$Strict
@@ -36,9 +36,15 @@ if (Test-Path $sourceMaterialPath) {
     $sourceFiles = Get-ChildItem -Path $sourceMaterialPath -Filter "*.md" -Recurse -ErrorAction SilentlyContinue
 }
 
-if ($SourceFiles.Count -gt 0) {
-    $sourceFiles += $SourceFiles | ForEach-Object { Get-Item $_ -ErrorAction SilentlyContinue }
+if ($AdditionalSourceFiles.Count -gt 0) {
+    $sourceFiles += $AdditionalSourceFiles | ForEach-Object { Get-Item $_ -ErrorAction SilentlyContinue }
 }
+
+$sourceFiles = @(
+    $sourceFiles | Where-Object {
+        $_ -and $_.PSObject -and ($null -ne $_.PSObject.Properties['FullName'])
+    }
+)
 
 if ($sourceFiles.Count -eq 0) {
     Write-Host "No source material files found to check against." -ForegroundColor Yellow
@@ -84,8 +90,8 @@ foreach ($sourceFile in $sourceFiles) {
             foreach ($sentence in $sentences) {
                 $words = $sentence.Trim() -split '\s+' | Where-Object { $_.Length -gt 3 }
                 if ($words.Count -ge 5) {
-                    # Take first 5-7 words as a potential phrase
-                    $phrase = ($words[0..6] -join ' ').Trim()
+                    $takeCount = [Math]::Min(7, $words.Count)
+                    $phrase = ($words[0..($takeCount - 1)] -join ' ').Trim()
                     if ($phrase.Length -gt 20) {
                         $sourcePhrases += $phrase
                     }
@@ -116,7 +122,11 @@ foreach ($contentFile in $contentFiles) {
         foreach ($sourceQuote in $sourceQuotes) {
             # Check for exact or near-exact matches
             $quoteWords = $sourceQuote.Quote -split '\s+' | Where-Object { $_.Length -gt 3 }
-            $quotePattern = ($quoteWords[0..([Math]::Min(7, $quoteWords.Count - 1))] -join '\s+')
+            $quotePattern = $null
+            if ($quoteWords.Count -gt 0) {
+                $takeCount = [Math]::Min(8, $quoteWords.Count)
+                $quotePattern = ($quoteWords[0..($takeCount - 1)] | ForEach-Object { [regex]::Escape($_) }) -join '\s+'
+            }
             
             if ($content -match [regex]::Escape($sourceQuote.Quote)) {
                 $violations += [PSCustomObject]@{
@@ -126,7 +136,7 @@ foreach ($contentFile in $contentFiles) {
                     Quote = $sourceQuote.Quote.Substring(0, [Math]::Min(80, $sourceQuote.Quote.Length))
                 }
             }
-            elseif ($content -match $quotePattern) {
+            elseif ($quotePattern -and ($content -match $quotePattern)) {
                 $warnings += [PSCustomObject]@{
                     File = $contentFile.FullName.Replace($RepoRoot, '').TrimStart('\')
                     Type = "Potential Quote Match"

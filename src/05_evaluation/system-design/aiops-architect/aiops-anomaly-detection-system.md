@@ -1,87 +1,74 @@
-# AIOps Anomaly Detection System
+# AIOps Anomaly Detection System (Scenario)
 
-## Context
+## Scenario
 
-You need to design an anomaly detection system for a large-scale AIOps platform that processes millions of metrics, logs, and traces per second from Salesforce services. The system must detect anomalies in real-time to enable proactive incident response.
+You’re asked to design anomaly detection for a large, multi-tenant operations platform.
+The platform ingests high-volume telemetry (metrics/logs/traces) and needs near-real-time signals that help responders act.
 
-## Ambiguities
+This is a reasoning exercise: focus on *how you think and communicate*, not a fully detailed implementation.
 
-- What types of anomalies need to be detected? (point anomalies, contextual anomalies, collective anomalies)
-- What is the acceptable latency for detection?
-- What is the acceptable false positive rate?
-- How should the system handle concept drift?
-- What is the scale requirement? (metrics per second, services)
-- What is the budget for compute resources?
+## First 2 minutes: clarify the goal
 
-## Clarifying Questions
+- Is the primary outcome alerting, automated mitigation, or investigation support?
+- What “anomaly” matters here (SLO burn, sudden error-rate jump, unusual dependency fan-out, latent saturation)?
+- What’s the tolerance for noisy alerts (alert fatigue) vs missed detections (silent failure)?
+- What’s the time budget for detection and routing (sub-second vs “within a minute”)?
+- Is this per-service, per-tenant, or fleet-wide detection?
 
-- What is the primary goal: reducing MTTR, preventing outages, or both?
-- What is the acceptable detection latency? (sub-second, seconds, minutes)
-- What is the current false positive rate, and what is the target?
-- How are anomalies currently detected, if at all?
-- What types of data sources are available? (metrics, logs, traces)
-- What is the expected volume? (metrics/sec, services, tenants)
-- Are there labeled incident data available for supervised learning?
-- What is the budget for compute and storage?
+## What makes this hard (name the constraints)
 
-## Trade-offs Analysis
+- Telemetry is messy (missing data, resets, cardinality explosions)
+- Behavior changes (deployments, traffic shifts, seasonality)
+- Correlation is common; causation is rare
+- Operators need explanations, not just scores
 
-**Option 1: Statistical Methods Only**
-- Z-score, IQR, moving averages
-- Pros: Simple, interpretable, low latency, low compute cost
-- Cons: Limited to simple patterns, high false positives, doesn't handle complex correlations
+## Reasoning approach (a simple framing)
 
-**Option 2: Unsupervised ML Only**
-- Isolation Forest, Autoencoders, DBSCAN
-- Pros: Handles complex patterns, no labels needed, good for high-dimensional data
-- Cons: Higher compute cost, less interpretable, may miss known patterns
+Think of the system as three layers:
 
-**Option 3: Supervised ML Only**
-- XGBoost, Random Forest, Neural Networks
-- Pros: Highest accuracy with labels, explainable (tree-based), can learn from incidents
-- Cons: Requires labeled data, may not detect novel anomalies, retraining overhead
+1. **Signal shaping**: clean + aggregate + define windows
+2. **Detection**: generate candidates with confidence
+3. **Decisioning**: suppress/route/group and capture feedback
 
-**Option 4: Ensemble Approach (Recommended)**
-- Combine statistical, unsupervised, and supervised methods
-- Pros: Robust, reduces false positives, handles diverse anomaly types
-- Cons: More complex, higher compute cost, requires orchestration
+This keeps the conversation structured even if tech choices change.
 
-## Structured Reasoning
+## Detection strategies to compare
 
-**Recommended Approach:**
+### Strategy A: rule/statistical baselines
 
-1. **Problem Framing**
-   - Restate: "Build a system that detects anomalies in service metrics, logs, and traces to enable proactive incident response"
-   - Stakeholders: SRE teams, on-call engineers, service owners
-   - Constraints: Real-time (sub-second latency), scale (millions of metrics/sec), low false positives
+- Works well for clear, single-metric signals (latency p95, error rate)
+- Low cost, high explainability
+- Risk: brittle thresholds and “many small false positives”
 
-2. **Architecture (High-Level)**
-   > "We'd build a multi-stage pipeline: real-time ingestion via Kafka, feature engineering and aggregation in Flink, anomaly detection using ensemble models (statistical + ML), alerting with confidence scoring, and feedback loops for continuous improvement. The architecture would be horizontally scalable and handle concept drift."
+### Strategy B: unsupervised detectors
 
-3. **Key Components**
-   - **Data Ingestion**: Kafka topics partitioned by service, schema registry for validation
-   - **Feature Engineering**: Rolling windows, rate of change, percentiles, cross-service correlations
-   - **Models**: Isolation Forest for high-dimensional, LSTM for temporal, ensemble for robustness
-   - **Alerting**: Confidence thresholds, alert grouping, suppression rules
-   - **Feedback**: Human feedback loop, model retraining pipeline
+- Useful when labels are sparse (new services, rare incidents)
+- Can capture multi-dimensional patterns
+- Risk: low interpretability and drift sensitivity
 
-4. **Trade-offs to Articulate**
-   - **Model complexity vs Latency**: Deep learning vs statistical methods
-   - **False positives vs False negatives**: Alert fatigue vs missed incidents
-   - **Real-time vs Batch**: Streaming vs periodic analysis
-   - **Unsupervised vs Supervised**: No labels needed vs better accuracy with labels
+### Strategy C: supervised detectors (when you truly have labels)
 
-5. **Production Considerations**
-   - **Concept drift**: Online learning, periodic retraining, drift detection (KS test, PSI)
-   - **False positives**: Ensemble methods, confidence scoring, human-in-the-loop feedback
-   - **Scale**: Sampling, dimensionality reduction, distributed inference
-   - **Signal fusion**: Feature-level fusion, decision-level fusion, attention mechanisms
+- Best when you can define labels consistently (incident taxonomy, time windows)
+- Works well for “known bad” patterns
+- Risk: label noise + bias + poor novelty detection
 
-## Reflections
+### Strategy D: layered/ensemble (often the practical answer)
 
-- How do you balance detection accuracy with operational overhead?
-- What signals indicate you should use supervised vs unsupervised methods?
-- How do you handle the trade-off between false positives and false negatives?
-- What makes an anomaly detection system production-ready?
-- How do you ensure the system adapts to changing patterns over time?
+- Cheap first-pass candidates + heavier second-pass scoring
+- Use separate models per signal type instead of “one model to rule them all”
+- Risk: operational complexity (monitoring, versioning, retraining)
+
+## What you should explicitly call out
+
+- **Cardinality control**: how you prevent “one metric per user” from exploding compute
+- **Feedback loop**: how operator actions become training/threshold input
+- **Change awareness**: deployments and config changes as context for detection
+- **Actionability**: grouping and routing rules matter as much as detection quality
+
+## Deliverable (what you’d say in an interview)
+
+- A crisp problem statement and success metrics
+- A high-level pipeline with where decisions live (detection vs decisioning)
+- 2–3 key trade-offs and why you choose a default
+- A plan for drift + evaluation (how you know it’s improving)
 
