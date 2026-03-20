@@ -7,12 +7,14 @@ Integrating Generative AI into production systems works best when you treat the 
 ## When to Use
 
 Use GenAI integration when:
+
 - The problem benefits from non-deterministic reasoning
 - Human-like interaction or content generation is required
 - The use case can tolerate occasional inaccuracies
 - Validation and fallback mechanisms are feasible
 
 Avoid GenAI integration when:
+
 - Deterministic results are required
 - Cost or latency constraints are prohibitive
 - Validation is impossible or too expensive
@@ -53,18 +55,21 @@ Use the model to propose hypotheses or drafts, then validate with deterministic 
 ## Trade-offs
 
 **Benefits:**
+
 - Human-like reasoning and interaction
 - Flexible content generation
 - Reduced need for hard-coded rules
 - Natural language understanding
 
 **Costs:**
+
 - Non-deterministic outputs
 - Higher latency and cost
 - Need for validation layers
 - Operational complexity
 
 **Failure Modes:**
+
 - Plausible but incorrect responses
 - Cost overruns from unmanaged usage
 - Latency spikes affecting user experience
@@ -73,14 +78,15 @@ Use the model to propose hypotheses or drafts, then validate with deterministic 
 ## Examples
 
 **Production-Safe Integration:**
+
 - Validation layers before accepting outputs
 - Confidence scoring and fallback mechanisms
 - Prompt versioning and A/B testing
 - Cost monitoring and throttling
 
 **Risky Integration:**
+
 - Direct use without validation
 - No fallback mechanisms
 - Unmanaged cost and latency
 - Trusting outputs without verification
-

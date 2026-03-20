@@ -9,11 +9,13 @@
 This repository helps you develop **architectural reasoning and decision-making skills** for senior technical roles. It focuses on **how to think**, not just what to know.
 
 **This is NOT**:
+
 - A course or official curriculum
 - A collection of system design solutions
 - A replacement for hands-on experience
 
 **This IS**:
+
 - A personal practice log for reasoning skills
 - Structured thinking frameworks
 - Role-specific preparation guides
@@ -23,7 +25,7 @@ This repository helps you develop **architectural reasoning and decision-making 
 
 ## 🗺️ Repository Structure
 
-```
+```text
 01_orientation/          ← YOU ARE HERE - Start here
 02_thinking/             ← How to think (role-agnostic)
 03_communication/        ← How to explain decisions
@@ -38,15 +40,19 @@ This repository helps you develop **architectural reasoning and decision-making 
 ## 🚀 Quick Start
 
 ### Step 1: Choose Your Role
+
 Read `01_orientation/role-comparison.md` to understand role differences.
 
 ### Step 2: Go to Your Role Path
+
 Navigate to `04_roles/[your-role]/README.md` and follow the preparation path.
 
 ### Step 3: Study Thinking Toolkit
+
 Work through `02_thinking/` - these skills apply to all roles.
 
 ### Step 4: Practice
+
 Use `05_evaluation/` for scenario practice.
 
 ---
@@ -69,6 +75,7 @@ These rules prevent confusion and maintain structure.
 ## 🎓 Learning Strategies
 
 See `01_orientation/learning-strategies.md` for:
+
 - How to study based on your goal
 - Time management tips
 - Practice schedules

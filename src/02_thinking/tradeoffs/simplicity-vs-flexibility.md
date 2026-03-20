@@ -14,4 +14,3 @@ Use when deciding between an MVP path and a more extensible design.
 - Avoid paying for flexibility you can't justify.
 - Prefer reversible decisions early.
 - Document what would trigger a redesign.
-

@@ -303,6 +303,7 @@ If a `source-material/` folder exists locally, treat it as an **intake/staging a
 5. ✅ **Verify no verbatim text** - Run verification check before committing
 
 **Verification Command** (run before committing):
+
 ```powershell
 # Automated zero-copy verification
 .\tools\psscripts\Verify-ZeroCopy.ps1
@@ -312,17 +313,20 @@ If a `source-material/` folder exists locally, treat it as an **intake/staging a
 ```
 
 **Manual Verification** (also recommended):
+
 - Search for known source material phrases in new content
 - Check all "Key Principle" quotes for originality
 - Verify example structures are not copied from source
 
 **Common Violation Patterns to Avoid**:
+
 - ❌ Copying "Key Principle" quotes verbatim from source
 - ❌ Using exact phrasing from source material examples
 - ❌ Mirroring source outline or section order
 - ❌ Light paraphrasing (changing a few words)
 
 **Required Transformation**:
+
 - ✅ Complete rewording of all concepts
 - ✅ Original examples and analogies
 - ✅ Different structure and organization
@@ -388,4 +392,3 @@ docker run --rm -v "${PWD}:/input:ro" lycheeverse/lychee --config /input/lychee.
 - **Practice**: Work through scenarios systematically to develop reasoning skills
 
 ---
-

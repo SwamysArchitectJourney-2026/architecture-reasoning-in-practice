@@ -14,4 +14,3 @@ Use when you have limited time to converge and need clarity fast.
 - Propose 2–3 options quickly.
 - Pick a default, call out risks, and define follow-ups.
 - Explicitly state assumptions and validation steps.
-

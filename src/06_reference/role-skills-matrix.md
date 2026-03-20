@@ -37,6 +37,7 @@
 | **Delivery Focus** | ✓ | ✓✓ | ✓✓✓ | ✓✓✓ | ✓✓ |
 
 **Legend:**
+
 - ✓✓✓ = Core competency / Primary focus
 - ✓✓ = Important / Secondary focus
 - ✓ = Relevant / Should understand
@@ -46,9 +47,11 @@
 ## Role Focus Summary
 
 ### Architect
+
 **Primary Focus**: System-wide design, long-term strategy, quality attributes, cross-team alignment
 
 **Key Skills**:
+
 - System-level architecture and patterns
 - Non-functional requirements
 - Technology selection and standards
@@ -56,9 +59,11 @@
 - Risk and trade-off analysis
 
 ### Principal Software Engineer
+
 **Primary Focus**: Hands-on architecture, technical depth, mentoring, code quality
 
 **Key Skills**:
+
 - End-to-end system design
 - Hands-on coding and implementation
 - Technical mentorship
@@ -66,9 +71,11 @@
 - Database and API design
 
 ### Technical Lead
+
 **Primary Focus**: Hands-on coding, team mentorship, delivery, security
 
 **Key Skills**:
+
 - Technical architecture
 - Hands-on development
 - Team mentorship
@@ -76,9 +83,11 @@
 - Performance optimization
 
 ### Engineering Manager
+
 **Primary Focus**: People management, technical leadership, DevOps, team building
 
 **Key Skills**:
+
 - Team management and mentoring
 - Technical strategy
 - DevOps and infrastructure
@@ -86,9 +95,11 @@
 - Cross-functional collaboration
 
 ### AIOps Data Scientist/Architect
+
 **Primary Focus**: AIOps platform, ML models, observability, systems engineering
 
 **Key Skills**:
+
 - ML model design and deployment
 - Anomaly detection and incident prediction
 - Real-time streaming systems
@@ -102,18 +113,23 @@
 ### Junior → Senior → Staff → Principal → Architect
 
 **Junior Engineer**:
+
 - Focus: Implementation, code quality, learning
 
 **Senior Engineer**:
+
 - Add: Technical design, mentoring, problem-solving
 
 **Staff Engineer**:
+
 - Add: Project leadership, cross-team work, technical strategy
 
 **Principal Engineer**:
+
 - Add: System architecture, technical standards, deep expertise
 
 **Architect**:
+
 - Add: System-wide thinking, long-term strategy, stakeholder management
 
 ---
@@ -121,6 +137,7 @@
 ## Evaluation Focus Areas by Role
 
 ### Architect Evaluations
+
 - System design and architecture patterns
 - Quality attributes and non-functional requirements
 - Technology selection and trade-offs
@@ -128,6 +145,7 @@
 - Long-term thinking
 
 ### Principal Engineer Evaluations
+
 - End-to-end system design
 - Hands-on architecture
 - Code quality and standards
@@ -135,6 +153,7 @@
 - Deep technical expertise
 
 ### Technical Lead Evaluations
+
 - Technical architecture
 - Hands-on coding
 - Team mentorship
@@ -142,6 +161,7 @@
 - Delivery and execution
 
 ### Engineering Manager Evaluations
+
 - Team management
 - Technical leadership
 - DevOps and infrastructure
@@ -149,6 +169,7 @@
 - Stakeholder communication
 
 ### AIOps Architect Evaluations
+
 - ML model design
 - Anomaly detection and prediction
 - Real-time systems
@@ -168,7 +189,7 @@
 ---
 
 **Related Resources**:
+
 - Role-specific preparation guides: `../04_roles/`
 - Terminology: `terminology.md`
 - Architecture patterns: `architecture-patterns/`
-

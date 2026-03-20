@@ -71,4 +71,3 @@ This keeps the conversation structured even if tech choices change.
 - A high-level pipeline with where decisions live (detection vs decisioning)
 - 2–3 key trade-offs and why you choose a default
 - A plan for drift + evaluation (how you know it’s improving)
-

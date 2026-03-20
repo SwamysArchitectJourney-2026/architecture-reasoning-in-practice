@@ -28,4 +28,3 @@ Start by defining measurable goals, then gather data, then choose targeted impro
 ## Reflections
 
 How would you avoid optimizing the wrong thing?
-

@@ -7,12 +7,14 @@ Micro-frontends can align UI boundaries with backend bounded contexts and team o
 ## When to Use
 
 Use micro-frontends when:
+
 - UI boundaries align with backend service boundaries
 - Multiple teams need independent deployment and ownership
 - Different parts of the application have distinct technology needs
 - Team autonomy outweighs operational complexity
 
 Avoid micro-frontends when:
+
 - Single team owns the entire frontend
 - Application is small or cohesive
 - Operational overhead exceeds benefits
@@ -50,12 +52,14 @@ Avoid micro-frontends when:
 ## Trade-offs
 
 **Benefits:**
+
 - Team autonomy and independent deployment
 - Technology flexibility per team
 - Clear ownership boundaries
 - Scalable team structure
 
 **Costs:**
+
 - Increased operational complexity
 - Shared dependency management challenges
 - Runtime integration overhead
@@ -63,6 +67,7 @@ Avoid micro-frontends when:
 - Versioning and compatibility issues
 
 **Common Pitfalls:**
+
 - Over-engineering for small applications
 - Insufficient investment in shared systems
 - Poor dependency management
@@ -71,14 +76,15 @@ Avoid micro-frontends when:
 ## Examples
 
 **Good Application:**
+
 - Large applications with multiple teams
 - Clear backend service boundaries
 - Different technology needs per domain
 - Strong investment in shared design system
 
 **Poor Application:**
+
 - Small applications with single team
 - Unclear boundaries or overlapping domains
 - Insufficient operational maturity
 - No shared design system investment
-

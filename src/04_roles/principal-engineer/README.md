@@ -11,6 +11,7 @@
 ### What a Principal Engineer Does
 
 A **Principal Engineer** focuses on:
+
 - **Hands-on architecture**: Designing and implementing systems end-to-end
 - **Technical depth**: Deep expertise in multiple areas (backend, cloud, databases, etc.)
 - **Code quality**: Writing, reviewing, and maintaining high-quality code
@@ -45,6 +46,7 @@ A **Principal Engineer** focuses on:
    - Decision narratives
 
 **Checklist**:
+
 - [ ] Read all thinking toolkit modules
 - [ ] Practice problem framing on 3 scenarios
 - [ ] Practice top-down communication
@@ -84,6 +86,7 @@ A **Principal Engineer** focuses on:
    - Observability and monitoring
 
 **Checklist**:
+
 - [ ] Study technical depth areas
 - [ ] Understand design-to-code translation
 - [ ] Practice scalability scenarios
@@ -107,6 +110,7 @@ A **Principal Engineer** focuses on:
    - Failure stories
 
 **Checklist**:
+
 - [ ] Practice 5+ system design scenarios
 - [ ] Practice explaining technical decisions
 - [ ] Prepare STAR stories for behavioral questions
@@ -129,6 +133,7 @@ A **Principal Engineer** focuses on:
    - Answer frameworks
 
 **Checklist**:
+
 - [ ] Complete 3+ mock evaluations
 - [ ] Review readiness checklist
 - [ ] Practice common questions
@@ -138,14 +143,16 @@ A **Principal Engineer** focuses on:
 
 ## Key Topics to Master
 
-### System Design
+### System Design Prompt Examples
+
 - End-to-end system design
 - Microservices architecture
 - API design (REST, GraphQL)
 - Database design and optimization
 - Caching strategies
 
-### Technical Depth
+### Technical Depth Prompt Examples
+
 - Backend frameworks and languages
 - Cloud platforms and services
 - Database systems (SQL, NoSQL)
@@ -153,6 +160,7 @@ A **Principal Engineer** focuses on:
 - System design principles
 
 ### Code Quality
+
 - Code review practices
 - Design patterns
 - Testing strategies
@@ -160,6 +168,7 @@ A **Principal Engineer** focuses on:
 - Security best practices
 
 ### Technical Leadership
+
 - Mentoring engineers
 - Technical standards
 - Code quality enforcement
@@ -171,12 +180,14 @@ A **Principal Engineer** focuses on:
 ## Practice Exercises
 
 ### Exercise 1: Explain Technical Decision in 60 Seconds
+
 - Pick a technical decision you made
 - Explain it using top-down communication
 - Mention key trade-offs
 - Stop when you've answered
 
 ### Exercise 2: Design from Requirements
+
 - Given a problem statement
 - Apply problem framing
 - Identify constraints
@@ -184,6 +195,7 @@ A **Principal Engineer** focuses on:
 - Show implementation considerations
 
 ### Exercise 3: Code Review Scenario
+
 - Review a code sample
 - Identify issues
 - Suggest improvements
@@ -194,6 +206,7 @@ A **Principal Engineer** focuses on:
 ## Evaluation Tips
 
 ### Do's
+
 - **Show technical depth** - Demonstrate deep expertise
 - **Balance design and code** - Show both architecture and implementation
 - **Mention trade-offs** - Every decision has trade-offs
@@ -202,6 +215,7 @@ A **Principal Engineer** focuses on:
 - **Ask clarifying questions** - Shows structured thinking
 
 ### Don'ts
+
 - Don't jump to solutions without understanding the problem
 - Don't ignore code quality
 - Don't focus only on high-level design
@@ -213,18 +227,21 @@ A **Principal Engineer** focuses on:
 ## Common Evaluation Questions
 
 ### System Design
+
 - "Design a scalable system for X"
 - "How would you optimize this system?"
 - "Explain your technical decisions"
 - "How do you handle production issues?"
 
 ### Technical Depth
+
 - "How does X work internally?"
 - "What are the trade-offs of Y?"
 - "How would you debug Z?"
 - "What's your approach to code quality?"
 
 ### Leadership
+
 - "How do you mentor engineers?"
 - "How do you handle technical disagreements?"
 - "How do you ensure code quality?"
@@ -255,8 +272,8 @@ You're ready when you can:
 ---
 
 **Related**:
+
 - Role comparison: `../../01_orientation/role-comparison.md`
 - Thinking toolkit: `../../02_thinking/`
 - Evaluation practice: `../../05_evaluation/`
 - Reference materials: `../../06_reference/`
-

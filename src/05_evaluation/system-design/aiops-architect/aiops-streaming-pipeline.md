@@ -49,4 +49,3 @@ Think in stages (each stage has its own failure modes):
 - How it scales with volume and burstiness
 - Where you enforce contracts (schemas) and how you enable replay
 - A short plan for observability and operational runbooks
-

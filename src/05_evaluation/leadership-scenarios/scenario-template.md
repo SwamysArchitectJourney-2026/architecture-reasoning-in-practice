@@ -24,12 +24,14 @@
 ## Options
 
 **Option 1: [Approach Name]**
+
 - [What would you do?]
 - Pros: [Benefits]
 - Cons: [Drawbacks]
 - Risks: [What could go wrong?]
 
 **Option 2: [Alternative Approach]**
+
 - [What would you do?]
 - Pros: [Benefits]
 - Cons: [Drawbacks]
@@ -66,4 +68,3 @@
 3. Emphasize communication and influence, not authority
 4. Show learning and growth mindset
 5. Connect to architectural reasoning where relevant
-

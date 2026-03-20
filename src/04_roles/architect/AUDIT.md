@@ -10,11 +10,13 @@
 **Purpose**: Define scope, responsibility, and readiness **per role**
 
 **Allowed content:**
+
 - `README.md` (role contract, preparation path)
 - `readiness-checklist.md` (readiness validation)
 - Responsibility area documents (optional)
 
 **Rules:**
+
 - ✅ Role-specific scope and accountability
 - ✅ Readiness criteria
 - ❌ No generic theory (that's `02_thinking/`)
@@ -32,6 +34,7 @@
 **Assessment**: Compliant
 
 **Why:**
+
 - Binary, uncomfortable checkboxes
 - Role-specific accountability (system boundaries, governance, long-term thinking)
 - No generic theory
@@ -50,14 +53,16 @@
 
 **Location**: "Phase 2: Architect-Specific Knowledge" and "Key Topics to Master"
 
-**Problem**: 
+**Problem**:
+
 - Lists generic topics: "System Design", "Trade-offs at Scale", "Migrations & Modernization"
 - "Key Topics to Master" is a knowledge dump
 - This content doesn't change when role changes (Principal Engineer would have similar topics)
 
 **Contract violation**: ❌ No generic theory
 
-**Fix**: 
+**Fix**:
+
 - Remove "Key Topics to Master" section entirely
 - Replace Phase 2 with role-specific accountability areas
 - Link to `02_thinking/` and `06_reference/` for theory
@@ -67,13 +72,15 @@
 **Location**: "Evaluation Tips" and "Common Evaluation Questions"
 
 **Problem**:
+
 - Evaluation tips belong in `05_evaluation/`
 - Common questions belong in `05_evaluation/`
 - This is pressure testing, not role definition
 
 **Contract violation**: ❌ No scenario walkthroughs (evaluation is scenario-based)
 
-**Fix**: 
+**Fix**:
+
 - Remove these sections
 - Link to `05_evaluation/system-design/architect/` instead
 
@@ -82,13 +89,15 @@
 **Location**: "Practice Exercises"
 
 **Problem**:
+
 - Exercises are generic, not role-specific
 - Could apply to any role
 - Better suited for `05_evaluation/` or removed
 
 **Contract violation**: ❌ No generic content
 
-**Fix**: 
+**Fix**:
+
 - Remove or move to `05_evaluation/`
 - Replace with role-specific accountability examples
 
@@ -99,10 +108,12 @@
 ### 1. Remove Generic Theory Sections
 
 **Delete:**
+
 - "Key Topics to Master" (lines 116-152)
 - Generic topic lists in Phase 2 (lines 59-62)
 
 **Replace with:**
+
 - Role-specific accountability areas
 - Links to `02_thinking/` for theory
 - Links to `06_reference/` for patterns
@@ -110,22 +121,26 @@
 ### 2. Remove Evaluation Content
 
 **Delete:**
+
 - "Evaluation Tips" (lines 178-194)
 - "Common Evaluation Questions" (lines 197-215)
 - "Practice Exercises" (lines 156-175)
 
 **Replace with:**
+
 - Link to `05_evaluation/system-design/architect/`
 - Focus on role scope, not evaluation prep
 
 ### 3. Strengthen Role-Specific Content
 
 **Keep and enhance:**
+
 - Role Definition (lines 11-27) ✅
 - Preparation Path structure (but remove generic content) ⚠️
 - Success Criteria (lines 218-228) ✅
 
 **Add:**
+
 - Clear accountability statements
 - What architects own vs influence
 - Role-specific decision-making scope
@@ -134,7 +149,7 @@
 
 ## Corrected Structure (Recommended)
 
-```
+```text
 README.md should contain:
 1. Role Definition ✅ (keep)
 2. What Architects Own (role-specific accountability)
@@ -144,6 +159,7 @@ README.md should contain:
 ```
 
 **Remove:**
+
 - Generic knowledge lists
 - Evaluation tips
 - Practice exercises
@@ -154,10 +170,10 @@ README.md should contain:
 ## Summary
 
 **Files**: 2
+
 - ✅ `readiness-checklist.md`: Compliant
 - ⚠️ `README.md`: 3 violations (generic theory, evaluation content, generic exercises)
 
 **Action Required**: Refactor `README.md` to focus on role-specific scope and accountability, remove generic content, link to other folders for theory and evaluation.
 
 **Risk Level**: Medium - Content is good but violates contract. Easy to fix by removing sections and adding links.
-

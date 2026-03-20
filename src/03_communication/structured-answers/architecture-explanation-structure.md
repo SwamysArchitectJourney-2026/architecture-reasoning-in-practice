@@ -7,6 +7,7 @@ A structured approach to explaining complex architectures that respects time con
 ## When to Use
 
 Use when:
+
 - Explaining system architecture to stakeholders
 - Presenting design decisions in technical reviews
 - Communicating architecture to teams with varying technical depth
@@ -49,14 +50,15 @@ Use when:
 ## Examples
 
 **Effective Explanation:**
+
 - Starts with system boundaries and key patterns
 - Explains decisions and trade-offs clearly
 - Goes deeper only when asked
 - Uses clear, non-technical language where possible
 
 **Ineffective Explanation:**
+
 - Dives into implementation details immediately
 - Lists tools without explaining decisions
 - Assumes audience needs all information upfront
 - Uses jargon without context
-

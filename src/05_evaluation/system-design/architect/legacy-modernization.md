@@ -28,4 +28,3 @@ Define success, slice the system by boundaries, modernize incrementally, and mea
 ## Reflections
 
 Which early signals indicate the modernization plan is failing?
-

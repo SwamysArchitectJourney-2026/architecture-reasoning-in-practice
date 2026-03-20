@@ -28,4 +28,3 @@ Separate workloads by consistency needs, pick defaults, and document exceptions 
 ## Reflections
 
 What criteria would force you to change the chosen consistency model?
-

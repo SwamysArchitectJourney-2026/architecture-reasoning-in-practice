@@ -14,4 +14,3 @@ Use when choosing between managed services, self-hosting, or optimization.
 - Look for non-linear cost cliffs.
 - Compare unit economics across options.
 - Consider ops cost and reliability risk.
-

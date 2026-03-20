@@ -9,7 +9,7 @@
 
 The repository structure is **locked and frozen**.
 
-```
+```text
 src/
 ├── 01_orientation/          ✅ LOCKED
 ├── 02_thinking/             ✅ LOCKED
@@ -27,6 +27,7 @@ src/
 ## 📋 Contracts Defined
 
 Each folder has a **contract** that defines:
+
 - Purpose
 - Allowed content
 - Rules and restrictions
@@ -43,11 +44,13 @@ Each folder has a **contract** that defines:
 **Structure review**: Every 30-60 days (not daily)
 
 **What to review:**
+
 - Contract violations
 - Content drift
 - Unclear files in `07_notes/`
 
 **What NOT to review:**
+
 - Folder structure (it's locked)
 - Folder purposes (they're contracted)
 
@@ -56,6 +59,7 @@ Each folder has a **contract** that defines:
 ## ✅ Validation Complete
 
 The structure is:
+
 - ✅ **Architecturally sound** - Clear separation of concerns
 - ✅ **Progressive** - Capability-driven learning path
 - ✅ **Role-explicit** - Clear role boundaries
@@ -75,4 +79,3 @@ The structure is:
 ---
 
 **The architecture of the learning system is sound. Structure is locked.**
-

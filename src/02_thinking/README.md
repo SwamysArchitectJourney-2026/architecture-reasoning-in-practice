@@ -33,6 +33,6 @@ These frameworks apply to **all roles**. Study these before role-specific conten
 ---
 
 **Related**:
+
 - Communication: `../03_communication/`
 - Role-specific: `../04_roles/`
-

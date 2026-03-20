@@ -14,4 +14,3 @@ Use when the ask is ambiguous, overloaded, or missing constraints.
 - Identify stakeholders and success criteria.
 - Capture constraints (time, cost, risk, compliance, latency).
 - Separate facts from assumptions.
-

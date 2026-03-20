@@ -11,6 +11,7 @@
 **Primary Focus**: System-wide design, long-term strategy, quality attributes
 
 **Key Responsibilities**:
+
 - Define system architecture and patterns
 - Make technology selection decisions
 - Ensure cross-team consistency
@@ -20,6 +21,7 @@
 **Decision Scope**: System-wide, long-term (months to years)
 
 **Key Skills**:
+
 - System-level thinking
 - Quality attributes (performance, security, scalability)
 - Technology selection
@@ -27,6 +29,7 @@
 - Risk and trade-off analysis
 
 **Typical Questions**:
+
 - "How should we structure our system?"
 - "What technologies should we adopt?"
 - "How do we ensure consistency across teams?"
@@ -38,6 +41,7 @@
 **Primary Focus**: Hands-on architecture, technical depth, mentoring
 
 **Key Responsibilities**:
+
 - Design end-to-end systems
 - Write and review code
 - Mentor engineers
@@ -47,6 +51,7 @@
 **Decision Scope**: System-level, but hands-on (weeks to months)
 
 **Key Skills**:
+
 - Deep technical expertise
 - System design
 - Code quality
@@ -54,6 +59,7 @@
 - Practical implementation
 
 **Typical Questions**:
+
 - "How do we implement this architecture?"
 - "What's the best way to structure this code?"
 - "How do we ensure quality?"
@@ -65,6 +71,7 @@
 **Primary Focus**: Project execution, cross-team delivery, technical leadership
 
 **Key Responsibilities**:
+
 - Lead project execution
 - Guide implementation details
 - Ensure quality delivery
@@ -74,6 +81,7 @@
 **Decision Scope**: Project-level, execution-focused (weeks to months)
 
 **Key Skills**:
+
 - Project leadership
 - Cross-team collaboration
 - Technical execution
@@ -81,6 +89,7 @@
 - Mentorship
 
 **Typical Questions**:
+
 - "How do we deliver this project?"
 - "How do we coordinate across teams?"
 - "What's the implementation plan?"
@@ -92,6 +101,7 @@
 **Primary Focus**: People management + technical leadership
 
 **Key Responsibilities**:
+
 - Manage and mentor team
 - Technical strategy
 - Project planning
@@ -101,6 +111,7 @@
 **Decision Scope**: Team and project level (weeks to quarters)
 
 **Key Skills**:
+
 - People management
 - Technical leadership
 - Project management
@@ -108,6 +119,7 @@
 - Stakeholder management
 
 **Typical Questions**:
+
 - "How do we build a high-performing team?"
 - "How do we balance technical debt and delivery?"
 - "How do we allocate resources?"
@@ -142,37 +154,44 @@
 ### Key Transitions
 
 **To Principal Engineer**:
+
 - Add: System architecture, technical standards, deep expertise
 
 **To Architect**:
+
 - Add: System-wide thinking, long-term strategy, stakeholder management
 
 **To Engineering Manager**:
+
 - Add: People management, team building, resource planning
 
 ---
 
 ## Which Role Should You Prepare For?
 
-### Choose **Architect** if:
+### Choose **Architect** if
+
 - You want to focus on system-wide design
 - You enjoy technology selection and standards
 - You're comfortable with long-term thinking
 - You want to work with stakeholders
 
-### Choose **Principal Engineer** if:
+### Choose **Principal Engineer** if
+
 - You want hands-on architecture work
 - You enjoy coding and technical depth
 - You want to mentor engineers
 - You prefer practical implementation
 
-### Choose **Staff Engineer** if:
+### Choose **Staff Engineer** if
+
 - You want to lead project execution
 - You enjoy cross-team collaboration
 - You want technical leadership without management
 - You focus on delivery
 
-### Choose **Engineering Manager** if:
+### Choose **Engineering Manager** if
+
 - You want to manage people
 - You enjoy team building
 - You want to combine technical and people leadership
@@ -202,6 +221,6 @@ They're complementary, not hierarchical.
 ---
 
 **Related**:
+
 - Learning strategies: `learning-strategies.md`
 - Role paths: `../04_role-paths/`
-

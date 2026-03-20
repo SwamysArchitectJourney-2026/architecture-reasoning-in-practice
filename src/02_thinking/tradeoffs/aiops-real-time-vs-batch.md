@@ -19,6 +19,7 @@ Use when designing data processing pipelines for anomaly detection, incident pre
 ## Key Considerations
 
 **Real-Time Streaming:**
+
 - Low latency (sub-second to seconds)
 - Approximate results (windowing, sampling)
 - Higher operational complexity
@@ -26,6 +27,7 @@ Use when designing data processing pipelines for anomaly detection, incident pre
 - Use cases: Anomaly detection, real-time alerting, incident prediction
 
 **Batch Processing:**
+
 - Higher latency (minutes to hours)
 - Accurate results (full data, no approximations)
 - Lower operational complexity
@@ -33,6 +35,7 @@ Use when designing data processing pipelines for anomaly detection, incident pre
 - Use cases: Historical analysis, post-mortem, model training
 
 **Hybrid Approaches:**
+
 - Lambda architecture: Separate real-time and batch layers
 - Kappa architecture: Single streaming pipeline, replay for historical
 - Real-time + periodic batch: Streaming for alerts, batch for accuracy
@@ -43,4 +46,3 @@ Use when designing data processing pipelines for anomaly detection, incident pre
 - **Incident prediction**: Real-time for proactive actions, batch for validation
 - **Root cause analysis**: Real-time for quick answers, batch for comprehensive analysis
 - **Observability queries**: Real-time for dashboards, batch for historical trends
-

@@ -7,12 +7,14 @@ Command Query Responsibility Segregation (CQRS) is a powerful pattern, but it sh
 ## When to Use
 
 Use CQRS when:
+
 - Read and write workloads have significantly different scalability requirements
 - Query complexity requires specialized read models
 - Write operations need different consistency guarantees than reads
 - The domain has clear read/write contention points
 
 Avoid CQRS when:
+
 - The domain is simple with low read/write divergence
 - The added complexity outweighs benefits
 - Team lacks experience with eventual consistency patterns
@@ -48,18 +50,21 @@ Avoid CQRS when:
 ## Trade-offs
 
 **Benefits:**
+
 - Independent scaling of read and write paths
 - Optimized read models for complex queries
 - Reduced contention on write models
 - Architectural flexibility for future changes
 
 **Costs:**
+
 - Increased system complexity
 - Eventual consistency challenges
 - More moving parts to operate and debug
 - Higher cognitive load for developers
 
 **When It Goes Wrong:**
+
 - Applied too broadly without justification
 - Insufficient understanding of consistency implications
 - Lack of operational maturity for distributed patterns
@@ -67,12 +72,13 @@ Avoid CQRS when:
 ## Examples
 
 **Good Application:**
+
 - E-commerce order system with high read volume and complex reporting needs
 - Event sourcing systems where read models are projections
 - Systems with clear read/write separation requirements
 
 **Poor Application:**
+
 - Simple CRUD applications with balanced read/write patterns
 - Early-stage systems with unclear requirements
 - Teams without distributed systems experience
-

@@ -54,4 +54,3 @@ Separate the problem into:
 - A ranked list of suspects with evidence summaries
 - A fast path (triage mode) and a deeper path (postmortem mode)
 - A feedback mechanism that improves future incidents
-

@@ -4,6 +4,7 @@ This checklist determines whether you are ready to operate as a
 **Software / Solution Architect** in real systems, reviews, and evaluations.
 
 If you cannot confidently check an item, return to:
+
 - `02_thinking`
 - `03_communication`
 - `04_roles/architect`
@@ -127,10 +128,10 @@ Architecture is influence, not authority.
 ## Stop Condition
 
 You are architect-ready when you can:
+
 - Defend your design calmly
 - Explain trade-offs clearly
 - Accept critique without defensiveness
 - Make decisions under uncertainty
 
 If not, return to fundamentals.
-

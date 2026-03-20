@@ -14,4 +14,3 @@ Use when requirements are unclear, contradictory, or missing priority signals.
 - Ask what must not change (hard constraints).
 - Ask what can be traded off (soft constraints).
 - Ask for examples and non-examples.
-

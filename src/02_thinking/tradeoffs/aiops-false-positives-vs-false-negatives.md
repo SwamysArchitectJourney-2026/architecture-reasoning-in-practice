@@ -19,18 +19,21 @@ Use when tuning anomaly detection thresholds, incident prediction models, or ale
 ## Key Considerations
 
 **False Positives (Alert Fatigue):**
+
 - High operational overhead (engineers ignore alerts)
 - Loss of trust in the system
 - Wasted resources investigating non-issues
 - Mitigation: Confidence scoring, alert grouping, suppression rules
 
 **False Negatives (Missed Incidents):**
+
 - Business impact (outages, SLA violations)
 - Loss of trust in proactive capabilities
 - Reactive firefighting instead of prevention
 - Mitigation: Lower thresholds, ensemble methods, multiple signals
 
 **Balancing Strategies:**
+
 - Confidence scoring with adaptive thresholds
 - Ensemble methods combining multiple models
 - Signal fusion across metrics, logs, traces
@@ -43,4 +46,3 @@ Use when tuning anomaly detection thresholds, incident prediction models, or ale
 - **Low-stakes services**: Lower false positive rate, accept occasional false negatives
 - **Time-sensitive incidents**: Prioritize recall (lower false negatives)
 - **Resource-constrained teams**: Prioritize precision (lower false positives)
-

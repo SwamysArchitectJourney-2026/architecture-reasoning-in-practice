@@ -7,12 +7,14 @@ Implementing security at multiple layers (edge, API gateway, application) provid
 ## When to Use
 
 Use layered edge security when:
+
 - System requires defense in depth
 - Global traffic management is needed
 - Application-level attacks must be blocked early
 - Cost and latency benefits justify edge components
 
 Avoid when:
+
 - Simple applications with minimal attack surface
 - Operational complexity outweighs security benefits
 - Single-layer security is sufficient
@@ -46,18 +48,21 @@ Avoid when:
 ## Trade-offs
 
 **Benefits:**
+
 - Defense in depth against multiple attack vectors
 - Reduced load on backend services
 - Global traffic management and latency optimization
 - Centralized security policy enforcement
 
 **Costs:**
+
 - Operational complexity of multiple layers
 - Potential false positives requiring tuning
 - Additional latency (minimal but present)
 - Cost of edge services and WAF rules
 
 **Common Pitfalls:**
+
 - Treating edge security as the only defense
 - Not tuning WAF rules (false positives)
 - Failing to coordinate with application-level security
@@ -66,14 +71,15 @@ Avoid when:
 ## Examples
 
 **Effective Implementation:**
+
 - WAF in detection mode first, then enforcement
 - Coordinated security policies across layers
 - Clear understanding of what each layer protects
 - Regular tuning and monitoring
 
 **Ineffective Implementation:**
+
 - WAF as checkbox security without tuning
 - No coordination between edge and application security
 - Assuming edge security is sufficient
 - Ignoring false positives and operational impact
-

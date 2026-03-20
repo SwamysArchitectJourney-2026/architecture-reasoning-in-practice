@@ -14,4 +14,3 @@ Use in design reviews and leadership discussions where time is limited.
 - Summarize constraints and trade-offs.
 - Provide supporting details only as needed.
 - End with risks and next steps.
-
