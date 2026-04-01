@@ -14,4 +14,3 @@ Use when stakeholders need confidence and a clear mitigation plan.
 - Estimate likelihood and impact.
 - Choose mitigations (prevention, detection, recovery).
 - Define what you'll monitor and when you'll act.
-

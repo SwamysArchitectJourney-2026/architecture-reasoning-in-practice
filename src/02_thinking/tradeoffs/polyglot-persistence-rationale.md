@@ -7,12 +7,14 @@ Using multiple database technologies in a single system requires clear justifica
 ## When to Use
 
 Use polyglot persistence when:
+
 - Different data domains have fundamentally different access patterns
 - Consistency requirements vary across domains
 - Schema evolution needs differ significantly
 - Performance characteristics require specialized storage
 
 Avoid polyglot persistence when:
+
 - Single database technology can meet all requirements
 - Operational complexity outweighs benefits
 - Team lacks expertise in multiple technologies
@@ -51,18 +53,21 @@ Avoid polyglot persistence when:
 ## Trade-offs
 
 **Benefits:**
+
 - Optimized storage for each domain's needs
 - Better performance characteristics
 - Flexibility in schema evolution
 - Service autonomy and independence
 
 **Costs:**
+
 - Operational complexity (multiple systems to manage)
 - Data duplication and synchronization challenges
 - Cross-service query limitations
 - Higher learning curve for teams
 
 **Common Pitfalls:**
+
 - Choosing technologies without clear justification
 - Failing to manage data consistency across stores
 - Underestimating operational overhead
@@ -71,12 +76,13 @@ Avoid polyglot persistence when:
 ## Examples
 
 **Strong Justification:**
+
 - SQL Server for transactional core domains requiring ACID guarantees
 - MongoDB for read models and rapidly evolving document structures
 - Clear boundaries between domains with different consistency needs
 
 **Weak Justification:**
+
 - "We used both because one is SQL and one is NoSQL"
 - No clear mapping between data characteristics and database choice
 - Operational burden exceeds architectural benefits
-

@@ -19,16 +19,19 @@ Use when choosing between model complexity, batch size, or inference strategies 
 ## Key Considerations
 
 **For Anomaly Detection:**
+
 - Statistical methods (Z-score, IQR): Low latency, lower accuracy
 - Unsupervised ML (Isolation Forest): Medium latency, good accuracy
 - Deep learning (LSTM, Autoencoders): Higher latency, best accuracy
 
 **For Incident Prediction:**
+
 - Simple models (XGBoost): Low latency, good accuracy
 - Complex models (Deep learning): Higher latency, potentially better accuracy
 - Ensemble methods: Medium latency, robust accuracy
 
 **Strategies to Balance:**
+
 - Model optimization (quantization, pruning, distillation)
 - Caching (feature caching, prediction caching)
 - Batching (micro-batching for latency, larger batches for throughput)
@@ -39,4 +42,3 @@ Use when choosing between model complexity, batch size, or inference strategies 
 - **Real-time detection**: Accept lower accuracy for sub-second latency
 - **Batch analysis**: Higher accuracy acceptable with longer latency
 - **Hybrid approach**: Real-time for critical alerts, batch for comprehensive analysis
-

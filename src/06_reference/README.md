@@ -8,6 +8,7 @@
 
 - **`terminology.md`** - Glossary of key architectural and role-specific terms
 - **`role-skills-matrix.md`** - Skills expected for each role
+- **`notebook-content-governance.md`** - Quick governance checklist for notebook-safe publishing
 - **`architecture-patterns/`** - Pattern references (AIOps, frameworks, etc.)
 - **`cloud-reference/`** - Cloud platform references
 - **`reading-list.md`** - External resources and foundational materials
@@ -32,7 +33,7 @@
 ---
 
 **Related**:
+
 - Thinking frameworks: `../02_thinking/`
 - Role-specific: `../04_roles/`
 - Evaluation scenarios: `../05_evaluation/`
-

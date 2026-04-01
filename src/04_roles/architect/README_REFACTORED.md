@@ -11,6 +11,7 @@
 ### What an Architect Does
 
 An **Architect** focuses on:
+
 - **System-wide design**: How components fit together across the entire system
 - **Long-term strategy**: Decisions that affect the system for months to years
 - **Quality attributes**: Performance, security, scalability, reliability, maintainability
@@ -31,31 +32,36 @@ An **Architect** focuses on:
 
 ### Accountability Areas
 
-**1. System Boundaries & Ownership**
+### 1. System Boundaries & Ownership
+
 - Define what's inside vs outside the system
 - Establish clear ownership across teams
 - Prevent accidental coupling
 - Reason about upstream/downstream dependencies
 
-**2. Architectural Decisions**
+### 2. Architectural Decisions
+
 - Make decisions that affect multiple teams
 - Justify technology and pattern choices
 - Document trade-offs and rationale
 - Ensure decisions align with long-term strategy
 
-**3. Quality Attributes**
+### 3. Quality Attributes
+
 - Balance competing quality attributes
 - Make NFRs influence design, not be afterthoughts
 - Reason about scalability, reliability, security at system level
 - Consider cost and operational impact
 
-**4. Cross-Team Alignment**
+### 4. Cross-Team Alignment
+
 - Ensure consistency across teams
 - Establish technical standards pragmatically
 - Guide teams without blocking them
 - Align architecture with business goals
 
-**5. Evolution & Modernization**
+### 5. Evolution & Modernization
+
 - Design for change over time
 - Propose incremental modernization strategies
 - Balance risk vs progress
@@ -81,6 +87,7 @@ An **Architect** focuses on:
    - Decision narratives
 
 **Checklist**:
+
 - [ ] Read all thinking toolkit modules
 - [ ] Practice problem framing on 3 scenarios
 - [ ] Practice top-down communication
@@ -98,12 +105,14 @@ An **Architect** focuses on:
 4. **Stakeholder Communication** - Explaining technical decisions to non-technical audiences
 
 **Study these areas**:
+
 - Review `readiness-checklist.md` - Understand what you're accountable for
 - Study system design patterns in `../../06_reference/architecture-patterns/`
 - Understand trade-offs in `../../02_thinking/tradeoffs/`
 - Practice communication in `../../03_communication/`
 
 **Checklist**:
+
 - [ ] Understand architect accountability areas
 - [ ] Review readiness checklist
 - [ ] Study relevant patterns and trade-offs
@@ -126,6 +135,7 @@ An **Architect** focuses on:
    - Failure stories
 
 **Checklist**:
+
 - [ ] Practice 5+ system design scenarios
 - [ ] Practice explaining architectures in 60 seconds
 - [ ] Prepare STAR stories for behavioral questions
@@ -146,6 +156,7 @@ An **Architect** focuses on:
    - Validate readiness
 
 **Checklist**:
+
 - [ ] Complete 3+ mock evaluations
 - [ ] Review readiness checklist
 - [ ] Validate all accountability areas
@@ -175,10 +186,10 @@ You're ready when you can:
 ---
 
 **Related**:
+
 - Role comparison: `../../01_orientation/role-comparison.md`
 - Thinking toolkit: `../../02_thinking/`
 - Communication: `../../03_communication/`
 - Evaluation practice: `../../05_evaluation/system-design/architect/`
 - Reference materials: `../../06_reference/`
 - Patterns and trade-offs: `../../02_thinking/tradeoffs/`
-

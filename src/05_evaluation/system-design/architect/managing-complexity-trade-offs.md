@@ -20,21 +20,24 @@ A system has grown in complexity through the application of multiple architectur
 
 ## Trade-offs Analysis
 
-**Option 1: Focus on Technical Complexity**
+### Option 1: Focus on Technical Complexity
+
 - Consistency across services
 - Eventual consistency management
 - Distributed system operations
 - Pros: Shows technical depth
 - Cons: May miss broader context
 
-**Option 2: Focus on Operational Complexity**
+### Option 2: Focus on Operational Complexity
+
 - Deployment and monitoring
 - Debugging across services
 - Team coordination
 - Pros: Shows operational awareness
 - Cons: May seem like process issues
 
-**Option 3: Focus on Decision Complexity**
+### Option 3: Focus on Decision Complexity
+
 - Pattern selection and application
 - Trade-off evaluation
 - Long-term vs short-term thinking
@@ -72,4 +75,3 @@ A system has grown in complexity through the application of multiple architectur
 - What makes a "hardest part" answer compelling?
 - How do you frame mistakes as learning opportunities?
 - What signals maturity in discussing complexity?
-

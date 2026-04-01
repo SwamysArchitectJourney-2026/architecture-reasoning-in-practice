@@ -24,18 +24,21 @@ You need to explain a microservices-based system that uses multiple architectura
 
 ## Trade-offs Analysis
 
-**Option 1: High-Level Overview First**
+### Option 1: High-Level Overview First
+
 - Start with system boundaries and key components
 - Go deeper only if asked
 - Pros: Respects time constraints, invites follow-up
 - Cons: May miss critical details if not probed
 
-**Option 2: Comprehensive Deep Dive**
+### Option 2: Comprehensive Deep Dive
+
 - Cover all aspects in detail immediately
 - Pros: Complete picture upfront
 - Cons: Information overload, loses focus
 
-**Option 3: Decision-Focused Narrative**
+### Option 3: Decision-Focused Narrative
+
 - Lead with key architectural decisions and rationale
 - Pros: Highlights reasoning and trade-offs
 - Cons: May skip important context
@@ -69,4 +72,3 @@ You need to explain a microservices-based system that uses multiple architectura
 - What signals indicate you should go deeper or stay high-level?
 - How do you handle questions that require significant context?
 - What makes an architecture explanation effective for different audiences?
-

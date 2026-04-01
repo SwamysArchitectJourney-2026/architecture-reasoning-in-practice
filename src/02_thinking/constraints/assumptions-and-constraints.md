@@ -14,4 +14,3 @@ Use when decisions depend on scale, reliability, cost, or operating model.
 - Classify constraints: business, technical, operational.
 - Quantify where possible (traffic, latency, data size).
 - Record what would change your decision.
-

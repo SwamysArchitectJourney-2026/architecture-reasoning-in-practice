@@ -94,10 +94,10 @@ Leadership is earned through competence.
 ## Stop Condition
 
 You are principal-ready when you can:
+
 - Own complex systems end-to-end
 - Resolve high-impact production issues
 - Influence architecture through facts
 - Be the technical escalation point
 
 If not, deepen execution skills.
-

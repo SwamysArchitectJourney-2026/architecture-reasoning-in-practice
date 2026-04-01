@@ -7,7 +7,7 @@ You need to frame what “prediction” can realistically mean and how to make i
 
 ## Start by reframing the ask
 
-- Predict *what* exactly: an outage, an SLO breach, a capacity event, or “risk trending up”? 
+- Predict *what* exactly: an outage, an SLO breach, a capacity event, or “risk trending up”?
 - What action will be taken if the model says “high risk”?
 - What’s the minimum lead time required for that action to matter?
 
@@ -53,4 +53,3 @@ A good answer focuses on *decision support* and *risk ranking*, not magical cert
 - A clear target definition and success metrics
 - A risk-ranking design with explainability
 - A rollout plan that avoids making on-call worse
-

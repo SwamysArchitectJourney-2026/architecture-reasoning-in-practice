@@ -11,6 +11,7 @@
 ### What an Architect Does
 
 An **Architect** focuses on:
+
 - **System-wide design**: How components fit together across the entire system
 - **Long-term strategy**: Decisions that affect the system for months to years
 - **Quality attributes**: Performance, security, scalability, reliability, maintainability
@@ -45,6 +46,7 @@ An **Architect** focuses on:
    - Decision narratives
 
 **Checklist**:
+
 - [ ] Read all thinking toolkit modules
 - [ ] Practice problem framing on 3 scenarios
 - [ ] Practice top-down communication
@@ -62,6 +64,7 @@ An **Architect** focuses on:
 4. **Governance & Communication** - Cross-team coordination, stakeholder communication, technical standards
 
 **Checklist**:
+
 - [ ] Study all system design patterns
 - [ ] Understand trade-offs deeply
 - [ ] Practice migration scenarios
@@ -84,6 +87,7 @@ An **Architect** focuses on:
    - Failure stories
 
 **Checklist**:
+
 - [ ] Practice 5+ system design scenarios
 - [ ] Practice explaining architectures in 60 seconds
 - [ ] Prepare STAR stories for behavioral questions
@@ -106,6 +110,7 @@ An **Architect** focuses on:
    - Answer frameworks
 
 **Checklist**:
+
 - [ ] Complete 3+ mock evaluations
 - [ ] Review readiness checklist
 - [ ] Practice common questions
@@ -116,6 +121,7 @@ An **Architect** focuses on:
 ## Key Topics to Master
 
 ### Architecture Patterns
+
 - Microservices vs Monolith
 - Domain-Driven Design (DDD)
 - CQRS (when to use)
@@ -123,6 +129,7 @@ An **Architect** focuses on:
 - API design (REST, GraphQL)
 
 ### Data Architecture
+
 - Polyglot persistence
 - Database selection criteria
 - Consistency models
@@ -130,6 +137,7 @@ An **Architect** focuses on:
 - Data modeling
 
 ### Cloud Architecture
+
 - Multi-cloud vs single cloud
 - Serverless vs containers
 - Edge computing
@@ -137,6 +145,7 @@ An **Architect** focuses on:
 - Security architecture
 
 ### Quality Attributes
+
 - Performance
 - Scalability
 - Reliability
@@ -145,6 +154,7 @@ An **Architect** focuses on:
 - Availability
 
 ### Communication & Governance
+
 - Stakeholder communication
 - Cross-team coordination
 - Technical standards
@@ -156,18 +166,21 @@ An **Architect** focuses on:
 ## Practice Exercises
 
 ### Exercise 1: Explain Architecture in 60 Seconds
+
 - Pick a complex system you've worked on
 - Explain it using top-down communication
 - Mention key trade-offs
 - Stop when you've answered
 
 ### Exercise 2: Design from Scratch
+
 - Given a problem statement
 - Apply problem framing
 - Identify constraints
 - Propose architecture with trade-offs
 
 ### Exercise 3: Handle Conflicting Requirements
+
 - Identify stakeholders
 - Prioritize quality attributes
 - Propose solutions with trade-offs
@@ -178,6 +191,7 @@ An **Architect** focuses on:
 ## Evaluation Tips
 
 ### Do's
+
 - **Start high-level** - Don't dive into details immediately
 - **Always mention trade-offs** - Every decision has trade-offs
 - **Think long-term** - Architects focus on system health over time
@@ -186,6 +200,7 @@ An **Architect** focuses on:
 - **Ask clarifying questions** - Shows structured thinking
 
 ### Don'ts
+
 - Don't jump to solutions without understanding the problem
 - Don't ignore trade-offs
 - Don't focus only on technical details
@@ -197,18 +212,21 @@ An **Architect** focuses on:
 ## Common Evaluation Questions
 
 ### System Design
+
 - "Design a scalable system for X"
 - "How would you modernize a legacy system?"
 - "Explain your architecture decisions"
 - "How do you handle conflicting requirements?"
 
 ### Trade-offs
+
 - "What are the trade-offs of microservices?"
 - "How do you choose between SQL and NoSQL?"
 - "When is CQRS appropriate?"
 - "What are the trade-offs of managed services?"
 
 ### Communication
+
 - "How do you explain technical decisions to non-technical stakeholders?"
 - "How do you handle disagreements about architecture?"
 - "How do you ensure consistency across teams?"
@@ -238,8 +256,9 @@ You're ready when you can:
 ---
 
 **Related**:
+
 - Role comparison: `../../01_orientation/role-comparison.md`
 - Thinking toolkit: `../../02_thinking/`
 - Evaluation practice: `../../05_evaluation/`
 - Reference materials: `../../06_reference/`
-
+- Architect accountability: `platform-architecture-accountability.md`

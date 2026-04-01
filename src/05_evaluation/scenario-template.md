@@ -22,11 +22,13 @@
 ## Trade-offs Analysis
 
 **Option 1: [Approach Name]**
+
 - [Description]
 - Pros: [Benefits]
 - Cons: [Drawbacks]
 
 **Option 2: [Alternative Approach]**
+
 - [Description]
 - Pros: [Benefits]
 - Cons: [Drawbacks]
@@ -65,4 +67,3 @@
 3. Keep context clear and concise
 4. Focus on reasoning process, not just solutions
 5. Include real trade-offs, not just pros/cons
-

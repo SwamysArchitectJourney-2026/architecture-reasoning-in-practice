@@ -8,7 +8,8 @@ Pointers to external references and foundational materials for architectural rea
 
 ## Architecture & Design
 
-### Books
+### Architecture Books
+
 - **"Designing Data-Intensive Applications"** by Martin Kleppmann
   - Distributed systems, consistency, scalability
 - **"Building Microservices"** by Sam Newman
@@ -18,7 +19,8 @@ Pointers to external references and foundational materials for architectural rea
 - **"Software Architecture: The Hard Parts"** by Neal Ford et al.
   - Architectural decision-making, trade-offs
 
-### Articles & Papers
+### Architecture Articles & Papers
+
 - **"Microservices Patterns"** - Chris Richardson
 - **"The Twelve-Factor App"** - Methodology for building SaaS applications
 - **"CAP Theorem"** - Understanding consistency, availability, partition tolerance
@@ -27,13 +29,15 @@ Pointers to external references and foundational materials for architectural rea
 
 ## AIOps & ML Systems
 
-### Books
+### AIOps & ML Systems Books
+
 - **"Hands-On Machine Learning"** by Aurélien Géron
   - ML fundamentals, production ML
 - **"Designing Machine Learning Systems"** by Chip Huyen
   - MLOps, production ML systems
 
-### Articles
+### AIOps & ML Systems Articles
+
 - **"MLOps: Continuous delivery and automation pipelines in ML"**
 - **"Anomaly Detection in Time Series"** - Research papers and techniques
 
@@ -41,11 +45,13 @@ Pointers to external references and foundational materials for architectural rea
 
 ## Distributed Systems
 
-### Books
+### Distributed Systems Books
+
 - **"Distributed Systems: Concepts and Design"** by George Coulouris
 - **"Consistency and Consensus"** - Chapter from DDIA
 
-### Articles
+### Distributed Systems Articles
+
 - **"Fallacies of Distributed Computing"** - Common misconceptions
 - **"Time, Clocks, and the Ordering of Events"** - Lamport timestamps
 
@@ -53,11 +59,13 @@ Pointers to external references and foundational materials for architectural rea
 
 ## Observability & Monitoring
 
-### Books
+### Observability & Monitoring Books
+
 - **"Observability Engineering"** by Charity Majors et al.
   - Three pillars: metrics, logs, traces
 
-### Articles
+### Observability & Monitoring Articles
+
 - **"The Three Pillars of Observability"**
 - **"Distributed Tracing"** - OpenTelemetry documentation
 
@@ -66,6 +74,7 @@ Pointers to external references and foundational materials for architectural rea
 ## System Design
 
 ### Online Resources
+
 - **System Design Primer** - GitHub repository
 - **High Scalability** - Blog on building scalable systems
 - **AWS Architecture Center** - Reference architectures
@@ -82,4 +91,3 @@ Pointers to external references and foundational materials for architectural rea
 ---
 
 **Note**: This is a starting point. Add resources as you discover them.
-

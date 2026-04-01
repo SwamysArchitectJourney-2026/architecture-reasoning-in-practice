@@ -7,6 +7,7 @@ A structured approach to explaining architectural decisions that demonstrates re
 ## When to Use
 
 Use when:
+
 - Explaining why architectural patterns were chosen
 - Justifying technology selections
 - Defending design decisions
@@ -48,6 +49,7 @@ Use when:
 > "We selected [technology] for [specific reason]. We considered [alternatives] but chose this because [rationale]. The trade-off was [cost/benefit]."
 
 **Avoid:**
+
 - Listing features without explaining decisions
 - Failing to acknowledge trade-offs
 - Not considering alternatives
@@ -56,14 +58,15 @@ Use when:
 ## Examples
 
 **Strong Rationale:**
+
 - Clear problem statement
 - Explicit trade-off acknowledgment
 - Alternative consideration
 - Learning and reflection
 
 **Weak Rationale:**
+
 - Tool or pattern listing without context
 - No trade-off discussion
 - Defensive or evasive
 - No learning or reflection
-

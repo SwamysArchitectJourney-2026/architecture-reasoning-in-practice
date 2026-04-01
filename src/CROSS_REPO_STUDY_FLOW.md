@@ -10,9 +10,11 @@
 ## 🔄 The Workflow
 
 ### 1. Learn How to Think
+
 **Location**: `architecture-reasoning-in-practice/src/02_thinking/`
 
 **What you learn:**
+
 - Problem framing
 - Trade-off analysis
 - Constraints modeling
@@ -25,9 +27,11 @@
 ---
 
 ### 2. Learn What Your Role Owns
+
 **Location**: `architecture-reasoning-in-practice/src/04_roles/[your-role]/`
 
 **What you learn:**
+
 - Role scope and accountability
 - Readiness criteria
 - Role-specific responsibilities
@@ -39,9 +43,11 @@
 ---
 
 ### 3. Apply Thinking to Full Designs
+
 **Location**: `system-design-in-practice/`
 
 **What you do:**
+
 - Design complete systems
 - Apply reasoning frameworks
 - Make architectural decisions
@@ -54,9 +60,11 @@
 ---
 
 ### 4. Reflect and Refine
+
 **Location**: Back to `architecture-reasoning-in-practice/`
 
 **What you do:**
+
 - Review evaluation scenarios (`05_evaluation/`)
 - Practice communication (`03_communication/`)
 - Reference materials as needed (`06_reference/`)
@@ -71,20 +79,24 @@
 
 ### Architect Path
 
-**Week 1-2: Foundations**
+### Architect Week 1-2: Foundations
+
 - `architecture-reasoning-in-practice/src/01_orientation/`
 - `architecture-reasoning-in-practice/src/02_thinking/`
 - `architecture-reasoning-in-practice/src/03_communication/`
 
-**Week 3: Role Understanding**
+### Architect Week 3: Role Understanding
+
 - `architecture-reasoning-in-practice/src/04_roles/architect/`
 - Complete readiness checklist
 
-**Week 4-8: Application**
+### Architect Week 4-8: Application
+
 - `system-design-in-practice/` - Design systems
 - `architecture-reasoning-in-practice/src/05_evaluation/system-design/architect/` - Practice scenarios
 
-**Ongoing: Refinement**
+### Architect Ongoing: Refinement
+
 - Use `06_reference/` for lookup
 - Practice with evaluation scenarios
 - Apply to new system designs
@@ -93,20 +105,24 @@
 
 ### Principal Engineer Path
 
-**Week 1-2: Foundations**
+### Principal Engineer Week 1-2: Foundations
+
 - `architecture-reasoning-in-practice/src/01_orientation/`
 - `architecture-reasoning-in-practice/src/02_thinking/`
 - `architecture-reasoning-in-practice/src/03_communication/`
 
-**Week 3: Role Understanding**
+### Principal Engineer Week 3: Role Understanding
+
 - `architecture-reasoning-in-practice/src/04_roles/principal-engineer/`
 - Complete readiness checklist
 
-**Week 4-8: Application**
+### Principal Engineer Week 4-8: Application
+
 - `system-design-in-practice/` - Design and implement systems
 - `architecture-reasoning-in-practice/src/05_evaluation/system-design/principal-engineer/` - Practice scenarios
 
-**Ongoing: Refinement**
+### Principal Engineer Ongoing: Refinement
+
 - Use `06_reference/` for lookup
 - Practice with evaluation scenarios
 - Apply to new system designs
@@ -206,6 +222,7 @@
 ## 🔗 Quick Links
 
 ### Reasoning (This Repo)
+
 - **Orientation**: `src/01_orientation/README.md`
 - **Thinking**: `src/02_thinking/README.md`
 - **Communication**: `src/03_communication/README.md`
@@ -214,6 +231,7 @@
 - **Reference**: `src/06_reference/README.md`
 
 ### Application (Other Repo)
+
 - **System Design**: `system-design-in-practice/`
 - **Full Scenarios**: Complete system designs
 - **Implementation**: Code and architecture
@@ -223,10 +241,12 @@
 ## 📊 Study Time Allocation
 
 **Recommended split:**
+
 - **Reasoning (this repo)**: 40% of study time
 - **Application (other repo)**: 60% of study time
 
 **Why:**
+
 - Reasoning without application is theoretical
 - Application without reasoning is ad-hoc
 - Both together build real capability
@@ -236,6 +256,7 @@
 ## 🎓 Success Metrics
 
 You're succeeding when:
+
 - ✅ You can reason about decisions systematically
 - ✅ You can design systems end-to-end
 - ✅ You can explain trade-offs clearly
@@ -245,4 +266,3 @@ You're succeeding when:
 ---
 
 **Remember: Reasoning here, application there. No duplication, no mirroring.**
-

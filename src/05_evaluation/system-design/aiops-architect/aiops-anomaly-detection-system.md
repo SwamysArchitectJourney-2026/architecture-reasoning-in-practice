@@ -65,10 +65,9 @@ This keeps the conversation structured even if tech choices change.
 - **Change awareness**: deployments and config changes as context for detection
 - **Actionability**: grouping and routing rules matter as much as detection quality
 
-## Deliverable (what you’d say in an interview)
+## Deliverable (what you’d present in a senior technical evaluation)
 
 - A crisp problem statement and success metrics
 - A high-level pipeline with where decisions live (detection vs decisioning)
 - 2–3 key trade-offs and why you choose a default
 - A plan for drift + evaluation (how you know it’s improving)
-

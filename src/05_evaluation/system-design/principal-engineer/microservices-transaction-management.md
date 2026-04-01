@@ -20,22 +20,26 @@ A system requires operations that span multiple microservices, but distributed t
 
 ## Trade-offs Analysis
 
-**Option 1: Distributed Transactions (2PC)**
+### Option 1: Distributed Transactions (2PC)
+
 - Strong consistency guarantees
 - Pros: ACID properties across services
 - Cons: Performance impact, availability trade-offs, complexity
 
-**Option 2: Saga Pattern (Choreography)**
+### Option 2: Saga Pattern (Choreography)
+
 - Event-driven coordination
 - Pros: Loose coupling, scalability
 - Cons: Complex failure handling, eventual consistency
 
-**Option 3: Saga Pattern (Orchestration)**
+### Option 3: Saga Pattern (Orchestration)
+
 - Centralized workflow coordination
 - Pros: Clear control flow, easier debugging
 - Cons: Orchestrator becomes bottleneck, single point of failure
 
-**Option 4: Eventual Consistency with Compensation**
+### Option 4: Eventual Consistency with Compensation
+
 - Accept temporary inconsistency
 - Pros: High availability, performance
 - Cons: Complex compensation logic, user experience challenges
@@ -70,4 +74,3 @@ Prefer designs that keep each service locally consistent, then coordinate cross-
 - What makes a good compensating action?
 - How do you balance consistency with availability and performance?
 - What observability is essential for distributed workflows?
-

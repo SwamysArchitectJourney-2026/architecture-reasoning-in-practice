@@ -1,46 +1,3 @@
-# AIOps Real-Time Streaming Pipeline
-
-## Context
-
-You need to design a real-time streaming pipeline that processes millions of metrics, logs, and traces per second with low latency for an AIOps platform. The pipeline must handle exactly-once semantics, scale horizontally, and be fault-tolerant.
-
-## Ambiguities
-
-- What is the acceptable latency? (sub-second, seconds)
-- What is the expected throughput? (events per second)
-- What level of consistency is required? (exactly-once, at-least-once)
-- How should the system handle late-arriving data?
-- What is the budget for compute and storage?
-
-## Clarifying Questions
-
-- What is the primary use case: real-time detection, aggregation, or both?
-- What is the acceptable latency? (sub-second, seconds, minutes)
-- What is the expected volume? (events/sec, peak vs average)
-- What level of consistency is required? (exactly-once, at-least-once)
-- How should late-arriving data be handled?
-- What is the retention period for data?
-- What is the budget for compute and storage?
-
-## Trade-offs Analysis
-
-**Option 1: Lambda Architecture**
-- Real-time stream processing + batch processing for accuracy
-- Pros: Handles both real-time and historical analysis, accurate results
-- Cons: More complex, higher operational overhead, data duplication
-
-**Option 2: Pure Streaming**
-- Real-time processing only, no batch layer
-- Pros: Simpler, lower latency, lower cost
-- Cons: May miss late-arriving data, less accurate for historical analysis
-
-**Option 3: Kappa Architecture (Recommended)**
-- Single streaming pipeline, replay for historical analysis
-- Pros: Simpler than lambda, handles both real-time and historical
-- Cons: Requires replay capability, may be slower for historical queries
-
-## Structured Reasoning
-
 # AIOps Streaming Pipeline (Scenario)
 
 ## Scenario
@@ -86,10 +43,9 @@ Think in stages (each stage has its own failure modes):
 - Hot partitions / skew and uneven load
 - Schema validation failures and incompatible changes
 
-## What you’d present in an interview
+## What you’d present in a senior technical evaluation
 
 - A minimal pipeline that meets the strictest latency path
 - How it scales with volume and burstiness
 - Where you enforce contracts (schemas) and how you enable replay
 - A short plan for observability and operational runbooks
-

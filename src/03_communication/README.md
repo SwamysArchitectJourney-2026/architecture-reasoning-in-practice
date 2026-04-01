@@ -31,6 +31,6 @@ These frameworks apply to **all roles**. Use them when explaining decisions.
 ---
 
 **Related**:
+
 - Thinking frameworks: `../02_thinking/`
 - Role-specific: `../04_roles/`
-
